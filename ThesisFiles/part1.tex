@@ -597,7 +597,7 @@ $\Sigma$:~是样本特征方差均值。\\
   \frac{\partial l(\phi,\mu_0,\mu_1,\Sigma)}{\partial\mu_0}&=\frac{\partial\sum_{i=1}^{m}(1-y^{(i)})log~p(x^{(i)}|y^{(i)}=0)}{\partial\mu_0}\\
     &=\frac{\partial\sum_{i=1}^{m}(1-y^{(i)})(log\frac{1}{\sqrt{(2\pi)^2|\Sigma|}}-\frac{1}{2}(x^{(i)}-\mu_0)^T\Sigma^{-1}(x^{(i)}-\mu_0))}{\partial\mu_0}\\
     &=\sum_{i=1}^{m}(1-y^{(i)})\Sigma^{-1}(x^{(i)}-\mu_0)\\
-    &=\sum_{i=1}^{m}I(y^{(i)}=0)\Sigma^{-1}(x^{(i)}-\mu)\\
+    &=\sum_{i=1}^{m}I(y^{(i)}=0)\Sigma^{-1}(x^{(i)}-\mu_0)\\
 \end{split}
 \end{equation}
 令其为0，得，
