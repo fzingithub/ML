@@ -571,7 +571,7 @@ $\Sigma$:~是样本特征方差均值。\\
 \begin{equation}\nonumber
 \begin{split}
   l(\phi,\mu_0,\mu_1,\Sigma)&=log\prod_{i=1}^{m}p(x^{(i)},y^{(i)})=log\prod_{i=1}^{m}p(x^{(i)}|y^{(i)})p(y^{(i)})=\sum_{i=1}^{m}log~p(x^{(i)}|y^{(i)})+log~p(y^{(i)})\\
-                            &=\sum_{i=1}^{m}log~(p(x^{(i)}|y^{(i)}=0)^{1-y^{(i)}}\cdotp(x^{(i)}|y^{(i)}=1)^{y^{(i)}})+\sum_{i=1}^{m}log~p(y^{(i)})\\
+                            &=\sum_{i=1}^{m}log~(p(x^{(i)}|y^{(i)}=0)^{1-y^{(i)}}\cdot p(x^{(i)}|y^{(i)}=1)^{y^{(i)}})+\sum_{i=1}^{m}log~p(y^{(i)})\\
                             &=\sum_{i=1}^{m}(1-y^{(i)})log~(p(x^{(i)}|y^{(i)}=0)+\sum_{i=1}^{m}y^{(i)}log~(p(x^{(i)}|y^{(i)}=1)+\sum_{i=1}^{m}log~p(y^{(i)})
 \end{split}
 \end{equation}
