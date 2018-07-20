@@ -809,7 +809,11 @@ $$P(y^{(i)}|x^{(i)};\theta)=\frac{1}{\sqrt{2\pi} \sigma}exp(- \frac{(y^{(i)}-\th
            &=ln\prod_{i=1}^{m}\frac{1}{\sqrt{2\pi} \sigma}exp(-\frac{(\epsilon^{(i)})^2}{2 \sigma^2})\\
            &=\prod_{i=1}^{m}ln\frac{1}{\sqrt{2\pi} \sigma}exp(-\frac{(\epsilon^{(i)})^2}{2 \sigma^2})\\
            &=mln\frac{1}{\sqrt{2\pi}\sigma}-\frac{1}{\sigma^2}\cdot\frac{1}{2}\sum_{i=1}^{m}(y^{(i)}-\theta^Tx^{(i)})^2\\
-           So:~~~~~~~~~&\\
+\end{split}
+\end{equation}
+于是有：
+\begin{equation}\nonumber
+\begin{split}
            J(\theta)&=\frac{1}{\sigma^2}\cdot\frac{1}{2}\sum_{i=1}^{m}(y^{(i)}-\theta^Tx^{(i)})^2
 \end{split}
 \end{equation}
@@ -863,7 +867,7 @@ $$trA=\sum_{i=1}^{m}A_{ii}$$
 &\nabla_A trABA^TC = CAB+C^TAB^T\\
 &\nabla_A|A| = |A|(A^{-1})^T\\
 &~\nonumber\\
-conbining ~&(2)~ and~ (3)~ :\nonumber\\
+combining ~&(2)~ and~ (3)~ :\nonumber\\
 &\nabla_{A^T}trABA^TC = B^TA^TC^T+BA^TC
 \end{align}
 
