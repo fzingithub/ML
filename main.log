@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  20 JUL 2018 15:14
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  20 JUL 2018 15:33
->>>>>>> 274d0075b16c0c35ba248cf74495c2c9f7de8b3a
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  20 JUL 2018 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1755,11 +1751,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 26577 strings out of 494534
- 456264 string characters out of 6176265
+ 26575 strings out of 494534
+ 456227 string characters out of 6176265
  500441 words of memory out of 5000000
- 29187 multiletter control sequences out of 15000+600000
- 589159 words of font info for 236 fonts, out of 8000000 for 9000
+ 29186 multiletter control sequences out of 15000+600000
+ 588866 words of font info for 235 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  41i,27n,56p,10460b,2646s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/s
@@ -1861,7 +1857,7 @@ ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb><c:/texlive/2018/texmf
 pe1/arphic/gbsnu/gbsnu9a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
 nu/gbsnu9c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9f.pfb
 ><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on main.pdf (35 pages, 2590845 bytes).
+Output written on main.pdf (35 pages, 2590852 bytes).
 PDF statistics:
  1661 PDF objects out of 1728 (max. 8388607)
  1225 compressed objects within 13 object streams
