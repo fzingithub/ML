@@ -649,7 +649,7 @@ $\Sigma$:~是样本特征方差均值。\\
 实际计算时，我们只需要比大小，那么贝叶斯公式中分母项可以不计算，由于2个高斯函数协方差矩阵相同，则高斯分布前面那相同部分也可以忽略。实际上，GDA算法也是一个线性分类器，根据上面推导可以知道，GDA的分界线(面)的方程为：
 \begin{equation}\nonumber
 \begin{split}
-  (1-\phi)exp((x-\mu_0)^T\Sigma{-1}(x-\mu_0))=\phi exp((x-\mu_1)^T\Sigma(x-\mu_1))
+  (1-\phi)exp((x-\mu_0)^T\Sigma^{-1}(x-\mu_0))=\phi exp((x-\mu_1)^T\Sigma(x-\mu_1))
 \end{split}
 \end{equation}
 取对数展开后化解，可得：
