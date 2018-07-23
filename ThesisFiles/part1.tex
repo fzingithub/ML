@@ -575,7 +575,7 @@ $\Sigma$:~是样本特征方差均值。\\
                             &=\sum_{i=1}^{m}(1-y^{(i)})log~(p(x^{(i)}|y^{(i)}=0)+\sum_{i=1}^{m}y^{(i)}log~(p(x^{(i)}|y^{(i)}=1)+\sum_{i=1}^{m}log~p(y^{(i)})
 \end{split}
 \end{equation}
-注意此函数分为三个部分，第一部分只与$~\mu_0~$有关；第二部分只与$~\mu_1~$有关；第三部分只$~\phi~$有关。最大化该函数，1.首先先求$~\phi~$，则求第一部分的偏导。
+注意此函数分为三个部分，第一部分只与$~\mu_0~$有关；第二部分只与$~\mu_1~$有关；第三部分只$~\phi~$有关。最大化该函数，1.首先先求$~\phi~$，则求第三部分的偏导。
 \begin{equation}\nonumber
 \begin{split}
   \frac{\partial l(\phi,\mu_0,\mu_1,\Sigma)}{\partial\phi }&=\frac{\sum_{i=1}^{m}log~p(y^{(i)})}{\partial\phi}\\
