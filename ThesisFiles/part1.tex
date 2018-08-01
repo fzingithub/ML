@@ -428,7 +428,7 @@ $p(x|y=1):$~~~对1类特征进行建模\\
   &=arg~\mathop{max}_y~p(x|y)p(y)\\
 \end{split}
 \end{equation}
-常见的生成模型有：高斯判别分析，隐马尔可夫模型HMM，朴素贝叶斯模型，高斯混合模型GMM，LDA等。
+常见的生成模型有：高斯判别分析（特征值为连续），隐马尔可夫模型HMM，朴素贝叶斯模型（特征值为离散），高斯混合模型GMM，LDA等。
 
 \subsubsection{多项正太分布}
 n维多项分布也称多项高斯分布，均值向量$~\mu\in R^n~$,协方差矩阵$~\Sigma\in R^{n\times n}~$,记为$~N(\mu,\Sigma)~$，其概率密度表示为：$$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^{n/2}|\Sigma|^{1/2}}exp\Big(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)\Big)$$
@@ -758,7 +758,7 @@ $$\Rightarrow p(y=1|x)\rightarrow logistic function.$$
 \subsubsection{概率论基础}
 贝叶斯学派的思想可以概括为先验概率+数据=后验概率。\\
 \noindent\textbf{条件独立公式}\\
-$$P(X,Y)=P(X)P(y)$$
+$$P(X,Y)=P(X)P(Y)$$
 \noindent\textbf{条件概率公式}\\
 $$P(Y|X)=P(X,Y)/P(X)$$
 $$P(X|Y)=P(Y,X)/P(Y)$$
@@ -778,7 +778,7 @@ $P(Y_j|X)~$为后验概率；\\
 利用上述概率论基础，回到我们的数据分析，来构我们的建朴素贝叶斯分类器。\\
 假设我们\textbf{有m个样本}，每个样本有n个特征，特征输出有两个类别，定义为1,0.（多分类同理）。
 $$(x_1^{(1)},x_2^{(1)},...,x_n^{(1)},y_1),(x_1^{(2)},x_2^{(2)},...,x_n^{(2)},y_2),...,(x_1^{(m)},x_2^{(m)},...,x_n^{(m)},y_m)$$
-从这些样本中就可以学习到\textbf{朴素贝叶斯的先验分布}$~P(Y=1),P(Y=0)~$;接着可以学习\textbf{条件概率分布}$~P(X|Y=0),P(X|Y=1)~$;这里就出现了一个问题，多元变量n个维度的条件分布很难求出。所以朴素贝叶斯就用到了一个大胆的强独立假设（Naive Bayes Assumption），样本各个特征之间相互独立则有：
+从这些样本中就可以学习到\textbf{朴素贝叶斯的先验分布}$~P(Y=1),P(Y=0)~$;接着可以学习\textbf{条件概率分布}$~P(X|Y=0),P(X|Y=1)~$;这里就出现了一个问题，多元变量n个维度的条件分布很难求出。所以朴素贝叶斯就用到了一个大胆的\textbf{强独立假设（Naive Bayes Assumption）}，样本各个特征之间相互独立则有：
 \begin{equation}\nonumber
 \begin{split}
   P(X|Y_j)&=P(x_1,x_2,...,x_n|Y_j)\\
@@ -795,24 +795,141 @@ $$(x_1^{(1)},x_2^{(1)},...,x_n^{(1)},y_1),(x_1^{(2)},x_2^{(2)},...,x_n^{(2)},y_2
           &=\frac{\prod_{i=1}^{n}P(x_i|Y_j)P(Y_j)}{...}
 \end{split}
 \end{equation}
-将分母省略实际上，是在朴素贝叶斯算法判别时是比较大小时，各类的后验概率都不用去除以相同的归一化项，可直接用来比较。
+将分母省略实际上，是在朴素贝叶斯算法判别时是比较大小时，各类的后验概率都不用去除以相同的归一化项，可直接用来比较。事实上，此模型还用到了一个假设就是\textbf{特征同等重要假设}。
+
+\subsubsection{多元变量伯努利事件模型}%词集模型 (不考虑频次)      
+\noindent\textbf{1.词集模型：}\\
+\indent多元变量伯努利事件模型（multi-variate Bernoulli event model）常用于文本分类，也称为\textbf{词集模型（set-of-words model）}就是不考虑同一文档中同一特征出现的频率，只要出现就将其置1。具体的建模过程为：\\
+\textcircled{\footnotesize{1}}模型总词表：（长度为n=5000）
+$$Vocabulary=[word_1,word_2,...,word_{5000}]$$
+\textcircled{\footnotesize{2}}文档词向量：（长度为n=5000,与总词表对应，存在文档总词表的单词相应位置置1）
+$$WordVector=[0,0,1,0,1,0,0,...1,0]$$
+\textcircled{\footnotesize{3}}特征为离散二值变化，输出也是二值\{0,1\}。因此有：
+\begin{equation}\nonumber
+\begin{split}
+  &\phi_y=p(y=1)\\
+  &\phi_{j|y=0}=p(x_j=1|y=1)\\
+  &\phi_{j|y=1}=p(x_j=0|y=0)\\
+\end{split}
+\end{equation}
+\textcircled{\footnotesize{4}}将$~y~$和$~x_j,y~$建模成Bernoulli分布（这是朴素贝叶斯最简单的特例之一），
+\begin{equation}\nonumber
+\begin{split}
+  &p(y)=(\phi_y)^y(1-\phi_y)^{1-y}\\
+  &p(x|y=0)=\prod_{j=1}^{n}p(x_j|y=0)=\prod_{j=1}^{n}(\phi_{j|y=0})^{x_j}(1-\phi_{j|y=0})^{1-x_j}\\
+  &p(x|y=1)=\prod_{j=1}^{n}p(x_j|y=1)=\prod_{j=1}^{n}(\phi_{j|y=1})^{x_j}(1-\phi_{j|y=1})^{1-x_j}\\
+\end{split}
+\end{equation}
+\textcircled{\footnotesize{5}}强独立假设下的似然函数(有m个样本)：
+\begin{equation}\nonumber
+\begin{split}
+  L(\phi_y,\phi_{i|y=1},\phi_{i|y=0})&=\prod_{i=1}^{m}p(x^{(i)},y^{(i)};\phi_y,\phi_{i|y=1},\phi_{i|y=0})\\
+\end{split}
+\end{equation}
+{\color{red}{\textcircled{\footnotesize{6}}}最大似然求参数：}
+\begin{equation}\nonumber
+\begin{split}
+  l(\phi_y,\phi_{i|y=1},\phi_{i|y=0})&=log\prod_{i=1}^{m}p(x^{(i)},y^{(i)};\phi_y,\phi_{i|y=1},\phi_{i|y=0})\\
+                                     &=log\prod_{i=1}^{m}p(y^{(i)};\phi_y)p(x^{(i)}|y^{(i)};\phi_{j|y=0},\phi_{j|y=1})\\
+                                     &=\sum_{i=1}^{m}\Big(log(\phi_y^{y^{(i)}}(1-\phi_y)^{1-y^{(i)}})+log\prod_{j=1}^{n}p(x_j^{(i)}|y^{(i)})\Big)\\
+                                     &=\sum_{i=1}^{m}\Big((y^{(i)}log\phi_y+(1-y^{(i)})log(1-\phi_y))\\
+                                     &~~~~~+log\prod_{j=1}^{n}(p(x_j^{(i)}|y^{(i)}=1))^{I\{y^{(i)}=1\}}(p(x_j^{(i)}|y^{(i)}=0))^{I\{y^{(i)}=0\}}\Big)\\
+                                     &=\sum_{i=1}^{m}\Big((y^{(i)}log\phi_y+(1-y^{(i)})log(1-\phi_y))\\
+                                     &~~~~~+\sum_{j=1}^{n}I\{y^{(i)}=1\}log~p(x_j^{(i)}|y^{(i)}=1)\\
+                                     &~~~~~~~~~~+\sum_{j=1}^{n}I\{y^{(i)}=0\}log~p(x_j^{(i)}|y^{(i)}=0)\Big)\\
+                                     &=\sum_{i=1}^{m}\Big((y^{(i)}log\phi_y+(1-y^{(i)})log(1-\phi_y))\\
+                                     &~~~~~+\sum_{j=1}^{n}I\{y^{(i)}=1\}log~(\phi_{j|y=1})^{x_j^{(i)}}(1-\phi_{j|y=1})^{1-x_j^{(i)}}\\
+                                     &~~~~~~~~~~+\sum_{j=1}^{n}I\{y^{(i)}=0\}log~(\phi_{j|y=0})^{x_j^{(i)}}(1-\phi_{j|y=0})^{1-x_j^{(i)}}\Big)\\
+\end{split}
+\end{equation}
+全式分为三部分，为求$~\phi_y~$对第一部分求导:
+\begin{equation}\nonumber
+\begin{split}
+  &\frac{\partial l}{\partial \phi_y}=\sum_{i=1}^{m}\frac{y^{(i)}}{\phi_y}-\frac{1-y^{(i)}}{1-\phi_y} =0\\
+  &{\color{red}{\Rightarrow\phi_y = \frac{\sum_{i=1}^{m}I\{y^{(i)}=1\}}{m}}}\\
+\end{split}
+\end{equation}
+为求$\phi_{j|y=1}$对第二部分求导：
+\begin{equation}\nonumber
+\begin{split}
+  \frac{\partial l}{\partial \phi_{j|y=1}}&= \frac{\partial \sum_{i=1}^{m}I\{y^{(i)}=1\}log~(\phi_{j|y=1})^{x_j^{(i)}}(1-\phi_{j|y=1})^{1-x_j^{(i)}}}{\partial \phi_{j|y=1}}\\
+  &=\sum_{i=1}^{m}I\{y^{(i)}=1\}(\frac{x_j^{(i)}}{\phi_{j|y=1}}-\frac{1-x_j^{(i)}}{1-\phi_{j|y=1}})=0\\
+  \Rightarrow~&{\color{red}{\phi_{j|y=1}=\frac{\sum_{i=1}^{m}I\{y^{(i)}=1\wedge x_j^{(i)}=1\}}  {\sum_{i=1}^{m}I\{y^{(i)}=1\}}}}\\
+\end{split}
+\end{equation}
+同理，可得$\phi_{j|y=0}$：
+\begin{equation}\nonumber
+\begin{split}
+  &{\color{red}{\phi_{j|y=0}=\frac{\sum_{i=1}^{m}I\{y^{(i)}=0\wedge x_j^{(i)}=1\}}  {\sum_{i=1}^{m}I\{y^{(i)}=0\}}}}\\
+\end{split}
+\end{equation}
+所以，我们得到了模型所有的参数值（进行拉普拉斯平滑后的结果）;可以利用贝叶斯公式判别新样本类别：
+\begin{equation}\nonumber
+\begin{split}
+  &\phi_y = \frac{\sum_{i=1}^{m}I\{y^{(i)}=1\}{\color{red}{+1}}}{m{\color{red}{+2}}}\\
+  &\phi_{j|y=1}=\frac{\sum_{i=1}^{m}I\{y^{(i)}=1\wedge x_j^{(i)}=1\}{\color{red}{+1}}}{\sum_{i=1}^{m}I\{y^{(i)}=1\}{\color{red}{+2}}}\\
+  &\phi_{j|y=0}=\frac{\sum_{i=1}^{m}I\{y^{(i)}=0\wedge x_j^{(i)}=1\}{\color{red}{+1}}}{\sum_{i=1}^{m}I\{y^{(i)}=0\}{\color{red}{+2}}}\\
+\end{split}
+\end{equation}
 
 
+\noindent最后，\textbf{上述建模的贝叶斯分类器，是一个线性分类器}；\\即存在某个$\theta\in R^{(n+1)}$,(特征第0个位置，对应截距项$\theta_0$)
+$$p(y=1|x)>=p(y=0|x)~\Leftrightarrow~\theta^T \begin{bmatrix}
+   1  \\
+   x 
+  \end{bmatrix}>=0$$
+证明：
+\begin{equation}\nonumber
+\begin{split}
+  &p(y=1|x)>=p(y=0|x)\\
+  \Leftrightarrow&\frac{p(y=1|x)}{p(y=0|x)}>=1\\
+  \Leftrightarrow&\frac{(\prod_{j=1}^{n}p(x_j|y=1))p(y=1)}{(\prod_{j=1}^{n}p(x_j|y=0))p(y=0)}>=1\\
+  \Leftrightarrow&\frac{(\prod_{j=1}^{n}(\phi_{j|y=1})^{x_j}(1-\phi_{j|y=1})^{(1-x_j)})\phi_y}{(\prod_{j=1}^{n}(\phi_{j|y=0})^{x_j}(1-\phi_{j|y=0})^{(1-x_j)})(1-\phi_y)}>=1\\
+  \Leftrightarrow&\sum_{j=0}^{n}x_j log(\phi_{j|y=1})+(1-x_j)log(1-\phi_{j|y=1})+log\phi_y\\
+  ~~~~~~~~~~&-\sum_{j=0}^{n} x_j log(\phi_{j|y=0})+(1-x_j)log(1-\phi_{j|y=0})+(1-log\phi_y)>=0\\
+  \Leftrightarrow&\sum_{j=1}^{n}x_jlog\frac{\phi_{j|y=1}}{(1-\phi_{j|y=1})}+log(1-\phi_{j|y=1})\\
+  ~~~~~~~~~~&-\sum_{j=1}^{n}x_jlog\frac{\phi_{j|y=0}}{(1-\phi_{j|y=0})}-log(1-\phi_{j|y=0})+log\frac{\phi_y}{1-\phi_y}>=0\\
+  \Leftrightarrow&\sum_{j=1}^{n}x_jlog\frac{\phi_{j|y=1}(1-\phi_{j|y=0})}{(1-\phi_{j|y=1})\phi_{j|y=0}}+log\frac{\phi_y}{1-\phi_y}>=0\\
+\end{split}
+\end{equation}  
+此时：$$\theta_0 = \sum_{j=1}^{m} log\frac{1-\phi_{j|y=1}}{1-\phi_{j|y=0}}+log\frac{\phi_y}{1-\phi_y}$$
+$$\theta_j=\frac{\phi_{j|y=1}(1-\phi_{j|y=0})}{(1-\phi_{j|y=1})\phi_{j|y=0}}$$
+也就是说，{\color{red}{我们拿一个新数据x代入模型测试，利用我们上面得到的线性分类器$\theta^Tx$，与利在朴素贝叶斯比较$p(y=1|x)$与$p(y=0|x)$是等效的。}}\textbf{事实上，离散特征的朴素贝叶斯分类器都是线性分类器；方差相同的连续的朴素贝叶斯分类器也是线性分类器。}进一步讲，只有某些具有特定属性的朴素贝叶斯分类器才是线性分类器。
 
+\subsubsection{多项式事件模型} %词袋模型（考虑到频次）-多用于文本分类问题
+多项式事件模型（multinomial event model）又称为朴素贝叶斯的词袋模型（多用于文档分类），\textbf{词袋模型（bag-of-words model）}就是考虑同一文档中重复出现的词以累加，显然词袋模型更加贴合实际；其建模过程，与伯努利事件模型相像，只是特征不在只取二值，而是多值$\{1,2,3,4,...\}$。这就与伯努利事件模型出现了差异，\textbf{其每一个特征变量不在服从伯努利分布而是多项式分布。}最大似然的过程相似，但结果不同，其似然结果为：
+\begin{equation}\nonumber
+\begin{split}
+  &\phi_y = \frac{\sum_{i=1}^{m}I\{y^{(i)}=1\}{\color{red}{+1}}}{m{\color{red}{+2}}}\\
+  &\phi_{k|y=1}=\frac{\sum_{i=1}^{m}\sum_{j=1}^{n_i}I\{y^{(i)}=1\wedge x_j^{(i)}=k\}{\color{red}{+1}}}  {\sum_{i=1}^{m}I\{y^{(i)}=1\}n_i{\color{red}{+|V|}}}\\
+  &\phi_{k|y=0}=\frac{\sum_{i=1}^{m}\sum_{j=1}^{n_i}I\{y^{(i)}=0\wedge x_j^{(i)}=k\}{\color{red}{+1}}}{\sum_{i=1}^{m}I\{y^{(i)}=0\}n_i{\color{red}{+|V|}}}\\
+\end{split}
+\end{equation}
+~k~,为模型总词表中的一个个单词；\\$~n_i~$,为一个个样本文档的有效长度；\\$~|V|~$，是文档总词表的长度。
 
-
-
-
-
-
-
-
-
-\subsubsection{多元变量伯努利事件模型}%词集模型 (不考虑频次)      词袋模型（考虑到频次）-多用于文本分类问题
-\subsubsection{多项式事件模型}
 \subsubsection{拉普拉斯平滑}
+做拉普拉斯平滑处理的原因很显然，也就是零概率问题，即就是在计算实例的概率时，如果某个量x，在观察样本库（训练集）中没有出现过，会导致整个实例的概率结果是0。在文本分类的问题中，当一个词语没有在训练样本中出现，该词语调概率为0，使用连乘计算文本出现概率时也为0。这是不合理的，不能因为一个事件没有观察到就武断的认为该事件的概率是0。
+
+为了解决零概率的问题，法国数学家拉普拉斯最早提出用加1的方法估计没有出现过的现象的概率，所以加法平滑也叫做拉普拉斯平滑。
+假定训练样本很大时，每个分量x的计数加1造成的估计概率变化可以忽略不计，但可以方便有效的避免零概率问题。
+上述两种朴素贝叶斯模型的参数估计值，最终结果式都做了拉普拉斯平滑。
 \subsubsection{实战：python实现朴素贝叶斯分类器分类文本}
 \subsubsection{示例：使用朴素贝叶斯过滤垃圾邮件}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \section{回归}
