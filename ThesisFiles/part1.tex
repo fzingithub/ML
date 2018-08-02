@@ -797,7 +797,7 @@ $$(x_1^{(1)},x_2^{(1)},...,x_n^{(1)},y_1),(x_1^{(2)},x_2^{(2)},...,x_n^{(2)},y_2
 \end{equation}
 将分母省略实际上，是在朴素贝叶斯算法判别时是比较大小时，各类的后验概率都不用去除以相同的归一化项，可直接用来比较。事实上，此模型还用到了一个假设就是\textbf{特征同等重要假设}。
 
-\subsubsection{多元变量伯努利事件模型}%词集模型 (不考虑频次)      
+\subsubsection{多元变量伯努利事件模型（词集模型）}%词集模型 (不考虑频次)
 \noindent\textbf{1.词集模型：}\\
 \indent多元变量伯努利事件模型（multi-variate Bernoulli event model）常用于文本分类，也称为\textbf{词集模型（set-of-words model）}就是不考虑同一文档中同一特征出现的频率，只要出现就将其置1。具体的建模过程为：\\
 \textcircled{\footnotesize{1}}模型总词表：（长度为n=5000）
@@ -876,7 +876,7 @@ $$WordVector=[0,0,1,0,1,0,0,...1,0]$$
 \noindent最后，\textbf{上述建模的贝叶斯分类器，是一个线性分类器}；\\即存在某个$\theta\in R^{(n+1)}$,(特征第0个位置，对应截距项$\theta_0$)
 $$p(y=1|x)>=p(y=0|x)~\Leftrightarrow~\theta^T \begin{bmatrix}
    1  \\
-   x 
+   x
   \end{bmatrix}>=0$$
 证明：
 \begin{equation}\nonumber
@@ -891,12 +891,12 @@ $$p(y=1|x)>=p(y=0|x)~\Leftrightarrow~\theta^T \begin{bmatrix}
   ~~~~~~~~~~&-\sum_{j=1}^{n}x_jlog\frac{\phi_{j|y=0}}{(1-\phi_{j|y=0})}-log(1-\phi_{j|y=0})+log\frac{\phi_y}{1-\phi_y}>=0\\
   \Leftrightarrow&\sum_{j=1}^{n}x_jlog\frac{\phi_{j|y=1}(1-\phi_{j|y=0})}{(1-\phi_{j|y=1})\phi_{j|y=0}}+log\frac{\phi_y}{1-\phi_y}>=0\\
 \end{split}
-\end{equation}  
+\end{equation}
 此时：$$\theta_0 = \sum_{j=1}^{m} log\frac{1-\phi_{j|y=1}}{1-\phi_{j|y=0}}+log\frac{\phi_y}{1-\phi_y}$$
 $$\theta_j=\frac{\phi_{j|y=1}(1-\phi_{j|y=0})}{(1-\phi_{j|y=1})\phi_{j|y=0}}$$
 也就是说，{\color{red}{我们拿一个新数据x代入模型测试，利用我们上面得到的线性分类器$\theta^Tx$，与利在朴素贝叶斯比较$p(y=1|x)$与$p(y=0|x)$是等效的。}}\textbf{事实上，离散特征的朴素贝叶斯分类器都是线性分类器；方差相同的连续的朴素贝叶斯分类器也是线性分类器。}进一步讲，只有某些具有特定属性的朴素贝叶斯分类器才是线性分类器。
 
-\subsubsection{多项式事件模型} %词袋模型（考虑到频次）-多用于文本分类问题
+\subsubsection{多项式事件模型（词袋模型）} %词袋模型（考虑到频次）-多用于文本分类问题
 多项式事件模型（multinomial event model）又称为朴素贝叶斯的词袋模型（多用于文档分类），\textbf{词袋模型（bag-of-words model）}就是考虑同一文档中重复出现的词以累加，显然词袋模型更加贴合实际；其建模过程，与伯努利事件模型相像，只是特征不在只取二值，而是多值$\{1,2,3,4,...\}$。这就与伯努利事件模型出现了差异，\textbf{其每一个特征变量不在服从伯努利分布而是多项式分布。}最大似然的过程相似，但结果不同，其似然结果为：
 \begin{equation}\nonumber
 \begin{split}
@@ -914,16 +914,165 @@ $$\theta_j=\frac{\phi_{j|y=1}(1-\phi_{j|y=0})}{(1-\phi_{j|y=1})\phi_{j|y=0}}$$
 假定训练样本很大时，每个分量x的计数加1造成的估计概率变化可以忽略不计，但可以方便有效的避免零概率问题。
 上述两种朴素贝叶斯模型的参数估计值，最终结果式都做了拉普拉斯平滑。
 \subsubsection{实战：python实现朴素贝叶斯分类器分类文本}
+在自然语言处理中，朴素贝叶斯的作用非常广泛；利用朴素贝叶斯进行文本分类，是因为它模型简易，且准确率较高。经过上面的学习知道了朴素贝叶斯之所以朴素是因为它存在两个假设，一是特征变量之间独立性假设；其二就是特征之间同等重要假设。这两个假设分明在现实的文本分类中不成立，尽管如此，朴素贝叶斯模型还会有一个很好的精度。这就使得朴素贝叶斯的优缺点显露无疑。\\
+\textbf{优点}：数据较少仍然有效；适用于多分类。\\
+\textbf{缺点}：{\color{red}对于输入数据的准备方式比较敏感。}\\
+\textbf{适用数据类型}：标称量数据。
+
+因为词袋模型更符合实际情况，且包含了简单的词集模型，那我利用词袋模型进行实战；实战的流程分为\textbf{五步}为：
+
+\noindent\textbf{\textcircled{\footnotesize{1}}生成文档总词表： }
+\begin{lstlisting}
+def loadDataSet(): #import text data
+    postingList=[['my', 'dog', 'has', 'flea', 'problems', 'help', 'please'],
+                 ['maybe', 'not', 'take', 'him', 'to', 'dog', 'park', 'stupid'],
+                 ['my', 'dalmation', 'is', 'so', 'cute', 'I', 'love', 'him'],
+                 ['stop', 'posting', 'stupid', 'worthless', 'garbage'],
+                 ['mr', 'licks', 'ate', 'my', 'steak', 'how', 'to', 'stop', 'him'],
+                 ['quit', 'buying', 'worthless', 'dog', 'food', 'stupid']]
+    classVec = [0,1,0,1,0,1]    #1 is abusive, 0 not
+    return postingList,classVec
+
+def createVocabList(dataSet):#create word vector list to contain all text information
+    vocabSet = set([])  #create empty set
+    for document in dataSet:
+        vocabSet = vocabSet | set(document) #union of the two sets
+    return list(vocabSet)
+\end{lstlisting}
+
+这里文档总词表手动生成便于测试算法；示例实战中的总词表是作用于文档，经过切分文本等相对复杂的文本解析函数生成的。
+
+\noindent\textbf{\textcircled{\footnotesize{2}}构建文档词向量：}
+\begin{lstlisting}
+def bagOfWords2VecMN(vocabList, inputSet):
+    returnVec = [0]*len(vocabList)
+    for word in inputSet:
+        if word in vocabList:
+            returnVec[vocabList.index(word)] += 1
+    return returnVec
+\end{lstlisting}
+
+将文档列表转换为文档词向量，由于是词袋模型，所以目标词未出现置0，出现则置出现的次数。
+
+\noindent{\color{red}{\textbf{\textcircled{\footnotesize{3}}训练模型得到参数：}}}
+\begin{lstlisting}
+def trainNB0(trainMatrix,trainCategory):
+    numTrainDocs = len(trainMatrix) # #sample
+    numWords = len(trainMatrix[0]) # #vocabulary
+    pAbusive = (sum(trainCategory))+1)/(float(numTrainDocs)+2)     #laplace smoothing
+    p0Num = np.ones(numWords); p1Num = np.ones(numWords)     #change to ones() #1 equal #vocabulary. Laplace smoothing
+#    print (p0Num,p1Num)
+    p0Denom = numWords; p1Denom = numWords                        #change to numWords-#vacabulary laplace smoothing
+    for i in range(numTrainDocs):#6
+        if trainCategory[i] == 1:
+            p1Num += trainMatrix[i]
+            p1Denom += sum(trainMatrix[i])    #bag of words model (multinomial event model(Andrew Ng))
+#            p1Denom += 1  #set of words model (multi-variate Bernoulli event model(Andrew Ng))
+        else:
+            p0Num += trainMatrix[i]
+            p0Denom += sum(trainMatrix[i]) #bag of words model (multinomial event model(Andrew Ng))
+#            p0Denom += 1 #set of words model (multi-variate Bernoulli event model(Andrew Ng))
+#        print (p0Num,p1Num,p0Denom,p1Denom)
+    p1Vect = np.log(p1Num/p1Denom)          #change to log()  avoid underflow
+    p0Vect = np.log(p0Num/p0Denom)          #change to log()
+#    print (p1Vect,p0Vect)
+    return p0Vect,p1Vect,pAbusive
+\end{lstlisting}
+
+此函数为整个朴素贝叶斯算法的核心，其中有三个重要问题；第一，利用python实现的是朴素贝叶斯词袋模型也就是多项式事件模型，但与Andrew Ng所讲的多项式事件模型有些区别，这里没有将单个文档的词向量设为变长，但是实质是一样的；第二，{\color{red}{拉普拉斯平滑}}，将分子分母加上相应的数字，注意p1Denom和p0Denom，这两个数字的初始值是文档总词表的长度。第三，由于判定分类时，要经过概率求积，但是在实现时，多个很小的概率值求积可能会产生下越界，因此在这里取自然对数，将求积运算转化成求和运算来{\color{red}{避免下越界}。}
+
+\noindent\textbf{\textcircled{\footnotesize{4}}模型用于分类：}
+\begin{lstlisting}
+import naiveBayes
+
+listOPosts , listClasses = naiveBayes.loadDataSet()
+myVocabList = naiveBayes.createVocabList(listOPosts)
+wordVec = naiveBayes.setOfWords2Vec(myVocabList,listOPosts[0])
+trainMat = []
+for postinDoc in listOPosts:
+    trainMat.append(naiveBayes.setOfWords2Vec(myVocabList,postinDoc))
+p0V,p1V,PAb = naiveBayes.trainNB0(trainMat,listClasses)
+
+print ("set of words models:===========================================")
+naiveBayes.testingNBsetOfwords()
+print ("===============================================================")
+print ("\nbag of words models:=========================================")
+naiveBayes.testingNBbagofwords()
+print ("===============================================================")
+
+output:
+['love', 'my', 'dalmation', 'to', 'dog', 'part', 'yes'] classified as:  0
+['stupid', 'garbage', 'conveninence'] classified as:  1
+\end{lstlisting}
+
+最终将两个测试文档成功分类。
+
+\noindent\textbf{\textcircled{\footnotesize{5}}测试算法准确度：}
+
+算法准确度在下节应用朴素贝叶斯算法进行实战时，在进行测算。之前已经确保了算法模型的正确性以及可行性验证。
+
 \subsubsection{示例：使用朴素贝叶斯过滤垃圾邮件}
+利用朴素贝叶斯词袋模型（多项式事件模型），进行垃圾邮件的过滤。实战的过程与上节一致，只有两部分差异；第一部分为，输入数据为许多邮件文本，先要经过文本解析转变为邮件词列表，再生成文档总词表；第二部分是测试算法时利用交叉验证进行的，最终得到准确度。
+
+\noindent\textbf{\textcircled{\footnotesize{1}}生成文档总词表： }
+\begin{lstlisting}
+def textParse(bigString):    #input is big string, #output is word list
+    import re
+    pattern = re.compile('\\W+')    #one or more word
+    listOfTokens = pattern.split(bigString)
+    return [tok.lower() for tok in listOfTokens if len(tok) > 2]  #return list
+
+def createVocabList(dataSet):#create word vector list to contain all text information
+    vocabSet = set([])  #create empty set
+    for document in dataSet:
+        vocabSet = vocabSet | set(document) #union of the two sets
+    return list(vocabSet)
+\end{lstlisting}
+
+python利用正则表达式模块很方便的实现文本解析，生成目标总词表及相应文档词列表。
+
+\noindent\textbf{\textcircled{\footnotesize{6}}完整的测试函数：}
+\begin{lstlisting}
+def spamTest():#process function
+    docList=[]; classList = []; fullText =[]
+    for i in range(1,26):
+        wordList = textParse(open('email/spam/%d.txt' % i).read())
+        docList.append(wordList)        #list of list
+        fullText.extend(wordList)       #list of word
+        classList.append(1)
+        wordList = textParse(open('email/ham/%d.txt' % i).read())
+        docList.append(wordList)
+        fullText.extend(wordList)
+        classList.append(0)
+    vocabList = createVocabList(docList)        #create vocabulary
+    trainingSet = list(range(50)); testSet=[]           #create test set
+
+    print ("all valid words number:",len(fullText))
+    print ("The length of word vector:",len(vocabList))
+
+    for i in range(10):#select randomly 10 mails as test set
+        randIndex = int(np.random.uniform(0,len(trainingSet)))
+        testSet.append(trainingSet[randIndex])
+        del(trainingSet[randIndex])
+
+    trainMat=[]; trainClasses = []   #train naive bayes classifier in trainSet
+    for docIndex in trainingSet:#train the classifier (get probs) trainNB0
+        trainMat.append(bagOfWords2VecMN(vocabList, docList[docIndex]))
+        trainClasses.append(classList[docIndex])
+    p0V,p1V,pSpam = trainNB0(np.array(trainMat),np.array(trainClasses))
 
 
+    errorCount = 0          #test classifier
+    for docIndex in testSet:        #classify the remaining items
+        wordVector = bagOfWords2VecMN(vocabList, docList[docIndex])   #numpy array
+        if classifyNB(np.array(wordVector),p0V,p1V,pSpam) != classList[docIndex]:
+            errorCount += 1
+            print ("classification error",docIndex,docList[docIndex])
+    print ('the error rate is: ',float(errorCount)/len(testSet))
+    #return vocabList,fullText
+\end{lstlisting}
 
-
-
-
-
-
-
+此过程利用所有模块函数进行实战过程，包括\textbf{文本解析，生成模型总词表和文档词列表，随机构建训练集与测试集，训练集训练生成概率参数，测试集测试得到结果}。最终测试100次中有34次错误率为0.1，其它全为0。因此平均错误率为3.4\%。
 
 
 
