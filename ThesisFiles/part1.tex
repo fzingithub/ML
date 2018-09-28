@@ -1077,10 +1077,34 @@ def spamTest():#process function
 
 \newpage
 \subsection{支持向量机}
+\subsubsection{逻辑回归与支持向量机}
+对于支持向量机我的理解是决定模型的生成只与支持向量相关；支持向量机一度被认为\textbf{最高效}的分类算法。那么逻辑回归与支持向量机都属于\textbf{判别学习算法}，来看看他们的区别于联系。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{logistics_function.eps}
+  \caption{逻辑函数}
+\end{figure}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.6\textwidth]{1412.eps}
+  \caption{线性可分模型构想}
+\end{figure}
+
+逻辑函数：$$y=h(z)=\frac{1}{1+exp(-z)}$$$$h_\theta(\theta^T x)=\frac{1}{1+exp(-\theta^Tx)}$$
+
+易知：$$z>>0~,~y=1~~~~~~~~z<<0~,~y=0$$
 
 
 
+反之：$$y=1~,~z>>0~~~~~~~~y=0~,~z<<0$$
 
+那么试想若对于一个二分类问题，线性可分下最优的决策边界就是离两类数据特征向量\textbf{最远}的情况。这就是由逻辑回归启发而来，然后是要解决线性可分下找出这样的决策边界，即就是分割（超）平面。
+
+那么从下面只有一两个特征线性可分的数据来看，这样的决策边界事实上只与少量的特征向量相关，就是离这个超平面最近的这几个点，把这些点称为\textbf{支持向量}。这也是支持向量机高效的原因。
+
+那么接下来要做的工作便是利用数学方法将求出这个显然存在的分割最优超平面。为此定义了两种间隔，\textbf{函数间隔}（functional margin）与\textbf{几何间隔}（geometric margin）。
+
+\subsubsection{函数间隔与几何间隔}
 
 
 
