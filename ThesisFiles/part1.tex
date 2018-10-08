@@ -1098,15 +1098,131 @@ def spamTest():#process function
 
 反之：$$y=1~,~z>>0~~~~~~~~y=0~,~z<<0$$
 
-那么试想若对于一个二分类问题，线性可分下最优的决策边界就是离两类数据特征向量\textbf{最远}的情况。这就是由逻辑回归启发而来，然后是要解决线性可分下找出这样的决策边界，即就是分割（超）平面。
+那么试想若对于一个二分类问题，线性可分下最优的决策边界就是离两类数据特征向量\textbf{最远}的情况。这就是由逻辑回归以及事实情况启发而来，然后是要解决线性可分下找出这样的决策边界，即就是分割（超）平面。
 
 那么从下面只有一两个特征线性可分的数据来看，这样的决策边界事实上只与少量的特征向量相关，就是离这个超平面最近的这几个点，把这些点称为\textbf{支持向量}。这也是支持向量机高效的原因。
 
 那么接下来要做的工作便是利用数学方法将求出这个显然存在的分割最优超平面。为此定义了两种间隔，\textbf{函数间隔}（functional margin）与\textbf{几何间隔}（geometric margin）。
 
 \subsubsection{函数间隔与几何间隔}
+一般来说，一个点的离分离超平面的远近可用$~|w\cdot x+b|~$的大小来衡量，而分类的正确性可用$~(w\cdot x+b)~$与类标记~y~的符号是否一致来判定。所以可以用$~y(w\cdot x+b)~$来表示分类的正确性与确信度。这就是\textbf{函数间隔}。
+
+\textbf{函数间隔} ~~对于给定的训练集数据集~T~和超平面$~(w,b)~$,~T~中所有的样本点$~(x_i,y_i)~$的函数间隔为
+$$\hat{\gamma_i}=y_i(w\cdot x_i+b)$$
+
+定义超平面$~(w,b)~$关于训练集~T~的函数间隔为超平面$~(w,b)~$关于~T~中所有样本点$~(x_i,y_i)~$的函数间隔之最小值，即
+$$\hat{\gamma} = \min \limits_{i=1,...,N} \hat{\gamma_i}$$
 
 
+函数间隔可以表示分类预测的正确性以及确信度，但是选择分离超平面时，只有函数间隔还不够。原因是如果成比例的改变~w,b~,超平面没有变而函数间隔为原来的二倍。因此我们需要规范化，如$~||w||=1~$,使得函数间隔变为\textbf{几何间隔}。
+
+\textbf{几何间隔} ~~对于给定的数据集~T~和超平面$~(w,b)~$，定义超平面$~(w,b)~$关于样本点$~(x_i,y_i)~$的几何间隔为
+$$\gamma_i = y_i(\frac{w}{||w||}\cdot x_i+\frac{b}{||w||})$$
+
+定义超平面$~(w,b)~$关于训练集~T~的几何间隔为超平面$~(w,b)~$关于~T~中所有样本点$~(x_i,y_i)~$的几何间隔的最小值，即
+$$\gamma = \min \limits_{i=1,...N} \gamma_i$$
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{geometric_margin.eps}
+  \caption{几何间隔}
+\end{figure}
+
+\subsubsection{最优间隔分类器的产生}
+定义了函数间隔与几何间隔之后，然后利用数学优化方法，显式表达这个求最优分割超平面的优化问题。
+
+\textbf{优化问题的转变}
+\begin{align}
+            &\max \limits_{\gamma,w,b}~\gamma  \nonumber  \\
+    s.t.~~  &y^{(i)}(w^Tx^{(i)}+b)~\geq~\gamma,~~i=1,...,m\nonumber\\
+            &||w||=1   \nonumber
+\end{align}
+
+由于一号优化问题中$~||w||=1~$是一个非凸性的约束，导致此优化问题难以求解，因此改变这个优化问题。
+\begin{align}
+            &\max \limits_{\hat{\gamma,w,b}}~\frac{\hat{\gamma}}{||w||}  \nonumber  \\
+    s.t.~~  &y^{(i)}(w^Tx^{(i)}+b)~\geq~\gamma,~~i=1,...,m \nonumber
+\end{align}
+
+二号优化问题用了另外的放缩方式，但依然是一个非凸性的优化问题，还需进行转变利用放缩条件$~\hat{\gamma}=1~$产生三号也是最终的优化问题。
+\textcolor{red}{\begin{align}
+            &\min \limits_{w,b} ~\frac{1}{2}||w||^2  \nonumber  \\
+    s.t.~~  &y_i(w\cdot x_i+b)-1 \geq 0,~~i=1,2,...,m\nonumber
+\end{align}}
+
+
+\textbf{最大间隔分离超平面的存在唯一性定理}~~若训练集~T~线性可分，则可将训练数据集中的样本点完全正确分开的最大间隔分离超平面存在且唯一。
+
+那么由定理可知最优间隔超平面存在且唯一，那么求解这个凸二次规划问题既可以产生这个最有间隔分类器。关于求解凸二次规划问题，可以利用如梯度下降等最优化算法下的QP软件来做，现在大多数是利用拉格朗日对偶学习算法来做。不仅是在求解速度上有优势，而且便于由线性向非线性扩充。
+
+\textbf{支持向量与间隔边界} ~~ 在线性可分情况下，训练数据集的样本点中与分离超平面距离最近的样本点的实例称为支持向量(support vector)， 支持向量是使约束条件式等号成立的点，即
+$$y_i(w\cdot x_i+b)-1=0$$
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{support_vector.eps}
+  \caption{支持向量与间隔边界}
+\end{figure}
+
+注意到$~H_1~$和$~H_2~$平行，并且没有实例点落在它们中间,在$~H_1~$与$~H_2~$，之间形成一条长带，分离超平面与它们平行且位于它们中央长带的宽度，即$~H_1~$与$~H_2~$之间的距离称为间隔(margin)。间隔依赖于分离超平面的法向量~w~,等于$~\frac{2}{||w||}~$,$~H_1~$和$~H_2~$称为间隔边界。
+
+在决定分离超平而时只有支持向量起作用，而其他实例点并不起作用如果移动支持向量将改变所求的解，但是如果在间隔边界以外移动其他实例点，甚至去掉这些点，则解是不会改变的。由于支持向量奄确定分离超平面中起着决定性作用，所以将这种分类模型称为支持向量机支持向量的个数 般很少，所以支持向量机由很少的“重要的”训练样本确定。
+
+\subsubsection{拉格朗日对偶}
+为了求解线性可分支持向量机的最优化问题，将它作为原始最优化问题，应用拉格朗日对偶性，通过求解对偶问题(duality problem)得到原始问题(primal problem)的最优解，这就是线性可分支持向量机的对偶算法(duality algorithm).这样做的优点,一是对偶问题往往更容易求解,二是自然引入核函数,进而推广到非线性分类问题.
+
+\textbf{拉格朗日数乘的一般形式}
+\\ \indent问题：
+\begin{align}
+            &\min \limits_w ~~f(w)   \nonumber \\
+    s.t.~~  &g_i(w)\leq0,~~i=1,...,k\nonumber\\             
+            &h_i(w) = 0,~~i=1,...,l\nonumber
+\end{align}
+
+拉格朗日对偶：~Lagrangian~ 拉格朗日算子
+$$L(w,\alpha,\beta)=f(w)+\sum_{i=1}^{k}\alpha_ig_i(w)+\sum_{i=1}^{l}\beta_ih_i(w)$$
+\indent定义，
+$$\Theta_p(w) = \max \limits_{\alpha,\beta,\alpha_i\geq0} L(w,\alpha,\beta)$$
+\indent\textbf{原始问题}
+$$p^*=\min \limits_w \max \limits_{\alpha,\beta,\alpha_i\geq0} L(w,\alpha,\beta) = \min\limits_w \Theta_p(w)$$
+\indent若$~g_i(w)>0~$或者$~h_i(w)\neq 0~$,有
+$$\Theta_p(w) = \max \limits_{\alpha,\beta,\alpha_i\geq0} f(w)+\sum_{i=1}^{k}\alpha_ig_i(w)+\sum_{i=1}^{l}\beta_ih_i(w)=\infty $$
+\indent 否则：
+$$\Theta_p(w) = f(w)$$
+\indent 有，
+\begin{equation}\nonumber
+\Theta_p(w)=
+\begin{cases}
+f(w)& \text{w满足原始约束}\\
+\infty&\text{w不满足原始约束}
+\end{cases}
+\end{equation}
+\indent 最终导出
+$$\min \limits_w \Theta(w) = \min \limits_w ~f(w)  ~~~s.t.~ ...$$
+
+\textbf{对偶问题} ~~\\
+\indent 定义
+$$\Theta_D(\alpha,\beta)=\min \limits_w L(w,\alpha,\beta)$$
+$$d^* = \max \limits_{\alpha\geq0,\beta} \min L(w,\alpha,\beta) = \max\limits_{\alpha\geq0,\beta} \Theta_D(\alpha,\beta)$$
+
+\textbf{定理} ~~$d^* = \max \limits_{\alpha\geq0,\beta} \min L(w,\alpha,\beta)\leq \min \limits_w \max \limits_{\alpha,\beta,\alpha_i\geq0} L(w,\alpha,\beta) = p^*$ \\
+\indent~~~~~~~~~~~~即就是：~~~~~~~~~~$d^*\leq p^*$
+
+对于对偶问题有很多有用的性质；解决原始优化问题的有效途径就是解决对偶问题。那么等号在什么条件下成立，就是KKT条件。
+
+\textbf{KKT条件}(对偶问题$~d^*~$与原始问题$~p^*~$等价条件)\\
+$
+\indent1.~~~\frac{\partial}{\partial w_i}L(w^*,\alpha^*,\beta^*) =0,~~i=1,...,n   \\
+\indent2.~~~\frac{\partial}{\partial \beta_i}L(w^*,\alpha^*,\beta^*) =0,~~i=1,...,l  \\
+\indent3.~~~\alpha_i^*g_i(w^*)=0,~~i=1,...,k\\
+\indent4.~~~g_i(w^*)\leq0,~~i=1,...,k \\
+\indent5.~~~\alpha_i\geq0,~~i=1,...,k 
+$
+
+由3可知,~~~~~~~~当$~\alpha_i>0~$时，$g_i(w^*)=0$\\
+\indent ~~~~~~~~~~~~~~~~~~~~~~~当$~\alpha_i\neq0~$时，$g_i(w^*)=0$
+
+\subsubsection{利用对偶问题求解最优间隔分类器}
 
 \newpage
 \section{回归}
