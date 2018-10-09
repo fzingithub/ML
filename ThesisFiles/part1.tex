@@ -235,7 +235,7 @@ def stocGradAscent0(dataMatrix, classLabels):
 
 \noindent分析：\\
 \indent分类器分错了三分之一的样本，但是只进行了类似于上节批量梯度下降的一次矩阵运算，所以结果并不公平。\\
-此外看到，存在一些不能正确分类的样本点，导致了在每次迭代的时，会引发系数的剧烈变化。
+\indent此外看到，存在一些不能正确分类的样本点，导致了在每次迭代的时，会引发系数的剧烈变化。
 于是期望算法能避免来回波动，从而收敛到某个值；以及收敛的速度也应加快。
 只要对其进行改进，效果则立竿见影。\\
 
@@ -1175,7 +1175,7 @@ $$y_i(w\cdot x_i+b)-1=0$$
 \\ \indent问题：
 \begin{align}
             &\min \limits_w ~~f(w)   \nonumber \\
-    s.t.~~  &g_i(w)\leq0,~~i=1,...,k\nonumber\\             
+    s.t.~~  &g_i(w)\leq0,~~i=1,...,k\nonumber\\
             &h_i(w) = 0,~~i=1,...,l\nonumber
 \end{align}
 
@@ -1216,13 +1216,144 @@ $
 \indent2.~~~\frac{\partial}{\partial \beta_i}L(w^*,\alpha^*,\beta^*) =0,~~i=1,...,l  \\
 \indent3.~~~\alpha_i^*g_i(w^*)=0,~~i=1,...,k\\
 \indent4.~~~g_i(w^*)\leq0,~~i=1,...,k \\
-\indent5.~~~\alpha_i\geq0,~~i=1,...,k 
+\indent5.~~~\alpha_i\geq0,~~i=1,...,k
 $
 
 由3可知,~~~~~~~~当$~\alpha_i>0~$时，$g_i(w^*)=0$\\
 \indent ~~~~~~~~~~~~~~~~~~~~~~~当$~\alpha_i\neq0~$时，$g_i(w^*)=0$
 
 \subsubsection{利用对偶问题求解最优间隔分类器}
+利用拉格朗日对偶求得原始问题的对偶问题，再解决对偶问题实现对原始问题的求解。这样做的好处是求解容易以及便于向非线性扩展。
+
+\textbf{原始问题} ~~
+\begin{align}
+            &\min \limits_{w,b} ~\frac{1}{2}||w||^2  \nonumber  \\
+    s.t.~  &y_i(w\cdot x_i+b)-1 \geq 0,~~i=1,2,...,m\nonumber
+\end{align}
+\indent\textbf{对偶问题} ~~
+\begin{align}
+   &L(w,b,\alpha) ~=~ \frac{1}{2}||w||^2-\sum_{i=1}^{m}\alpha_i~[y^{(i)}(w^Tx^{(i)}+b)-1] \nonumber\\
+   &\theta_D(\alpha)~=~\min \limits_{w,b} L(w,b,\alpha)   \nonumber\\
+   \text{求解：} &\textcircled{\footnotesize{1}} ~\text{先最小化lagrangian.$~L(w,b,\alpha)~$}  \nonumber\\
+                &\nabla_wL(w,b,\alpha)=w-\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}=0 \nonumber\\
+                &\textcolor{red}{w = \sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}} \nonumber \\
+                &\frac{\partial}{\partial b} L(w,b,\alpha) = \sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber\\
+                &\textcolor{red}{\sum_{i=1}^{m}\alpha_iy^{(i)}=0} \nonumber \\
+                &\textcircled{\footnotesize{2}} ~\text{代入到原式：}\nonumber\\
+                &L(w,b,\alpha) \nonumber \\
+                &=\frac{1}{2}||w||^2-\sum_{i=1}^{m}\alpha_i~[y^{(i)}(w^Tx^{(i)}+b)-1] \nonumber\\
+                &=\frac{1}{2}ww^T-\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}w^T-\sum_{i=1}^{m}\alpha_iy^{(i)}b+\sum_{i=1}^{m}\alpha_i \nonumber \\
+                &=\frac{1}{2}ww^T-ww^T-\sum_{i=1}^{m}\alpha_iy^{(i)}b+\sum_{i=1}^{m}\alpha_i \nonumber \\
+                &=-\frac{1}{2}\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}(\sum_{j=1}^{m}\alpha_iy^{(j)}x^{(j)})^T-b\sum_{i=1}^{m}\alpha_iy^{(i)}+\sum_{i=1}^{m}\alpha_i \nonumber \\
+                W(\alpha)&=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber             
+\end{align}
+
+\indent得到最终的对偶优化问题：
+\textcolor{red}{\begin{align}
+            &\min \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}>-\sum_{i=1}^{m}\alpha_i \nonumber\nonumber\\
+         &~~~~~~~~~~~~~~~~~~~~s.t.~~\alpha_i\geq 0,~~i=1,...,m \nonumber \\
+               &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber
+\end{align}}
+\indent最终要解决此对偶问题，1998年John.C.platt发表了一篇论文~"Sequential Minimal Optimization:A Fast Algorithm For Training Support Vector Machines"~or SMO algorithm 很好的解决了这个优化问题。
+
+
+\subsubsection{软间隔支持向量机}
+在此之前所有的讨论都是建立在数据明显线性可分下进行的，接下来要介绍一种~SVM~的变化形式来解决允许少量错误分点的情况，就是引入~L1~范式的正则化项（松弛变量）。这样做的好处是防止模型过拟合，使模型更稳定。
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.78\textwidth]{soft.eps}
+  \caption{软间隔支持向量机}
+\end{figure}
+
+\textbf{原始问题加入正则化项} ~~
+\begin{align}
+            &\min \limits_{w,b} ~\frac{1}{2}||w||^2 + C\sum_{i=1}^{m}\xi_i  \nonumber  \\
+    s.t.~~  y_i(w\cdot& x_i+b) \geq 1-\xi_i,~~i=1,2,...,m\nonumber\\
+            ~~~&\xi_i\geq 0,~~i=1,...,m. \nonumber
+\end{align}
+
+\textbf{得到对偶问题} ~~
+\begin{align}
+            &\min \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}>-\sum_{i=1}^{m}\alpha_i \nonumber\nonumber\\
+         &~~~~~~~~~~~~~~~~~~s.t.~~0 \leq\alpha_i\leq \textcolor{red}{C},~~i=1,...,m \nonumber \\
+               &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber
+\end{align}
+
+\textbf{由KKT条件可知}
+\begin{align}
+    \alpha_i=0 ~~~ =>  &~~~y^{(i)}(w^Tx^{(i)}+b)\geq1   \nonumber\\
+    \alpha_i=C ~~~ => &~~~y^{(i)}(w^Tx^{(i)}+b)\leq1   \nonumber\\
+    0\leq\alpha_i\leq C ~~~ => &~~~y^{(i)}(w^Tx^{(i)}+b)=1   \nonumber
+\end{align}
+
+\subsubsection{引入核函数}
+分类数据从线性可分，有少量早噪声点，我们可以利用~SVM~或者~SVM~的变形来解决；但大多数的分类数据是线性不可分的，此时我们就要引入核函数，利用核技巧来解决这一线性不可分的情况。
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.72\textwidth]{kernel.eps}
+  \caption{核技巧}
+\end{figure}
+
+\textbf{核} \\
+\indent 特征映射~~feature~mapping.\\
+\indent 一维特征$~x~\rightarrow~$三维特征$~\Phi(x)=\begin{bmatrix} x \\ x^2\\ x^3\end{bmatrix}~$\\
+\indent利用特征映射来代替对偶问题中的内积，是一种好的方法，但是$~\Phi(x)~$一般维度很高甚至是无限维，这就导致利用$~<\Phi(x^{(i)}),\Phi(x^{(j)})>~$代替$~<x^{(i)},x^{(j)}>~$代价非常大。如此，便引入了核函数。
+
+\textbf{核函数} \\
+\indent举例，核函数及对应的核：
+\begin{align}
+    \textcircled{\footnotesize{1}}&~~x,z\in R^n \nonumber\\
+    K(x,z) &~=~ (x^Tz)^2 \nonumber \\
+           &~=~ (\sum_{i=1}^{n}x_iz_i)(\sum_{j=1}^{n}x_jz_j) \nonumber \\
+           &~=~ \sum_{i,j=1}^{n}(x_ix_j)(z_iz_j) ~~~~~~~~~~~~~~\textcolor{red}{O(n)}\nonumber\\
+           ~&~\nonumber\\
+    \Phi(x)&~=~ \begin{bmatrix} x_1x_1 \\ x_1x_2\\ x_1x_3 \\ x_2x_1 \\ x_2x_2 \\ x_2x_3\\ x_3x_1 \\x_3x_2\\x_3x_3  \end{bmatrix}~~~~~~~~~~~~~~~~~~~~~~~~~~~\textcolor{red}{O(n^2)}\nonumber\\
+         ~&~    \nonumber\\
+    \textcircled{\footnotesize{2}}&~~K(x,z)=(x^Tz+c)^d ~~~~~~~~~~\textcolor{red}{O(n)}  \nonumber\\
+    ~&~~\Phi(x)~ \text{的维度与的相关。 }~~~~\textcolor{red}{O(n^d)} \nonumber \\
+    ~&~    \nonumber\\
+    \textcircled{\footnotesize{3}}&~~\text{径向基函数(radial basis function)} \nonumber \\
+    K(x,y) &~=~\exp\Big(\frac{-||x-y||^2}{2\sigma^2}\Big) ~~~~~~~~~~\textcolor{red}{O(n)} \nonumber \\
+    ~&~~\Phi(x)~ \text{无限维}~~~~~~~~~~~~~~~~~~~~~~~~~\textcolor{red}{O(\infty)} \nonumber
+\end{align}
+\indent 事实上，对于任意给定的核函数，是否一定存在原始的核，答案显然是不一定的。那其中的关系由~Mercer~定理给出。
+
+\textbf{Mercer~定理}~~\textcolor{red}{任何半正定对称函数都可以作为核函数。}\\
+\indent K~是一个~Mercer~核，其充要条件是$~\{x^{(1)},x^{(2)},...,x^{(m)}\}~$所对应的核矩阵是对称半正定矩阵。
+
+\textbf{引入高斯核得到新的对偶优化问题}
+\begin{align}
+            &\min \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}\textcolor{red}{K<x^{(i)},x^{(j)}>}-\sum_{i=1}^{m}\alpha_i \nonumber\nonumber\\
+         &~~~~~~~~~~~~~~~~~~s.t.~~0 \leq\alpha_i\leq \textcolor{red}{C},~~i=1,...,m \nonumber \\
+               &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber \\
+               ~&~ \nonumber\\
+               &\text{得到}~,\alpha^*,w^* ~,~ b^* \nonumber\\
+               &\text{构造决策函数：}~f(x)~=~sign~\Big(\sum_{i=1}^{m}~\alpha^*_iy_iK(x,x_i)+b^*\Big) \nonumber
+\end{align}
+\indent最终的问题在于如何求得最终优化问题的最优解，这便是利用~SMO~算法。
+
+\subsubsection{SMO~算法}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \section{回归}
