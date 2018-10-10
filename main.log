@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  9 OCT 2018 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  10 OCT 2018 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -657,6 +657,26 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen143
 \Gin@req@width=\dimen144
 )
+(c:/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip54
+\subfigcapskip=\skip55
+\subfigcaptopadj=\dimen145
+\subfigbottomskip=\skip56
+\subfigcapmargin=\dimen146
+\subfiglabelskip=\skip57
+\c@subfigure=\count189
+\c@lofdepth=\count190
+\c@subtable=\count191
+\c@lotdepth=\count192
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip58
+\subfig@bottom=\skip59
+)
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -713,16 +733,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen145
-\Hy@linkcounter=\count189
-\Hy@pagecounter=\count190
+\@linkdim=\dimen147
+\Hy@linkcounter=\count193
+\Hy@pagecounter=\count194
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count191
+\Hy@SavedSpaceFactor=\count195
 
 (c:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -742,17 +762,17 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count192
+\c@Hy@tempcnt=\count196
 
 (c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen146
-\Fld@menulength=\count193
-\Field@Width=\dimen147
-\Fld@charsize=\dimen148
+\XeTeXLinkMargin=\dimen148
+\Fld@menulength=\count197
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -762,23 +782,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count194
-\c@Item=\count195
-\c@Hfootnote=\count196
+\Hy@abspage=\count198
+\c@Item=\count199
+\c@Hfootnote=\count266
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count197
-\c@bookmark@seq@number=\count198
+\Fld@listcount=\count267
+\c@bookmark@seq@number=\count268
 
 (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip54
+\Hy@SectionHShift=\skip60
 )
 (c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -807,7 +827,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip55
+\@mathmargin=\skip61
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -816,49 +836,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
-\ex@=\dimen149
+\ex@=\dimen151
 ))
 (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen150
+\pmbraise@=\dimen152
 )
 (c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count199
+\inf@bad=\count269
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count266
-\leftroot@=\count267
+\uproot@=\count270
+\leftroot@=\count271
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count268
-\DOTSCASE@=\count269
+\classnum@=\count272
+\DOTSCASE@=\count273
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box48
 \strutbox@=\box49
-\big@size=\dimen151
+\big@size=\dimen153
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count270
-\c@MaxMatrixCols=\count271
+\macc@depth=\count274
+\c@MaxMatrixCols=\count275
 \dotsspace@=\muskip17
-\c@parentequation=\count272
-\dspbrk@lvl=\count273
+\c@parentequation=\count276
+\dspbrk@lvl=\count277
 \tag@help=\toks19
-\row@=\count274
-\column@=\count275
-\maxfields@=\count276
+\row@=\count278
+\column@=\count279
+\maxfields@=\count280
 \andhelp@=\toks20
-\eqnshift@=\dimen152
-\alignsep@=\dimen153
-\tagshift@=\dimen154
-\tagwidth@=\dimen155
-\totwidth@=\dimen156
-\lineht@=\dimen157
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
 \@envbody=\toks21
-\multlinegap=\skip56
-\multlinetaggap=\skip57
+\multlinegap=\skip62
+\multlinetaggap=\skip63
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -866,34 +886,34 @@ LaTeX Info: Redefining \] on input line 2818.
 (c:/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip58
-\f@nch@O@elh=\skip59
-\f@nch@O@erh=\skip60
-\f@nch@O@olh=\skip61
-\f@nch@O@orh=\skip62
-\f@nch@O@elf=\skip63
-\f@nch@O@erf=\skip64
-\f@nch@O@olf=\skip65
-\f@nch@O@orf=\skip66
+\f@nch@headwidth=\skip64
+\f@nch@O@elh=\skip65
+\f@nch@O@erh=\skip66
+\f@nch@O@olh=\skip67
+\f@nch@O@orh=\skip68
+\f@nch@O@elf=\skip69
+\f@nch@O@erf=\skip70
+\f@nch@O@olf=\skip71
+\f@nch@O@orf=\skip72
 )
 (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count277
+\lst@mode=\count281
 \lst@gtempboxa=\box50
 \lst@token=\toks23
-\lst@length=\count278
-\lst@currlwidth=\dimen158
-\lst@column=\count279
-\lst@pos=\count280
-\lst@lostspace=\dimen159
-\lst@width=\dimen160
-\lst@newlines=\count281
-\lst@lineno=\count282
-\lst@maxwidth=\dimen161
+\lst@length=\count282
+\lst@currlwidth=\dimen160
+\lst@column=\count283
+\lst@pos=\count284
+\lst@lostspace=\dimen161
+\lst@width=\dimen162
+\lst@newlines=\count285
+\lst@lineno=\count286
+\lst@maxwidth=\dimen163
 
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count283
-\lst@skipnumbers=\count284
+\c@lstnumber=\count287
+\lst@skipnumbers=\count288
 \lst@framebox=\box51
 )
 (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
@@ -915,104 +935,104 @@ File: UTF8.chr 2015/04/18 4.8.4
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 113.
+LaTeX Info: Redefining \selectfont on input line 114.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
-\scratchdimen=\dimen162
+\scratchcounter=\count289
+\scratchdimen=\dimen164
 \scratchbox=\box52
-\nofMPsegments=\count286
-\nofMParguments=\count287
+\nofMPsegments=\count290
+\nofMParguments=\count291
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count288
-\MPscratchDim=\dimen163
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen165
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks25
 ) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1032,7 +1052,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring OFF on input line 113.
+Package hyperref Info: Link coloring OFF on input line 114.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1040,31 +1060,31 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count291
+\c@section@level=\count295
 )
-LaTeX Info: Redefining \ref on input line 113.
-LaTeX Info: Redefining \pageref on input line 113.
-LaTeX Info: Redefining \nameref on input line 113.
+LaTeX Info: Redefining \ref on input line 114.
+LaTeX Info: Redefining \pageref on input line 114.
+LaTeX Info: Redefining \nameref on input line 114.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-\c@lstlisting=\count292
-\c@example=\count293
-\c@algorithm=\count294
-\c@theorem=\count295
-\c@definition=\count296
-\c@axiom=\count297
-\c@property=\count298
-\c@proposition=\count299
-\c@lemma=\count300
-\c@corollary=\count301
-\c@remark=\count302
-\c@condition=\count303
-\c@conclusion=\count304
-\c@assumption=\count305
-LaTeX Font Info:    Try loading font information for C70+gbsn on input line 152
+\c@lstlisting=\count296
+\c@example=\count297
+\c@algorithm=\count298
+\c@theorem=\count299
+\c@definition=\count300
+\c@axiom=\count301
+\c@property=\count302
+\c@proposition=\count303
+\c@lemma=\count304
+\c@corollary=\count305
+\c@remark=\count306
+\c@condition=\count307
+\c@conclusion=\count308
+\c@assumption=\count309
+LaTeX Font Info:    Try loading font information for C70+gbsn on input line 153
 .
 
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
@@ -1073,22 +1093,22 @@ File: c70gbsn.fd 2015/04/18 4.8.4
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 152.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 153.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
-LaTeX Font Info:    Try loading font information for C70+rm on input line 152.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
+LaTeX Font Info:    Try loading font information for C70+rm on input line 153.
 
 (c:/texlive/2018/texmf-dist/tex/latex/ctex/fd/c70rm.fd
 File: c70rm.fd 2018/01/28 v2.4.12 Chinese font definition (CTEX)
 )
-LaTeX Font Info:    Try loading font information for C70+hei on input line 153.
+LaTeX Font Info:    Try loading font information for C70+hei on input line 154.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/zhmetrics/c70hei.fd
@@ -1700,22 +1720,22 @@ input line 1127.
 (pdftex.def)             Requested size: 187.70158pt x 176.9553pt.
  [38 <./Figure/geometric_margin-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/support_vector.eps>
-(epstopdf)                    date: 2018-10-08 16:10:51
-(epstopdf)                    size: 346138 bytes
+(epstopdf)                    date: 2018-10-10 15:33:42
+(epstopdf)                    size: 5261385 bytes
 (epstopdf)             Output file: <Figure/support_vector-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2018-10-08 16:11:36
-(epstopdf)                    size: 74021 bytes
+(epstopdf)                    date: 2018-10-10 15:33:51
+(epstopdf)                    size: 47615 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/support_vector-eps-
 converted-to.pdf Figure/support_vector.eps>
 (epstopdf)             \includegraphics on input line 1163.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/support_vector-eps-converted-to.pdf, id=1144, 83.31125pt x 67.25125pt>
+<Figure/support_vector-eps-converted-to.pdf, id=1144, 433.62pt x 234.8775pt>
 File: Figure/support_vector-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/support_vector-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/support_vector-eps-converted-to.pdf  used on in
 put line 1163.
-(pdftex.def)             Requested size: 187.70158pt x 151.54373pt.
+(pdftex.def)             Requested size: 187.70158pt x 101.67271pt.
  [39 <./Figure/support_vector-eps-converted-to.pdf>]pdfTeX warning (ext4): dest
 ination with the same identifier (name{equation.1.3}) has been already used, du
 plicate ignored
@@ -1746,7 +1766,7 @@ Package epstopdf Info: Source file: <Figure/soft.eps>
 to.pdf Figure/soft.eps>
 (epstopdf)             \includegraphics on input line 1264.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/soft-eps-converted-to.pdf, id=1169, 357.335pt x 129.48375pt>
+<Figure/soft-eps-converted-to.pdf, id=1176, 357.335pt x 129.48375pt>
 File: Figure/soft-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/soft-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/soft-eps-converted-to.pdf  used on input line 1
@@ -1763,7 +1783,7 @@ Package epstopdf Info: Source file: <Figure/kernel.eps>
 d-to.pdf Figure/kernel.eps>
 (epstopdf)             \includegraphics on input line 1294.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/kernel-eps-converted-to.pdf, id=1183, 421.575pt x 202.7575pt>
+<Figure/kernel-eps-converted-to.pdf, id=1190, 421.575pt x 202.7575pt>
 File: Figure/kernel-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/kernel-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/kernel-eps-converted-to.pdf  used on input line
@@ -1788,8 +1808,118 @@ LaTeX Warning: Command \textcircled invalid in math mode on input line 1319.
 
 LaTeX Warning: Command \textcircled invalid in math mode on input line 1319.
 
-[44] [45]
-Overfull \hbox (23.07275pt too wide) in paragraph at lines 1394--1397
+[44]
+Package epstopdf Info: Source file: <Figure/Gradient_descent.eps>
+(epstopdf)                    date: 2018-10-10 09:06:10
+(epstopdf)                    size: 5424843 bytes
+(epstopdf)             Output file: <Figure/Gradient_descent-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-10-10 09:36:15
+(epstopdf)                    size: 38786 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/Gradient_descent-ep
+s-converted-to.pdf Figure/Gradient_descent.eps>
+(epstopdf)             \includegraphics on input line 1351.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/Gradient_descent-eps-converted-to.pdf, id=1208, 218.8175pt x 172.645pt>
+
+File: Figure/Gradient_descent-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/Gradient_descent-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/Gradient_descent-eps-converted-to.pdf  used on 
+input line 1351.
+(pdftex.def)             Requested size: 160.43948pt x 126.58563pt.
+Package epstopdf Info: Source file: <Figure/Coordinate_ascent.eps>
+(epstopdf)                    date: 2018-10-10 09:03:04
+(epstopdf)                    size: 2645645 bytes
+(epstopdf)             Output file: <Figure/Coordinate_ascent-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2018-10-10 09:36:17
+(epstopdf)                    size: 28504 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/Coordinate_ascent-e
+ps-converted-to.pdf Figure/Coordinate_ascent.eps>
+(epstopdf)             \includegraphics on input line 1358.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1209, 218.8175pt x 169.63374
+pt>
+File: Figure/Coordinate_ascent-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/Coordinate_ascent-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/Coordinate_ascent-eps-converted-to.pdf  used on
+ input line 1358.
+(pdftex.def)             Requested size: 160.43948pt x 124.37775pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1349--1361
+[]$[]$ $[]$ 
+ []
+
+[45 <./Figure/Gradient_descent-eps-converted-to.pdf> <./Figure/Coordinate_ascen
+t-eps-converted-to.pdf>]pdfTeX warning (ext4): destination with the same identi
+fier (name{equation.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1395 \end{align}
+                   [46]
+Package epstopdf Info: Source file: <Figure/clipped.eps>
+(epstopdf)                    date: 2018-10-10 15:35:47
+(epstopdf)                    size: 3431629 bytes
+(epstopdf)             Output file: <Figure/clipped-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-10-10 15:37:15
+(epstopdf)                    size: 67086 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/clipped-eps-convert
+ed-to.pdf Figure/clipped.eps>
+(epstopdf)             \includegraphics on input line 1427.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/clipped-eps-converted-to.pdf, id=1242, 433.62pt x 192.72pt>
+File: Figure/clipped-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/clipped-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/clipped-eps-converted-to.pdf  used on input lin
+e 1427.
+(pdftex.def)             Requested size: 333.69527pt x 148.31544pt.
+ [47]
+Overfull \hbox (35.9664pt too wide) detected at line 1461
+[]
+ []
+
+
+Overfull \hbox (12.94258pt too wide) detected at line 1474
+[]
+ []
+
+[48pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1474 \end{align}
+                   <./Figure/clipped-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1477
+
+ []
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1482.
+
+[49]
+Overfull \hbox (23.07275pt too wide) in paragraph at lines 1529--1532
 []\C70/gbsn/bx/n/10.95/5f S \C70/gbsn/bx/n/10.95/62 ^^Q \C70/gbsn/bx/n/10.95/4e
  ì \C70/gbsn/bx/n/10.95/97 b \C70/gbsn/bx/n/10.95/5b ù \C70/gbsn/bx/n/10.95/56 
 Þ \C70/gbsn/bx/n/10.95/5f R \C70/gbsn/bx/n/10.95/95 î \C70/gbsn/bx/n/10.95/98 ˜
@@ -1805,18 +1935,18 @@ bx/n/10.95/53 s\OT1/cmr/m/n/10.95 1/2\C70/gbsn/bx/n/10.95/76 „
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1397
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1532
 
  []
 
-[46pdfTeX warning (ext4): destination with the same identifier (name{equation.2
+[50pdfTeX warning (ext4): destination with the same identifier (name{equation.2
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1397 ...i)} = \theta^T x^{(i)}+ \epsilon^{(i)}$$
+l.1532 ...i)} = \theta^T x^{(i)}+ \epsilon^{(i)}$$
                                                   ]
-Underfull \hbox (badness 10000) in paragraph at lines 1401--1403
+Underfull \hbox (badness 10000) in paragraph at lines 1536--1538
 
  []
 
@@ -1824,25 +1954,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1406 \begin{equation}
+l.1541 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1418 \begin{equation}
+l.1553 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1429 \begin{equation}
-                       \nonumber [47]pdfTeX warning (ext4): destination with th
+l.1564 \begin{equation}
+                       \nonumber [51]pdfTeX warning (ext4): destination with th
 e same identifier (name{equation.2.1}) has been already used, duplicate ignored
 
 <to be read again> 
                    \relax 
-l.1440 \begin{equation}
+l.1575 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1456
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1591
 
  []
 
@@ -1850,9 +1980,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1458 \begin{equation}
+l.1593 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
+Underfull \hbox (badness 10000) in paragraph at lines 1600--1602
 
  []
 
@@ -1860,13 +1990,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1475 \end{align}
-                   [48] [49]pdfTeX warning (ext4): destination with the same id
+l.1610 \end{align}
+                   [52] [53]pdfTeX warning (ext4): destination with the same id
 entifier (name{equation.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1516 \begin{equation}
-                       \nonumber [50]
+l.1651 \begin{equation}
+                       \nonumber [54]
 Package epstopdf Info: Source file: <Figure/2141.eps>
 (epstopdf)                    date: 2018-07-19 16:25:10
 (epstopdf)                    size: 17325 bytes
@@ -1875,30 +2005,30 @@ Package epstopdf Info: Source file: <Figure/2141.eps>
 (epstopdf)                    size: 35134 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/2141-eps-converted-
 to.pdf Figure/2141.eps>
-(epstopdf)             \includegraphics on input line 1588.
+(epstopdf)             \includegraphics on input line 1723.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/2141-eps-converted-to.pdf, id=1246, 433.62pt x 289.08pt>
+<Figure/2141-eps-converted-to.pdf, id=1327, 433.62pt x 289.08pt>
 File: Figure/2141-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/2141-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/2141-eps-converted-to.pdf  used on input line 1
-588.
+723.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
- [51]pdfTeX warning (ext4): destination with the same identifier (name{equation
+ [55]pdfTeX warning (ext4): destination with the same identifier (name{equation
 .2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1601 \begin{equation}
+l.1736 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1621 \begin{equation}
+l.1756 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1621
+Underfull \hbox (badness 10000) in paragraph at lines 1747--1756
 
  []
 
-[52 <./Figure/2141-eps-converted-to.pdf>]
+[56 <./Figure/2141-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/tau.eps>
 (epstopdf)                    date: 2018-07-19 16:25:10
 (epstopdf)                    size: 750505 bytes
@@ -1907,13 +2037,13 @@ Package epstopdf Info: Source file: <Figure/tau.eps>
 (epstopdf)                    size: 183888 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/tau-eps-converted-t
 o.pdf Figure/tau.eps>
-(epstopdf)             \includegraphics on input line 1654.
+(epstopdf)             \includegraphics on input line 1789.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/tau-eps-converted-to.pdf, id=1309, 268.00125pt x 204.765pt>
+<Figure/tau-eps-converted-to.pdf, id=1390, 268.00125pt x 204.765pt>
 File: Figure/tau-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/tau-eps-converted-to.pdf>
-Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 16
-54.
+Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 17
+89.
 (pdftex.def)             Requested size: 229.4159pt x 175.28209pt.
 
 
@@ -1927,13 +2057,13 @@ Package epstopdf Info: Source file: <Figure/lwlr1.eps>
 (epstopdf)                    size: 32386 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr1-eps-converted
 -to.pdf Figure/lwlr1.eps>
-(epstopdf)             \includegraphics on input line 1661.
+(epstopdf)             \includegraphics on input line 1796.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr1-eps-converted-to.pdf, id=1310, 433.62pt x 289.08pt>
+<Figure/lwlr1-eps-converted-to.pdf, id=1391, 433.62pt x 289.08pt>
 File: Figure/lwlr1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr1-eps-converted-to.pdf  used on input line 
-1661.
+1796.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 (epstopdf)                    date: 2018-07-19 16:25:10
@@ -1943,13 +2073,13 @@ Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 (epstopdf)                    size: 32637 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_01-eps-conver
 ted-to.pdf Figure/lwlr0_01.eps>
-(epstopdf)             \includegraphics on input line 1666.
+(epstopdf)             \includegraphics on input line 1801.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr0_01-eps-converted-to.pdf, id=1311, 433.62pt x 289.08pt>
+<Figure/lwlr0_01-eps-converted-to.pdf, id=1392, 433.62pt x 289.08pt>
 File: Figure/lwlr0_01-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_01-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_01-eps-converted-to.pdf  used on input li
-ne 1666.
+ne 1801.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 (epstopdf)                    date: 2018-07-19 16:25:10
@@ -1959,72 +2089,72 @@ Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 (epstopdf)                    size: 33079 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_003-eps-conve
 rted-to.pdf Figure/lwlr0_003.eps>
-(epstopdf)             \includegraphics on input line 1671.
+(epstopdf)             \includegraphics on input line 1806.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr0_003-eps-converted-to.pdf, id=1312, 433.62pt x 289.08pt>
+<Figure/lwlr0_003-eps-converted-to.pdf, id=1393, 433.62pt x 289.08pt>
 File: Figure/lwlr0_003-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_003-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_003-eps-converted-to.pdf  used on input l
-ine 1671.
+ine 1806.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1678
+Underfull \hbox (badness 10000) in paragraph at lines 1793--1813
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53] [54 <./Figure/tau-eps-converted-to.pdf> <./Figure/lwlr1-eps-converted-to.p
+[57] [58 <./Figure/tau-eps-converted-to.pdf> <./Figure/lwlr1-eps-converted-to.p
 df> <./Figure/lwlr0_01-eps-converted-to.pdf>]pdfTeX warning (ext4): destination
  with the same identifier (name{equation.2.6}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.1682 \begin{equation}
-                       \nonumber [55 <./Figure/lwlr0_003-eps-converted-to.pdf>]
-[56])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
- [57]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+l.1817 \begin{equation}
+                       \nonumber [59 <./Figure/lwlr0_003-eps-converted-to.pdf>]
+[60])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
+ [61]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B92D019122733BDD46A88797E6EF322A;5778.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 27435 strings out of 494534
- 471049 string characters out of 6176265
- 516470 words of memory out of 5000000
- 29769 multiletter control sequences out of 15000+600000
- 608062 words of font info for 303 fonts, out of 8000000 for 9000
+ 27719 strings out of 494534
+ 475658 string characters out of 6176265
+ 518342 words of memory out of 5000000
+ 29999 multiletter control sequences out of 15000+600000
+ 616598 words of font info for 334 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,27n,56p,10410b,2752s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,27n,56p,10410b,2768s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
 imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows
-/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
-/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun
-.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
-s/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wind
+/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:
+/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei
+.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
+s/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wind
 ows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf>
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
 hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
 onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
-indows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.t
-tf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/
-simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
-s/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c
+indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.t
+tc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/
+simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
+s/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c
 :/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhe
-i.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
+i.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
 ts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
 dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
 ><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/si
 msun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/
 Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
 Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
-ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts
+ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts
 /simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windo
 ws/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><
 c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simh
@@ -2033,88 +2163,89 @@ nts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wi
 ndows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.tt
 f><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
 imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
-/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
-/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei
-.ttf><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2018/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c
-:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu20.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/arphic/gbsnu/gbsnu4e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arph
-ic/gbsnu/gbsnu4f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
-50.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb><c:/tex
-live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu52.pfb><c:/texlive/2018/texm
-f-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb><c:/texlive/2018/texmf-dist/fonts/t
-ype1/arphic/gbsnu/gbsnu54.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gb
-snu/gbsnu55.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu56.pf
-b><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu57.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu58.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/arphic/gbsnu/gbsnu59.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
-arphic/gbsnu/gbsnu5b.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
-bsnu5c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5d.pfb><c:
-/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5e.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb><c:/texlive/2018/texmf-dist/fon
-ts/type1/arphic/gbsnu/gbsnu60.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphi
-c/gbsnu/gbsnu61.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6
-2.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu63.pfb><c:/texl
-ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb><c:/texlive/2018/texmf
--dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/arphic/gbsnu/gbsnu67.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
-nu/gbsnu68.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu69.pfb
-><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6a.pfb><c:/texlive/2
-018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.pfb><c:/texlive/2018/texmf-dist
-/fonts/type1/arphic/gbsnu/gbsnu6c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/a
-rphic/gbsnu/gbsnu6d.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
-snu6e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu70.pfb><c:/
-texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu71.pfb><c:/texlive/2018/t
-exmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb><c:/texlive/2018/texmf-dist/font
-s/type1/arphic/gbsnu/gbsnu73.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic
-/gbsnu/gbsnu74.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu75
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb><c:/texli
-ve/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu77.pfb><c:/texlive/2018/texmf-
-dist/fonts/type1/arphic/gbsnu/gbsnu78.pfb><c:/texlive/2018/texmf-dist/fonts/typ
-e1/arphic/gbsnu/gbsnu79.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsn
-u/gbsnu7a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7b.pfb>
-<c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pfb><c:/texlive/20
-18/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb><c:/texlive/2018/texmf-dist/
-fonts/type1/arphic/gbsnu/gbsnu7e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/ar
-phic/gbsnu/gbsnu7f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbs
-nu80.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu81.pfb><c:/t
-exlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu82.pfb><c:/texlive/2018/te
-xmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb><c:/texlive/2018/texmf-dist/fonts
-/type1/arphic/gbsnu/gbsnu84.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/
-gbsnu/gbsnu86.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu88.
-pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu89.pfb><c:/texliv
-e/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8a.pfb><c:/texlive/2018/texmf-d
-ist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/arphic/gbsnu/gbsnu8c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu
-/gbsnu8d.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f.pfb><
-c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb><c:/texlive/201
-8/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb><c:/texlive/2018/texmf-dist/f
-onts/type1/arphic/gbsnu/gbsnu94.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arp
-hic/gbsnu/gbsnu95.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
-u96.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb><c:/te
-xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb><c:/texlive/2018/tex
-mf-dist/fonts/type1/arphic/gbsnu/gbsnu99.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/arphic/gbsnu/gbsnu9a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/g
-bsnu/gbsnu9c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9f.p
-fb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on main.pdf (57 pages, 3050567 bytes).
+/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
+/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei
+.ttf><c:/Windows/Fonts/simhei.ttf><c:/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c
+:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu
+/gbsnu20.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.pfb><
+c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><c:/texlive/2018/texmf-dist/f
+onts/type1/arphic/gbsnu/gbsnu50.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu51.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
+u52.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb><c:/te
+xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu54.pfb><c:/texlive/2018/tex
+mf-dist/fonts/type1/arphic/gbsnu/gbsnu55.pfb><c:/texlive/2018/texmf-dist/fonts/
+type1/arphic/gbsnu/gbsnu56.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/g
+bsnu/gbsnu57.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu58.p
+fb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu59.pfb><c:/texlive
+/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><c:/texlive/2018/texmf-di
+st/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/arphic/gbsnu/gbsnu5d.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/
+gbsnu5e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb><c
+:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb><c:/texlive/2018
+/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu62.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arph
+ic/gbsnu/gbsnu63.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
+65.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb><c:/tex
+live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu67.pfb><c:/texlive/2018/texm
+f-dist/fonts/type1/arphic/gbsnu/gbsnu68.pfb><c:/texlive/2018/texmf-dist/fonts/t
+ype1/arphic/gbsnu/gbsnu69.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu6a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.pf
+b><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6d.pfb><c:/texlive/2018/texmf-dis
+t/fonts/type1/arphic/gbsnu/gbsnu6e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
+arphic/gbsnu/gbsnu70.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
+bsnu71.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu73.pfb><c:/texlive/2018/
+texmf-dist/fonts/type1/arphic/gbsnu/gbsnu74.pfb><c:/texlive/2018/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu75.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphi
+c/gbsnu/gbsnu76.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7
+7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu78.pfb><c:/texl
+ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu79.pfb><c:/texlive/2018/texmf
+-dist/fonts/type1/arphic/gbsnu/gbsnu7a.pfb><c:/texlive/2018/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu7b.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
+nu/gbsnu7c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb
+><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><c:/texlive/2
+018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7f.pfb><c:/texlive/2018/texmf-dist
+/fonts/type1/arphic/gbsnu/gbsnu80.pfb><c:/texlive/2018/texmf-dist/fonts/type1/a
+rphic/gbsnu/gbsnu81.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu82.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb><c:/
+texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu84.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/arphic/gbsnu/gbsnu86.pfb><c:/texlive/2018/texmf-dist/font
+s/type1/arphic/gbsnu/gbsnu88.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic
+/gbsnu/gbsnu89.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8a
+.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8c.pfb><c:/texlive/2018/texmf-
+dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb><c:/texlive/2018/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu8f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsn
+u/gbsnu90.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb>
+<c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu95.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu96.pfb><c:/texlive/2018/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnu97.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbs
+nu98.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu99.pfb><c:/t
+exlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb><c:/texlive/2018/te
+xmf-dist/fonts/type1/arphic/gbsnu/gbsnu9c.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/arphic/gbsnu/gbsnu9f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/
+gbsnu/gbsnuff.pfb>
+Output written on main.pdf (61 pages, 3175157 bytes).
 PDF statistics:
- 2155 PDF objects out of 2487 (max. 8388607)
- 1641 compressed objects within 17 object streams
- 524 named destinations out of 1000 (max. 500000)
- 727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2241 PDF objects out of 2487 (max. 8388607)
+ 1700 compressed objects within 17 object streams
+ 537 named destinations out of 1000 (max. 500000)
+ 742 words of extra memory for PDF output out of 10000 (max. 10000000)
 

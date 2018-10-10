@@ -1161,7 +1161,7 @@ $$y_i(w\cdot x_i+b)-1=0$$
 \begin{figure}[!htb]
   \centering
   \includegraphics[width=0.45\textwidth]{support_vector.eps}
-  \caption{支持向量与间隔边界}
+  \caption{支持向量机}
 \end{figure}
 
 注意到$~H_1~$和$~H_2~$平行，并且没有实例点落在它们中间,在$~H_1~$与$~H_2~$，之间形成一条长带，分离超平面与它们平行且位于它们中央长带的宽度，即$~H_1~$与$~H_2~$之间的距离称为间隔(margin)。间隔依赖于分离超平面的法向量~w~,等于$~\frac{2}{||w||}~$,$~H_1~$和$~H_2~$称为间隔边界。
@@ -1245,7 +1245,7 @@ $
                 &=\frac{1}{2}ww^T-\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}w^T-\sum_{i=1}^{m}\alpha_iy^{(i)}b+\sum_{i=1}^{m}\alpha_i \nonumber \\
                 &=\frac{1}{2}ww^T-ww^T-\sum_{i=1}^{m}\alpha_iy^{(i)}b+\sum_{i=1}^{m}\alpha_i \nonumber \\
                 &=-\frac{1}{2}\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}(\sum_{j=1}^{m}\alpha_iy^{(j)}x^{(j)})^T-b\sum_{i=1}^{m}\alpha_iy^{(i)}+\sum_{i=1}^{m}\alpha_i \nonumber \\
-                W(\alpha)&=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber             
+                W(\alpha)&=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber
 \end{align}
 
 \indent得到最终的对偶优化问题：
@@ -1281,9 +1281,9 @@ $
 
 \textbf{由KKT条件可知}
 \begin{align}
-    \alpha_i=0 ~~~ =>  &~~~y^{(i)}(w^Tx^{(i)}+b)\geq1   \nonumber\\
-    \alpha_i=C ~~~ => &~~~y^{(i)}(w^Tx^{(i)}+b)\leq1   \nonumber\\
-    0\leq\alpha_i\leq C ~~~ => &~~~y^{(i)}(w^Tx^{(i)}+b)=1   \nonumber
+    \alpha_i=0 ~~~ \Rightarrow  &~~~y^{(i)}(w^Tx^{(i)}+b)\geq1   \nonumber\\
+    \alpha_i=C ~~~ \Rightarrow &~~~y^{(i)}(w^Tx^{(i)}+b)\leq1   \nonumber\\
+    0\leq\alpha_i\leq C ~~~ \Rightarrow &~~~y^{(i)}(w^Tx^{(i)}+b)=1   \nonumber
 \end{align}
 
 \subsubsection{引入核函数}
@@ -1334,17 +1334,152 @@ $
 \indent最终的问题在于如何求得最终优化问题的最优解，这便是利用~SMO~算法。
 
 \subsubsection{SMO~算法}
+SOM~算法全称~Sequential~Minimal~Optimization.~是1998年4月~John.C.platt~发表的关于训练支持向量机一种快速的算法。它相较于其他训练支持向量机的算法有明显的速度优势。它的灵感来源于坐标上升算法~(Coordinate~ascent)~.
 
+\textbf{坐标上升}\\
+$
+\indent Repeat\{\\
+\indent~~~~~~~~    for ~i=1 ~to~ m\{\\
+\indent~~~~~~~~~~~~~~~~        \alpha_i :=arg~ \max \limits_{\alpha_i}~W(\alpha_1,..,\alpha_{i-1},\alpha_i,\alpha_{i+1},...,\alpha_m)\\
+\indent~~~~~~~~    \}\\
+\indent\}
+$
+\begin{figure}[!h]
+\begin{minipage}
+{0.5\linewidth}
+\centering
+\includegraphics[width=2.22in]{Gradient_descent.eps}
+\caption{梯度下降}
+\end{minipage}
+%
+\begin{minipage}
+{0.5\linewidth}
+\centering
+\includegraphics[width=2.22in]{Coordinate_ascent.eps}
+\caption{坐标上升}
+\end{minipage}
+\end{figure}
 
+\indent 坐标上升相较于其他最优化算法，如牛顿法来讲，是一种“曲线救国”的形式。虽然它收敛时的迭代次数要远多于牛顿法，但是对于单变量的优化问题它拥有明确的解析解，它的执行速度是非常快的。
 
+\indent 利用坐标上升的思想来解决支持向量机的对偶问题就是SMO算法的实质，但是坐标上升的基本形式不能直接用于~SVM~的对偶优化问题，应为它有一个关于$~\alpha~$的等式约束。所以~SMO~算法每次优两个$~\alpha~$变量。
 
+\textbf{SMO~算法框架}~~\\
+\indent 框架：\\
+\indent ~~~~~~~~~~选择$~\alpha_i,\alpha_j~$。(经验法则亦或者是启发式方法)\\
+\indent ~~~~~~~~~~固定其他所有$~\alpha_i~$。\\
+\indent ~~~~~~~~~~同时使得$~\alpha_i,\alpha_j~$最优。\textcolor{red}{（核心步骤）}
 
+\textbf{核心步骤的数学推导}~~\\
+\indent 对偶优化问题：
+\begin{align}
+            &\min \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}\textcolor{red}{K<x^{(i)},x^{(j)}>}-\sum_{i=1}^{m}\alpha_i \nonumber\nonumber\\
+         &~~~~~~~~~~~~~~~~~~s.t.~~0 \leq\alpha_i\leq \textcolor{red}{C},~~i=1,...,m \nonumber \\
+               &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber
+\end{align}
 
+\indent 依据坐标上升思想，控制变量剩两个得到新的优化问题：~~
+\begin{align}
+    &~~~~~~~~~~~~~~~~~~~~~\min \limits_{\alpha_1,\alpha_2} \Psi (\alpha_1,\alpha_2) \nonumber \\
+    &~~~~~~~~~~~~~~~~=\min \limits_{\alpha_1,\alpha_2}\frac{1}{2}K_{11}\alpha_1^2+\frac{1}{2}K_{22}\alpha_2^2+y_1y_2\alpha_1\alpha_2 \nonumber \\
+    &~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-(\alpha_1+\alpha_2)+y_1v_1\alpha_1+y_2v_2\alpha_2+Constant   \tag{1}  \\
+    &~~~~~~~~~~~~~~~~~~~~~~~~~~~ v_i = \sum_{j=3}^{m} \alpha_i\alpha_jK(x_i,x_j) \nonumber \\
+    &~~~~~~~~~~~~~~~~~~~~~~~~~~~~s.t.~~~0\leq\alpha_1,\alpha_2 \leq C \nonumber \\
+    &~~~~~~~~~~~~~~~~~~~~~~~~~\alpha_1y_1+\alpha_2y_2 = -\sum_{i=3}^{m}\alpha_iy_i =\xi \nonumber \\
+    &~~~~~~~~~~~~~~~~\Rightarrow~~\alpha_1=(\xi-\alpha_2y_2)y_1   \tag{2}
+\end{align} 
+\indent 将(2)代入(1)得到一元二次函数的优化问题：
+\begin{align}
+    &~~~~~~~~~~~~~~~~\min \limits_{\alpha_2}\phi(\alpha2)=\frac{1}{2}K_{11}((\xi-\alpha_2y_2)y_1)^2+\frac{1}{2}K_{22}\alpha_2^2+y_1y_2(\xi-\alpha_2y_2)y_1\alpha_2 \nonumber \\
+    &~~~~~~~~~~~~~~~~~~~~~~~~-((\xi-\alpha_2y_2)y_1+\alpha_2)+y_1v_1(\xi-\alpha_2y_2)y_1+y_2v_2\alpha_2+Constant    
+\end{align}
+\indent 利用微分求这个最小化问题的最优解：
+ \begin{align}
+    &\frac{\partial\phi(\alpha_2)}{\partial\alpha_2}=(K_{11}+K_{22}-K_{12})\alpha_2-K_{11}\xi y_2 \nonumber \\
+    &~~~~~~~~~~~~~~~~~+K_{11}\xi y_2+y_1y_2-1-v_1y_2+v_2y_1=0    \nonumber \\
+    &~~~~~~\text{令求得的$~\alpha_1,\alpha_2~$为$~\alpha_1^{new},\alpha_2^{new}~$}. ~~~~~~\text{未更新的$~\alpha_1,\alpha_2~$为$~\alpha_1^{old},\alpha_2^{old}~$}. \nonumber \\
+    &\text{由于等式约束条件$~\sum_{i=1}^{m}y^{(i)}\alpha_i=0~$有:} \nonumber \\
+    &\alpha_1^{old}y_1+\alpha_2^{old}y_2 = -\sum_{i=3}^{m}\alpha_iy_i =\xi=\alpha_1^{new}y_1+\alpha_2^{new}y_2 \nonumber \\
+    &~~~~~~~~~~~~~~~~~\Rightarrow\xi = \alpha_1^{old}y_1+\alpha_2^{old}y_2  \\
+    &\text{真实值与预测值之间的误差:} \nonumber\\
+    &~~~~~~~~~~~~~~~~~~~~~~~E_i = f(x_i)-y_i \\
+    &~~~~~~~~~~~~~~~~~~~~~~~f(x)=\sum_{i=1}^{N}\alpha_iy_iK(x_i,x)+b   \nonumber \\
+    &~~~~~~\text{由于}~v_i = \sum_{j=3}^{m} \alpha_i\alpha_jK(x_i,x_j)~\text{因此：} \nonumber \\
+    &~~~~~~~~~~~~~~~~~~~~~~~v_1=f(x_1)-\sum_{j=1}^{2}\alpha_jy_jK_{1j}-b \\
+    &~~~~~~~~~~~~~~~~~~~~~~~v_2=f(x_2)-\sum_{j=1}^{2}\alpha_jy_jK_{2j}-b \\
+    &\text{将(4)(6)(7)代入求导式：}  \nonumber \\
+    &~~~~~~(K_{11}+K_{22}-2K_{12})\alpha_2-(\alpha_1^{old}y_1+\alpha_2^{old}y_2)y_2(K_{11}-K_{22})+y_1y_2-y_2^2 \nonumber\\
+    &~~~~~~~~~~+y_2(f(x_2)-f(x_1)+\alpha_1^{old}y_1k_{11}+\alpha_2^{old}y_2K_{12}-\alpha_1^{old}y_1K_{12}-\alpha_2^{old}y_2K_{22})=0 \nonumber \\
+    &\Rightarrow(K_{11}+K_{22}-2K_{12})\alpha_2=\alpha_2^{old}(K_{11}+K_{22}-2K_{12})+y_2(f(x_1)-f(x_2)-y_1+y_2) \nonumber \\
+    &~~~~~~\text{令}~\eta=(K_{11}+K_{22}-2K_{12})=||\phi(x_1)-\phi(x_2)||^2 \nonumber \\
+    &\Rightarrow\textcolor{red}{ \alpha_2^{new,unclipped}=\alpha_2^{old}+\frac{y_2(E_1-E_2)}{\eta}}
+\end{align}
+\indent由于求得的$~\alpha_2^{new,unclipped}~$是未利用不等式约束的解析解，我们进一步依据不等式约束$~0\leq \alpha_{1,2}\leq C~$和等式$~\alpha_1^{new}y_1+\alpha_2^{new}y_2  =\xi~$来进行裁剪，使求得的$~\alpha_{1,2}~$都满足约束。
 
+裁剪~~情况1：
+\begin{align}
+    &y_1\neq y_2 ~\Rightarrow~\alpha_1-\alpha_2 = K   \nonumber \\
+    &L=\max(0,-K)=\max(0,\alpha_2^{old}-\alpha_1^{old}) \nonumber\\
+    &H=\min(0,C-K)=\min(0,C+\alpha_2^{old}-\alpha_1^{old}) \nonumber
+\end{align}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.8\textwidth]{clipped.eps}
+  \caption{裁剪}
+\end{figure}
+\indent~~~~~~~~~~情况2：
+\begin{align}
+    &y_1= y_2 ~\Rightarrow~\alpha_1+\alpha_2 = k   \nonumber \\
+    &L=\max(0,K-C)=\max(0,\alpha_2^{old}+\alpha_1^{old}-C) \nonumber\\
+    &H=\min(K,C)=\min(0,c+\alpha_2^{old}-\alpha_1^{old}) \nonumber
+\end{align}
+\indent 裁剪后：
+\textcolor{red}{\begin{equation}\nonumber
+\alpha_2^{new,clipped}=
+\begin{cases}
+H& ,\alpha_2^{new,unclipped}>H\\
+\alpha_2^{new,unclipped}&,L\leq \alpha_2^{new,unclipped}\leq H\\
+L&,\alpha_2^{new,unclipped}>L
+\end{cases}
+\end{equation}}
 
+求解$~\alpha_1~$:
+\begin{align}
+  &\alpha_1^{old}y_1+\alpha_2^{old}y_2=\alpha_1^{new}y_1+\alpha_2^{new}y_2 \nonumber\\
+  &\textcolor{red}{\alpha_1^{new}=\alpha_1^{old}+y_1y_2(\alpha_2^{old}-\alpha_2^{new})}
+\end{align}
 
+\textcolor{red}{特殊情况：\textcircled{\footnotesize{1}}$~\eta<0~$,核矩阵为非半正定矩阵。\\
+\indent~~~~~~~~~~~~~~~~~~~~\textcircled{\footnotesize{2}}$~\eta=0~$,样本$~x_1,x_2~$输入特征相同。\\
+\indent~~~~~~~~~~~~~~~$~\Rightarrow$这两种情况下，都是在边界上取得极值。}
+\begin{align}
+  &~~~~~~\text{则将}~~~\alpha_2^{new}=L~,~\alpha_2^{new}=H \nonumber \\
+  &~~~~~~\text{代入(9)式得}~~~\alpha_1^{new}=L_1~,~\alpha_1^{new}=H_1~,~s=y_1y_2. \nonumber \\
+  &~~~~~\Rightarrow L_1=\alpha_1^{old}+s(\alpha_2^{old}-L) \nonumber \\
+  &~~~~~~~~~~~H_1=\alpha_1^{old}+s(\alpha_2^{old}-H) \nonumber \\
+  &~~~~~~\text{将代入(1)式中比较$~\Psi(\alpha_1=L_1,\alpha_2=L)~$与$~\Psi(\alpha_1=H_1,\alpha_2=H)~$取小得特殊情况的解析解。} \nonumber
+\end{align}
+\begin{align}
+  \Psi_L&=\Psi(L_1,L)=\Psi(\alpha_1=L_1,\alpha_2=L)    \nonumber\\
+        &=\frac{1}{2}L_1^2K_{11}+\frac{1}{2}L_2^2K_{22}+sK_{12}LL_1-(L_1+L)+y_1v_1L_1+y_2v_2L_2+Constant \nonumber \\
+        &=...+L_1(y_1v_1-1)+L_2(y_2v_2-1)+Constant \nonumber \\
+        &=...+L_1(y_1[f(x_1)-\alpha_1y_1K_{11}-\alpha_2y_2K_{12}-b]-1)+L_2(y_2v_2-1)+Constant \nonumber \\
+        &=...+L_1([f(x_1)-y_1+y_1-b-\alpha_1y_1K_{11}-\alpha_2y_2K_{12}]-1)+L_2(y_2v_2-1)+Constant \nonumber \\
+        &=...+L_1(y_1(E_1-b)+1-\alpha_1K_{11}-y_1y_2K_{12}\alpha_2-1)+L_2(y_2v_2-1)+Constant \nonumber \\
+        &=\frac{1}{2}L_1^2K_{11}+\frac{1}{2}L_2^2K_{22}+sK_{12}LL_1+L_1f_1+L_2f_2+Constant \nonumber \\
+        &~~~~~~~~~~~~f_1=y_1(E_1-b)-\alpha_1K_{11}-y_1y_2\alpha_2K_{12} \nonumber \\
+        &~~~~~~~~~~~~f_2=y_2(E_2-b)-\alpha_2K_{22}-y_1y_2\alpha_1K_{12} \nonumber \\
+  \Psi_H&=\Psi(H_1,H)=\Psi(\alpha_1=H_1,\alpha_2=H)    \nonumber\\
+        &=\frac{1}{2}H_1^2K_{11}+\frac{1}{2}H_2^2K_{22}+sK_{12}HH_1+H_1f_1+H_2f_2+Constant \nonumber
+\end{align}
 
-
+\textcolor{red}{计算阈值~b~和差值$~E_i~$} \\
+\begin{align}
+   &\textcircled{\footnotesize{1}}     \nonumber \\
+   &\textcircled{\footnotesize{2}}      \nonumber \\
+   &\textcircled{\footnotesize{3}}      \nonumber \\
+   &\textcircled{\footnotesize{4}}      \nonumber 
+\end{align}
 
 
 
