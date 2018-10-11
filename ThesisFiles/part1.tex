@@ -1485,11 +1485,601 @@ L&,\alpha_2^{new,unclipped}>L
    &\textcircled{\footnotesize{4}}  ~ \text{若}~~~\alpha_1^{new}=0~or~C ,~\alpha_2^{new}=0~or~C \Rightarrow b^{new}=\frac{1}{2}(b_1^{new}+b_2^{new})     \nonumber
 \end{align}
 
-\subsubsection{实战：简化版的SMO算法}
+\textcolor{red}{变量的选取方法}\\
+\indent SMO~算法在每个子问题中选择两个变量优化， 其中至少一个变量是违反 KKT条件的。\\
+\indent\textcircled{\footnotesize{1}}第一个变量的选取方法：~~\\
+\indent SMO~称选择第1个变量的过程为外层循环外层循环在训练样本中选取违反~KKT~条件最严重的样本点,并将其对应的变量作为第 1个变量.具体地,检验训练样本点$~(x_i,y_i)~$是否满足~KKT~条件 ， 即
+\\
+~\\
+\begin{align}
+    \alpha_i=0 ~~~ \Leftrightarrow  &~~~y_ig(x_i)\geq1   \nonumber\\
+    \alpha_i=C ~~~ \Leftrightarrow &~~~y_ig(x_i)\leq1   \nonumber\\
+    0\leq\alpha_i\leq C ~~~ \Leftrightarrow &~~~y_ig(x_i)=1   \nonumber
+\end{align}
+其中，$~g(x_i)=\sum_{j=1}^{m}\alpha_jy_jK(x_i,x_j)+b~$.\\
+\indent该检验是在$~\epsilon~$范围内进行的。在检验过程中，外层循环首先遍历所有满足条件$~0<\alpha_i<C~$的样本点，即在间隔边界上的支持向盘点，检验它们是否满足~KKT~条件如果这些样本点都满足~KKT~条件，那么遍历整个训练集，检验它们是否满足~KKT~条件．
+
+\textcircled{\footnotesize{2}}第2个变量的选择 \\
+\indent SMO~称选择第2个变量的过程为内层循环。假设在外层循环中已经找到第1个变量叫$~\alpha_1~$，现在要在内层循环中找第2个变量$~\alpha_2~$第2个变量选择的标准是希望能使$~\alpha_2~$有足够大的变化。\\
+\indent由式(8)可知，$~\alpha_2^{new}~$是依赖于$~|E_1-E_2|~$的，为了加快计算速 ，一种简单的做法是选择$~\alpha_2~$，使其对应的$~|E_1-E_2|~$最大。因为$~\alpha_1~$已定，$~E_1~$也就确定了。如果$~E_1~$是正的，那么选择最小的$~E_i~$作为$~E_2~$，如果$~E_i~$是负的，那么选择最大的$~E_i~$作为$~E_2~$,为了节省计算时间，将所有$~E_i~$保存在一个列表中。\\
+\indent在特殊情况下，如果内层循环通过以上方法选择的$~\alpha_2~$不能使目标函数有足够的下降，那么采用以下启发式规则继续选择$~\alpha_2~$·遍历在间隔边界上的支持向量点，依次将其对应的变量作为$~\alpha_2~$试用，直到目标函数有足够的下降若找不到合适的$~\alpha_2~$那么遍历训练数据集;若仍找不到合适的$~\alpha_2~$，则放弃第1个$~\alpha_1~$，再通过外层寻找$~\alpha_1~$。
+\subsubsection{实战：简化版的SMO算法处理小规模数据集}
+支持向量机优缺点\\
+\textcolor{red}{优点}：泛化错误率低，计算开销不大，结果易解释。\\
+\textcolor{red}{缺点}：泛化错误率低，计算开销不大，结果易解释。\\
+适用数据类型：数值型和标称型数据。
+
+SVM的一般流程\\
+(1) 收集数据：可以使用任意方法。 \\
+(2) 准备数据：需要数值型数据。\\
+(3) 分析数据：有助于可视化分隔超平面。\\
+(4) 训练算法：SVM的大部分时间都源自训练，该过程主要实现两个参数的调优。\\
+(5) 测试算法：十分简单的计算过程就可以实现。\\
+(6) 使用算法：几乎所有分类问题都可以使用SVM，值得一提的是，SVM本身是一个二类
+分类器，对多类问题应用SVM需要对代码做一些修改。\\
+
+\noindent程序核心函数代码：
+\begin{lstlisting}
+def selectJrand(i,m):
+    j=i #we want to select any J not equal to i
+    while (j==i):
+        j = int(np.random.uniform(0,m))
+    return j
+
+def clipAlpha(aj,H,L):  #s.t. 0<=\alpha<=C
+    if aj > H:
+        aj = H
+    if L > aj:
+        aj = L
+    return aj
+
+def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
+    dataMatrix = np.mat(dataMatIn); labelMat = np.mat(classLabels).transpose()
+    b = 0; m,n = np.shape(dataMatrix)
+    alphas = np.mat(np.zeros((m,1)))
+    iter = 0
+    while (iter < maxIter):
+        alphaPairsChanged = 0
+        for i in range(m):
+            fXi = float(np.multiply(alphas,labelMat).T\
+            *(dataMatrix*dataMatrix[i,:].T)) + b
+            Ei = fXi - float(labelMat[i])
+            #if checks if an example violates KKT conditions
+            if ((labelMat[i]*Ei < -toler) and (alphas[i] < C))
+            or ((labelMat[i]*Ei > toler) and (alphas[i] > 0)):
+                j = selectJrand(i,m)
+                print("i",i,alphas[i])
+                print("j",j,alphas[j])
+                fXj = float(np.multiply(alphas,labelMat).T*\
+                (dataMatrix*dataMatrix[j,:].T)) + b
+                Ej = fXj - float(labelMat[j])
+                alphaIold = alphas[i].copy(); alphaJold = alphas[j].copy();
+                if (labelMat[i] != labelMat[j]):
+                    L = max(0, alphas[j] - alphas[i])
+                    H = min(C, C + alphas[j] - alphas[i])
+                else:
+                    L = max(0, alphas[j] + alphas[i] - C)
+                    H = min(C, alphas[j] + alphas[i])
+                if L==H: print ("L==H"); continue
+                eta = 2.0 * dataMatrix[i,:]*dataMatrix[j,:].T -\
+                dataMatrix[i,:]*dataMatrix[i,:].T - dataMatrix[j,:]*dataMatrix[j,:].T
+                if eta >= 0: print ("eta>=0"); continue
+                alphas[j] -= labelMat[j]*(Ei - Ej)/eta
+                alphas[j] = clipAlpha(alphas[j],H,L)
+                if (abs(alphas[j] - alphaJold) < 0.00001):
+                    print ("j not moving enough",alphas[j])
+                    continue
+                alphas[i] += labelMat[j]*labelMat[i]*(alphaJold - alphas[j])
+                print("i",i,alphas[i])
+                print("j",j,alphas[j]);
+                #update i by the same amount as j
+                #the update is in the oppostie direction
+                b1 = b - Ei- labelMat[i]*(alphas[i]-alphaIold)\
+                *dataMatrix[i,:]*dataMatrix[i,:].T-labelMat[j]\
+                *(alphas[j]-alphaJold)*dataMatrix[i,:]*dataMatrix[j,:].T
+                b2 = b - Ej- labelMat[i]*(alphas[i]-alphaIold)\
+                *dataMatrix[i,:]*dataMatrix[j,:].T-labelMat[j]\
+                *(alphas[j]-alphaJold)*dataMatrix[j,:]*dataMatrix[j,:].T
+                if (0 < alphas[i]) and (C > alphas[i]): b = b1
+                elif (0 < alphas[j]) and (C > alphas[j]): b = b2
+                else: b = (b1 + b2)/2.0
+                alphaPairsChanged += 1
+                print ("iter: %d i:%d, pairs changed %d" % (iter,i,alphaPairsChanged))
+        if (alphaPairsChanged == 0): iter += 1
+        else: iter = 0
+        print ("iteration number: %d" % iter)
+    return b,alphas
+
+def test():
+    dataArr,labelArr = svmMLiA.loadDataSet('testSet.txt')
+    b,alpha = svmMLiA.smoSimple(dataArr,labelArr,0.6,0.001,80)
+    print (b)
+    print (alpha[alpha>0])
+    for i in range(100):
+        if alpha[i]>0.0:
+            print (i,dataArr[i],labelArr[i])
+
+\end{lstlisting}
+
+\noindent实验结果运行时间：
+\begin{lstlisting}
+Time For Run SMO:15.935288698252556s
+\end{lstlisting}
+
+\noindent运行结果可视化图：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.65\textwidth]{SMOSimple.eps}
+  \caption{简化版~SMO~算法运行结果图}
+\end{figure}
+
+\noindent简化版的~SMO~算法：\\
+\textcircled{\footnotesize{1}}  ~ 应用简化版的~SMO~算法来处理小规模数据集，不注重它的运行效率。       \\
+\textcircled{\footnotesize{2}}  ~$~\alpha~$对选取比较粗糙，这是效率低下的主要原因。       \\
+\textcircled{\footnotesize{3}}  ~不考虑$~\eta=(K_{11}+K_{22}-2K_{12})\leq0~$情况，事实上，这对算法的收敛没有太大影响。        \\
+\textcircled{\footnotesize{4}}  ~没有向线性不可分的情况拓展，即就是没有使用核技巧，难以应用在实际中。        \\
+
+
+
+
 
 \subsubsection{实战：完整版的SMO算法加速优化}
+\noindent程序核心函数代码：
+\begin{lstlisting}
+class optStruct:
+    def __init__(self,dataMatIn, classLabels, C, toler):  # Initialize the structure with the parameters
+        self.X = dataMatIn
+        self.labelMat = classLabels
+        self.C = C
+        self.tol = toler
+        self.m = np.shape(dataMatIn)[0]
+        self.alphas = np.mat(np.zeros((self.m,1)))
+        self.b = 0
+        self.eCache = np.mat(np.zeros((self.m,2))) #first column is valid flag
 
-\subsubsection{利用SVM进行识别字体}
+def calcEk(oS, k):
+    fXk = float(np.multiply(oS.alphas,oS.labelMat).T*(oS.X*oS.X[k,:].T)) + oS.b
+    Ek = fXk - float(oS.labelMat[k])
+    return Ek
+
+def selectJrand(i,m):
+    j=i #we want to select any J not equal to i
+    while (j==i):
+        j = int(np.random.uniform(0,m))
+    return j
+
+def clipAlpha(aj,H,L):
+    if aj > H:
+        aj = H
+    if L > aj:
+        aj = L
+    return aj
+
+def selectJ(i, oS, Ei):         #this is the second choice -heurstic, and calcs Ej
+    maxK = -1; maxDeltaE = 0; Ej = 0
+    oS.eCache[i] = [1,Ei]  #set valid #choose the alpha that gives the maximum delta E
+    validEcacheList = np.nonzero(oS.eCache[:,0].A)[0];print("the length of validEcacheList",len(validEcacheList))
+    if (len(validEcacheList)) > 1:
+        for k in validEcacheList:   #loop through valid Ecache values and find the one that maximizes delta E
+            if k == i: continue #don't calc for i, waste of time
+            Ek = calcEk(oS, k)
+            deltaE = abs(Ei - Ek)
+            if (deltaE > maxDeltaE):
+                maxK = k; maxDeltaE = deltaE; Ej = Ek
+        return maxK, Ej
+    else:   #in this case (first time around) we don't have any valid eCache values
+        j = selectJrand(i, oS.m)
+        Ej = calcEk(oS, j)
+    return j, Ej
+
+def updateEk(oS, k):#after any alpha has changed update the new value in the cache
+    Ek = calcEk(oS, k)
+    oS.eCache[k] = [1,Ek]
+
+def innerL(i, oS):
+    Ei = calcEk(oS, i)
+    if ((oS.labelMat[i]*Ei < -oS.tol) and (oS.alphas[i] < oS.C)) or ((oS.labelMat[i]*Ei > oS.tol) and (oS.alphas[i] > 0)):
+        j,Ej = selectJ(i, oS, Ei) #this has been changed from selectJrand
+        alphaIold = oS.alphas[i].copy(); alphaJold = oS.alphas[j].copy();
+        if (oS.labelMat[i] != oS.labelMat[j]):
+            L = max(0, oS.alphas[j] - oS.alphas[i])
+            H = min(oS.C, oS.C + oS.alphas[j] - oS.alphas[i])
+        else:
+            L = max(0, oS.alphas[j] + oS.alphas[i] - oS.C)
+            H = min(oS.C, oS.alphas[j] + oS.alphas[i])
+        if L==H: print ("L==H"); return 0
+        eta = 2.0 * oS.X[i,:]*oS.X[j,:].T - oS.X[i,:]*oS.X[i,:].T - oS.X[j,:]*oS.X[j,:].T
+        if eta >= 0: print ("eta>=0"); return 0
+        oS.alphas[j] -= oS.labelMat[j]*(Ei - Ej)/eta
+        oS.alphas[j] = clipAlpha(oS.alphas[j],H,L)
+        updateEk(oS, j) #added this for the Ecache
+        if (abs(oS.alphas[j] - alphaJold) < 0.00001): print ("j not moving enough"); return 0
+        oS.alphas[i] += oS.labelMat[j]*oS.labelMat[i]*(alphaJold - oS.alphas[j])#update i by the same amount as j
+        updateEk(oS, i) #added this for the Ecache                    #the update is in the oppostie direction
+        b1 = oS.b - Ei- oS.labelMat[i]*(oS.alphas[i]-alphaIold)*oS.X[i,:]*oS.X[i,:].T - oS.labelMat[j]*(oS.alphas[j]-alphaJold)*oS.X[i,:]*oS.X[j,:].T
+        b2 = oS.b - Ej- oS.labelMat[i]*(oS.alphas[i]-alphaIold)*oS.X[i,:]*oS.X[j,:].T - oS.labelMat[j]*(oS.alphas[j]-alphaJold)*oS.X[j,:]*oS.X[j,:].T
+        if (0 < oS.alphas[i]) and (oS.C > oS.alphas[i]): oS.b = b1
+        elif (0 < oS.alphas[j]) and (oS.C > oS.alphas[j]): oS.b = b2
+        else: oS.b = (b1 + b2)/2.0
+        return 1
+    else: return 0
+
+def smoP(dataMatIn, classLabels, C, toler, maxIter):    #full Platt SMO
+    oS = optStruct(np.mat(dataMatIn),np.mat(classLabels).transpose(),C,toler)
+    iter = 0
+    entireSet = True; alphaPairsChanged = 0
+    while (iter < maxIter) and ((alphaPairsChanged > 0) or (entireSet)):
+        alphaPairsChanged = 0
+        if entireSet:   #go over all
+            for i in range(oS.m):
+                alphaPairsChanged += innerL(i,oS)
+                print ("fullSet, iter: %d i:%d, pairs changed %d" % (iter,i,alphaPairsChanged))
+            iter += 1
+        else:#go over non-bound (railed) alphas
+            nonBoundIs = np.nonzero((oS.alphas.A > 0) * (oS.alphas.A < C))[0]
+            for i in nonBoundIs:
+                alphaPairsChanged += innerL(i,oS)
+                print ("non-bound, iter: %d i:%d, pairs changed %d" % (iter,i,alphaPairsChanged))
+            iter += 1
+        if entireSet: entireSet = False #toggle entire set loop
+        elif (alphaPairsChanged == 0): entireSet = True
+        print ("iteration number: %d" % iter)
+    return oS.b,oS.alphas
+
+def test():
+    dataArr,labelArr = svmMLiA.loadDataSet('testSet.txt')
+    b,alpha = svmMLiA.smoSimple(dataArr,labelArr,0.6,0.001,80)
+    print (b)
+    print (alpha[alpha>0])
+    for i in range(100):
+        if alpha[i]>0.0:
+            print (i,dataArr[i],labelArr[i])
+\end{lstlisting}
+
+\noindent实验结果运行时间：
+\begin{lstlisting}
+Time For Run CompleteSMO:0.06899004697106648s
+\end{lstlisting}
+
+\noindent运行结果可视化图：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.65\textwidth]{SMOComplete.eps}
+  \caption{完整版~SMO~算法运行结果图}
+\end{figure}
+
+\noindent完整版的~SMO~算法：\\
+\textcircled{\footnotesize{1}}  ~算法运行效率相较于简化版明显提高，可利用其在大数据量下进行分类。        \\
+\textcircled{\footnotesize{2}}  ~对$~\alpha~$对变量的高效选取是算法高效的保证。       \\
+\textcircled{\footnotesize{3}}  ~还是没有考虑$~\eta=(K_{11}+K_{22}-2K_{12})\leq0~$情况，因对算法的收敛没有太大影响。       \\
+\textcircled{\footnotesize{4}}  ~还是没有向线性不可分的情况拓展，即就是没有使用核技巧，难以应用在实际中。       \\
+
+
+
+
+\subsubsection{实战：引入核函数处理线性不可分情况}
+\noindent程序核心函数代码：
+\begin{lstlisting}
+class optStruct:
+    def __init__(self,dataMatIn, classLabels, C, toler, kTup):  # Initialize the structure with the parameters
+        self.X = dataMatIn
+        self.labelMat = classLabels
+        self.C = C
+        self.tol = toler
+        self.m = np.shape(dataMatIn)[0]
+        self.alphas = np.mat(np.zeros((self.m,1)))
+        self.b = 0
+        self.eCache = np.mat(np.zeros((self.m,2))) #first column is valid flag
+        self.K = np.mat(np.zeros((self.m,self.m)))
+        for i in range(self.m):
+            self.K[:,i] = kernelTrans(self.X, self.X[i,:], kTup)
+
+def selectJrand(i,m):
+    j=i #we want to select any J not equal to i
+    while (j==i):
+        j = int(np.random.uniform(0,m))
+    return j
+
+def clipAlpha(aj,H,L):
+    if aj > H:
+        aj = H
+    if L > aj:
+        aj = L
+    return aj
+
+def kernelTrans(X, A, kTup): #calc the kernel or transform data to a higher dimensional space
+    m,n = np.shape(X)
+    K = np.mat(np.zeros((m,1)))
+    if kTup[0]=='lin': K = X * A.T   #linear kernel
+    elif kTup[0]=='rbf':
+        for j in range(m):
+            deltaRow = X[j,:] - A
+            K[j] = deltaRow*deltaRow.T
+        K = np.exp(K/(-1*kTup[1]**2)) #divide in NumPy is element-wise not matrix like Matlab
+    else: raise NameError('Houston We Have a Problem -- \
+    That Kernel is not recognized')
+    return K
+
+def calcEk(oS, k):
+    fXk = float(np.multiply(oS.alphas,oS.labelMat).T*oS.K[:,k]) + oS.b
+    Ek = fXk - float(oS.labelMat[k])
+    return Ek
+
+def selectJ(i, oS, Ei):         #this is the second choice -heurstic, and calcs Ej
+    maxK = -1; maxDeltaE = 0; Ej = 0
+    oS.eCache[i] = [1,Ei]  #set valid #choose the alpha that gives the maximum delta E
+    validEcacheList = np.nonzero(oS.eCache[:,0].A)[0];print("the length of validEcacheList",len(validEcacheList))
+    if (len(validEcacheList)) > 1:
+        for k in validEcacheList:   #loop through valid Ecache values and find the one that maximizes delta E
+            if k == i: continue #don't calc for i, waste of time
+            Ek = calcEk(oS, k)
+            deltaE = abs(Ei - Ek)
+            if (deltaE > maxDeltaE):
+                maxK = k; maxDeltaE = deltaE; Ej = Ek
+        return maxK, Ej
+    else:   #in this case (first time around) we don't have any valid eCache values
+        j = selectJrand(i, oS.m)
+        Ej = calcEk(oS, j)
+    return j, Ej
+
+def updateEk(oS, k):#after any alpha has changed update the new value in the cache
+    Ek = calcEk(oS, k)
+    oS.eCache[k] = [1,Ek]
+	
+
+def innerL(i, oS):
+    Ei = calcEk(oS, i)
+    if ((oS.labelMat[i]*Ei < -oS.tol) and (oS.alphas[i] < oS.C)) or ((oS.labelMat[i]*Ei > oS.tol) and (oS.alphas[i] > 0)):
+        j,Ej = selectJ(i, oS, Ei) #this has been changed from selectJrand
+        alphaIold = oS.alphas[i].copy(); alphaJold = oS.alphas[j].copy();
+        if (oS.labelMat[i] != oS.labelMat[j]):
+            L = max(0, oS.alphas[j] - oS.alphas[i])
+            H = min(oS.C, oS.C + oS.alphas[j] - oS.alphas[i])
+        else:
+            L = max(0, oS.alphas[j] + oS.alphas[i] - oS.C)
+            H = min(oS.C, oS.alphas[j] + oS.alphas[i])
+        if L==H: print ("L==H"); return 0
+        eta = 2.0 * oS.K[i,j] - oS.K[i,i] - oS.K[j,j] #changed for kernel
+        if eta >= 0: print ("eta>=0"); return 0
+        oS.alphas[j] -= oS.labelMat[j]*(Ei - Ej)/eta
+        oS.alphas[j] = clipAlpha(oS.alphas[j],H,L)
+        updateEk(oS, j) #added this for the Ecache
+        if (abs(oS.alphas[j] - alphaJold) < 0.00001): print ("j not moving enough"); return 0
+        oS.alphas[i] += oS.labelMat[j]*oS.labelMat[i]*(alphaJold - oS.alphas[j])#update i by the same amount as j
+        updateEk(oS, i) #added this for the Ecache                    #the update is in the oppostie direction
+        b1 = oS.b - Ei- oS.labelMat[i]*(oS.alphas[i]-alphaIold)*oS.K[i,i] - oS.labelMat[j]*(oS.alphas[j]-alphaJold)*oS.K[i,j]
+        b2 = oS.b - Ej- oS.labelMat[i]*(oS.alphas[i]-alphaIold)*oS.K[i,j]- oS.labelMat[j]*(oS.alphas[j]-alphaJold)*oS.K[j,j]
+        if (0 < oS.alphas[i]) and (oS.C > oS.alphas[i]): oS.b = b1
+        elif (0 < oS.alphas[j]) and (oS.C > oS.alphas[j]): oS.b = b2
+        else: oS.b = (b1 + b2)/2.0
+        return 1
+    else: return 0
+
+def smoP(dataMatIn, classLabels, C, toler, maxIter,kTup=('lin', 0)):    #full Platt SMO
+    oS = optStruct(np.mat(dataMatIn),np.mat(classLabels).transpose(),C,toler,kTup)
+    iter = 0
+    entireSet = True; alphaPairsChanged = 0
+    while (iter < maxIter) and ((alphaPairsChanged > 0) or (entireSet)):
+        alphaPairsChanged = 0
+        if entireSet:   #go over all
+            for i in range(oS.m):
+                alphaPairsChanged += innerL(i,oS)
+                print ("fullSet, iter: %d i:%d, pairs changed %d" % (iter,i,alphaPairsChanged))
+            iter += 1
+        else:#go over non-bound (railed) alphas
+            nonBoundIs = np.nonzero((oS.alphas.A > 0) * (oS.alphas.A < C))[0]
+            for i in nonBoundIs:
+                alphaPairsChanged += innerL(i,oS)
+                print ("non-bound, iter: %d i:%d, pairs changed %d" % (iter,i,alphaPairsChanged))
+            iter += 1
+        if entireSet: entireSet = False #toggle entire set loop
+        elif (alphaPairsChanged == 0): entireSet = True
+        print ("iteration number: %d" % iter)
+    return oS.b,oS.alphas
+
+def testRbf(k1=1.5):
+    dataArr,labelArr = loadDataSet('testSetRBF.txt')
+    b,alphas = smoP(dataArr, labelArr, 200, 0.0001, 10000, ('rbf', k1))
+    #C=200 important
+    datMat=np.mat(dataArr); labelMat = np.mat(labelArr).transpose()
+    svInd=np.nonzero(alphas.A>0)[0]
+    sVs=datMat[svInd];print (sVs) #get matrix of only support vectors
+    labelSV = labelMat[svInd];
+    print ("there are %d Support Vectors" % np.shape(sVs)[0])
+    m,n = np.shape(datMat)
+    errorCount = 0
+    for i in range(m):
+        kernelEval = kernelTrans(sVs,datMat[i,:],('rbf', k1))
+        predict=kernelEval.T * np.multiply(labelSV,alphas[svInd]) + b
+        if np.sign(predict)!=np.sign(labelArr[i]): errorCount += 1
+    print ("the training error rate is: %f" % (float(errorCount)/m))
+    dataArr,labelArr = loadDataSet('testSetRBF2.txt')
+    errorCount = 0
+    datMat=np.mat(dataArr); labelMat = np.mat(labelArr).transpose()
+    m,n = np.shape(datMat)
+    for i in range(m):
+        kernelEval = kernelTrans(sVs,datMat[i,:],('rbf', k1))
+        predict=kernelEval.T * np.multiply(labelSV,alphas[svInd]) + b
+        if np.sign(predict)!=np.sign(labelArr[i]): errorCount += 1
+    print ("the test error rate is: %f" % (float(errorCount)/m))
+\end{lstlisting}
+
+\noindent运行结果：
+\begin{lstlisting}
+there are 21 Support Vectors
+the training error rate is: 0.020000
+the test error rate is: 0.030000
+Time For Run CompleteSMOWithKernel:0.5218268112548685
+\end{lstlisting}
+
+\noindent引入核函数完整版的~SMO~算法：\\
+\textcircled{\footnotesize{1}} 在完整~SMO~算法的基础之上，引入了核函数（径向基函数）。         \\
+\textcircled{\footnotesize{2}} 向非线性情况进行了扩展，可以利用其进行项目实战。         \\
+
+
+
+
+\subsubsection{实战：利用SVM进行识别字体}
+\noindent数据形式：
+\begin{lstlisting}
+#two training example.
+00000000000000001111000000000000
+00000000000000011111111000000000
+00000000000000011111111100000000
+00000000000000011111111110000000
+00000000000000011111111110000000
+00000000000000111111111100000000
+00000000000000111111111100000000
+00000000000001111111111100000000
+00000000000000111111111100000000
+00000000000000111111111100000000
+00000000000000111111111000000000
+00000000000001111111111000000000
+00000000000011111111111000000000
+00000000000111111111110000000000
+00000000001111111111111000000000
+00000001111111111111111000000000
+00000011111111111111110000000000
+00000111111111111111110000000000
+00000111111111111111110000000000
+00000001111111111111110000000000
+00000001111111011111110000000000
+00000000111100011111110000000000
+00000000000000011111110000000000
+00000000000000011111100000000000
+00000000000000111111110000000000
+00000000000000011111110000000000
+00000000000000011111110000000000
+00000000000000011111111000000000
+00000000000000011111111000000000
+00000000000000011111111000000000
+00000000000000000111111110000000
+00000000000000000111111100000000
+
+
+00000000001111100000000000000000
+00000000011111100000000000000000
+00000000111111111000000000000000
+00000000111111111110000000000000
+00000001111111111110000000000000
+00000001111111111110000000000000
+00000001111110111111000000000000
+00000001111110011111110000000000
+00000000111110001111111000000000
+00000000111110001111111000000000
+00000000111110001111111110000000
+00000000111110001111111110000000
+00000000111111001111111000000000
+00000000111111111111111000000000
+00000000001111111111111100000000
+00000000000111111111111100000000
+00000000000011111111111100000000
+00000000000011111111111100000000
+00000000000000000011111000000000
+00000000000000000001111100000000
+00000000000000000001111110000000
+00000000000000000001111110000000
+00000000000000000001111100000000
+00000000000000000001111100000000
+00000000000000000001111100000000
+00000000000000000000111110000000
+00000000011111000011111110000000
+00000000011111111111111100000000
+00000000111111111111111000000000
+00000000111111111111111000000000
+00000000011111111111111000000000
+00000000000111111111100000000000
+
+\end{lstlisting}
+
+\noindent数据处理函数：
+\begin{lstlisting}
+def loadImages(dirName):
+    from os import listdir
+    hwLabels = []
+    trainingFileList = listdir(dirName)          #load the training set
+    m = len(trainingFileList);
+    trainingMat = np.zeros((m,1024))
+    for i in range(m):
+        fileNameStr = trainingFileList[i]       #1_xx.txt  or  9_xx.txt
+        fileStr = fileNameStr.split('.')[0]     #take off .txt     1_xx or 9_xx
+        classNumStr = int(fileStr.split('_')[0])   #1 or 9
+        if classNumStr == 9: hwLabels.append(-1)
+        else: hwLabels.append(1)
+        trainingMat[i,:] = img2vector('%s/%s' % (dirName, fileNameStr))
+    return trainingMat, hwLabels
+
+def img2vector(filename):  #32x32 per feature
+    returnVect = np.zeros((1,1024))   # numpy array
+    fr = open(filename)   #_io.TextIOWrapper
+    for i in range(32):
+        lineStr = fr.readline()
+        for j in range(32):
+            returnVect[0,32*i+j] = int(lineStr[j])
+    return returnVect
+
+def testDigits(kTup=('rbf', 10)):
+    dataArr,labelArr = loadImages('trainingDigits')
+    b,alphas = smoP(dataArr, labelArr, 200, 0.0001, 10000, kTup)
+    datMat=np.mat(dataArr); labelMat = np.mat(labelArr).transpose()
+    svInd=np.nonzero(alphas.A>0)[0]
+    sVs=datMat[svInd] #support vector
+    labelSV = labelMat[svInd];
+    print ("there are %d Support Vectors" % np.shape(sVs)[0])
+    m,n = np.shape(datMat)
+    errorCount = 0
+    for i in range(m):#support vector only
+        kernelEval = kernelTrans(sVs,datMat[i,:],kTup)
+        predict=kernelEval.T * np.multiply(labelSV,alphas[svInd]) + b
+        if np.sign(predict)!=np.sign(labelArr[i]): errorCount += 1
+    print ("the training error rate is: %f" % (float(errorCount)/m))
+    dataArr,labelArr = loadImages('testDigits')
+    errorCount = 0
+    datMat=np.mat(dataArr); labelMat = np.mat(labelArr).transpose()
+    m,n = np.shape(datMat)
+    for i in range(m):#support vector only
+        kernelEval = kernelTrans(sVs,datMat[i,:],kTup)
+        predict=kernelEval.T * np.multiply(labelSV,alphas[svInd]) + b
+        if np.sign(predict)!=np.sign(labelArr[i]): errorCount += 1
+    print ("the test error rate is: %f" % (float(errorCount)/m) )   
+\end{lstlisting}
+
+\noindent模型准确率及结果：
+\begin{lstlisting}
+there are 112 Support Vectors
+the training error rate is: 0.000000
+the test error rate is: 0.010753
+Time For Run CompleteSMOWithKernel:9.26518176738s
+\end{lstlisting}
+
+利用引入核函数的完整~SMO~算法进行一个手写数字识别的实战二分类，得到了不错的分类效果。
+
+
+\subsubsection{小结}
+支持向量机是一种分类器。之所以称为“机”是因为它会产生一个二值决策结果，即它是一种
+决策“机”。支持向量机的泛化错误率较低，也就是说它具有良好的学习能力，且学到的结果具有
+很好的推广性。这些优点使得支持向量机十分流行，有些人认为它是监督学习中最好的定式算法。
+
+支持向量机试图通过求解一个二次优化问题来最大化分类间隔。在过去，训练支持向量机常
+采用非常复杂并且低效的二次规划求解方法。John.C.Platt引入了~SMO~算法，此算法可以通过每次只
+优化2个$~\alpha~$值来加快SVM的训练速度。
+
+核方法或者说核技巧会将数据（有时是非线性数据）从一个低维空间映射到一个高维空间，
+可以将一个在低维空间中的非线性问题转换成高维空间下的线性问题来求解。核方法不止在~SVM~
+中适用，还可以用于其他算法中。而其中的径向基函数是一个常用的度量两个向量距离的核函数。
+
+支持向量机是一个二类分类器。当用其解决多类问题时，则需要额外的方法对其进行扩展。
+~SVM~的效果也对优化参数和所用核函数中的参数敏感。
+
+
+
+
+
+
+
+
+
+
 
 
 
