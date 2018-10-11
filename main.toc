@@ -30,6 +30,9 @@
 \contentsline {subsubsection}{\numberline {1.4.6}软间隔支持向量机}{42}{subsubsection.1.4.6}
 \contentsline {subsubsection}{\numberline {1.4.7}引入核函数}{43}{subsubsection.1.4.7}
 \contentsline {subsubsection}{\numberline {1.4.8}SMO\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 算法}{45}{subsubsection.1.4.8}
+\contentsline {subsubsection}{\numberline {1.4.9}实战：简化版的SMO算法}{49}{subsubsection.1.4.9}
+\contentsline {subsubsection}{\numberline {1.4.10}实战：完整版的SMO算法加速优化}{49}{subsubsection.1.4.10}
+\contentsline {subsubsection}{\numberline {1.4.11}利用SVM进行识别字体}{49}{subsubsection.1.4.11}
 \contentsline {section}{\numberline {2}回归}{50}{section.2}
 \contentsline {subsection}{\numberline {2.1}线性回归}{50}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}对高斯分布进行广义线性建模}{50}{subsubsection.2.1.1}

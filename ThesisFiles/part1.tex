@@ -1387,11 +1387,11 @@ $
     &~~~~~~~~~~~~~~~~~~~~~~~~~~~~s.t.~~~0\leq\alpha_1,\alpha_2 \leq C \nonumber \\
     &~~~~~~~~~~~~~~~~~~~~~~~~~\alpha_1y_1+\alpha_2y_2 = -\sum_{i=3}^{m}\alpha_iy_i =\xi \nonumber \\
     &~~~~~~~~~~~~~~~~\Rightarrow~~\alpha_1=(\xi-\alpha_2y_2)y_1   \tag{2}
-\end{align} 
+\end{align}
 \indent 将(2)代入(1)得到一元二次函数的优化问题：
 \begin{align}
     &~~~~~~~~~~~~~~~~\min \limits_{\alpha_2}\phi(\alpha2)=\frac{1}{2}K_{11}((\xi-\alpha_2y_2)y_1)^2+\frac{1}{2}K_{22}\alpha_2^2+y_1y_2(\xi-\alpha_2y_2)y_1\alpha_2 \nonumber \\
-    &~~~~~~~~~~~~~~~~~~~~~~~~-((\xi-\alpha_2y_2)y_1+\alpha_2)+y_1v_1(\xi-\alpha_2y_2)y_1+y_2v_2\alpha_2+Constant    
+    &~~~~~~~~~~~~~~~~~~~~~~~~-((\xi-\alpha_2y_2)y_1+\alpha_2)+y_1v_1(\xi-\alpha_2y_2)y_1+y_2v_2\alpha_2+Constant
 \end{align}
 \indent 利用微分求这个最小化问题的最优解：
  \begin{align}
@@ -1473,16 +1473,23 @@ L&,\alpha_2^{new,unclipped}>L
         &=\frac{1}{2}H_1^2K_{11}+\frac{1}{2}H_2^2K_{22}+sK_{12}HH_1+H_1f_1+H_2f_2+Constant \nonumber
 \end{align}
 
-\textcolor{red}{计算阈值~b~和差值$~E_i~$} \\
+\textcolor{red}{计算阈值~b~和差值$~E_i~$}
 \begin{align}
-   &\textcircled{\footnotesize{1}}     \nonumber \\
-   &\textcircled{\footnotesize{2}}      \nonumber \\
-   &\textcircled{\footnotesize{3}}      \nonumber \\
-   &\textcircled{\footnotesize{4}}      \nonumber 
+   &\textcircled{\footnotesize{1}}  ~ \text{若}~~~0<\alpha_1^{new}<C~,~\alpha_2^{new}=0~or~C \Rightarrow \sum_{i=1}^{N}\alpha_iy_iK_{i1}+b=y_1   \nonumber \\
+   &~~~~~~~~~~\Rightarrow b_1^{new}=y_1-\sum_{i=3}^{m}\alpha_iy_iK_{i1}-\alpha_1^{new}y_1K_{11}-\alpha_2^{new}y_2K_{21}   \nonumber \\
+   &~~~~~~~~~~~\text{因} ~ E_1=f(x_1)-y_1=\sum_{i=3}^{m}\alpha_iy_1K_{i1}+\alpha_1^{old}y_1K_{11}+\alpha_2^{old}y_2K_{21}+b^{old}-y_1\nonumber\\
+   &~~~~~~~~~~\Rightarrow b^{new}=b_1^{new}=-E_1-y_1K_{11}(\alpha_1^{new}-\alpha_1^{old})-y_2K_{21}(\alpha_2^{new}-\alpha_2^{old})+b^{old}   \nonumber \\
+   &\textcircled{\footnotesize{2}}      ~ \text{同理}~~~0<\alpha_2^{new}<C~,~\alpha_1^{new}=0~or~C \nonumber \\
+   &~~~~~~~~~~\Rightarrow b^{new}=b_2^{new}=-E_2-y_1K_{12}(\alpha_1^{new}-\alpha_1^{old})-y_2K_{22}(\alpha_2^{new}-\alpha_2^{old})+b^{old}   \nonumber \\
+   &\textcircled{\footnotesize{3}}   ~ \text{若}~~~0<\alpha_1^{new}<C~,~0<\alpha_2^{new}<C \Rightarrow  b^{new}=b_1^{new}=b_2^{new}   \nonumber \\
+   &\textcircled{\footnotesize{4}}  ~ \text{若}~~~\alpha_1^{new}=0~or~C ,~\alpha_2^{new}=0~or~C \Rightarrow b^{new}=\frac{1}{2}(b_1^{new}+b_2^{new})     \nonumber
 \end{align}
 
+\subsubsection{实战：简化版的SMO算法}
 
+\subsubsection{实战：完整版的SMO算法加速优化}
 
+\subsubsection{利用SVM进行识别字体}
 
 
 
