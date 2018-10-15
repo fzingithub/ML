@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.7.19)  13 OCT 2018 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  15 OCT 2018 09:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2018-04-01> patch level 2
-Babel <3.18> and hyphenation patterns for 6 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/ctex/ctexart.cls
 (c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2018/03/05 L3 programming layer (loader) 
@@ -1187,10 +1187,10 @@ l.158         weights
                       = weights + alpha * dataMatrix.transpose()* error #mat...
 ]
 Package epstopdf Info: Source file: <Figure/1141.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 15:13:51
 (epstopdf)                    size: 15838 bytes
 (epstopdf)             Output file: <Figure/1141-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 15:26:02
 (epstopdf)                    size: 14477 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1141-eps-converted-
 to.pdf Figure/1141.eps>
@@ -1209,10 +1209,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.1.3}
 l.200 \begin{equation}
                       \nonumber [8]
 Package epstopdf Info: Source file: <Figure/1142.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 16:53:23
 (epstopdf)                    size: 16238 bytes
 (epstopdf)             Output file: <Figure/1142-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 16:56:20
 (epstopdf)                    size: 14537 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1142-eps-converted-
 to.pdf Figure/1142.eps>
@@ -1227,10 +1227,10 @@ Package pdftex.def Info: Figure/1142-eps-converted-to.pdf  used on input line 2
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
 quanjiao) on input line 226.
 Package epstopdf Info: Source file: <Figure/1143.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 873981 bytes
+(epstopdf)                    date: 2018-07-10 18:54:56
+(epstopdf)                    size: 873965 bytes
 (epstopdf)             Output file: <Figure/1143-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 19:00:17
 (epstopdf)                    size: 211948 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1143-eps-converted-
 to.pdf Figure/1143.eps>
@@ -1250,10 +1250,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--241
 [9 <./Figure/1141-eps-converted-to.pdf>] [10 <./Figure/1142-eps-converted-to.pd
 f> <./Figure/1143-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/1144.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 16:54:25
 (epstopdf)                    size: 15844 bytes
 (epstopdf)             Output file: <Figure/1144-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 19:03:23
 (epstopdf)                    size: 14450 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1144-eps-converted-
 to.pdf Figure/1144.eps>
@@ -1266,10 +1266,10 @@ Package pdftex.def Info: Figure/1144-eps-converted-to.pdf  used on input line 2
 66.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/1145.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 827545 bytes
+(epstopdf)                    date: 2018-07-10 18:56:39
+(epstopdf)                    size: 827529 bytes
 (epstopdf)             Output file: <Figure/1145-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-10 19:03:25
 (epstopdf)                    size: 205996 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1145-eps-converted-
 to.pdf Figure/1145.eps>
@@ -1310,10 +1310,10 @@ l.416 \begin{equation}
 l.425 \begin{equation}
                       \nonumber [16]
 Package epstopdf Info: Source file: <Figure/Gaussion1.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 20119331 bytes
+(epstopdf)                    date: 2018-07-15 16:04:51
+(epstopdf)                    size: 20119315 bytes
 (epstopdf)             Output file: <Figure/Gaussion1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-15 17:40:04
 (epstopdf)                    size: 293149 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Gaussion1-eps-conve
 rted-to.pdf Figure/Gaussion1.eps>
@@ -1326,10 +1326,10 @@ Package pdftex.def Info: Figure/Gaussion1-eps-converted-to.pdf  used on input l
 ine 443.
 (pdftex.def)             Requested size: 417.1175pt x 111.30133pt.
 Package epstopdf Info: Source file: <Figure/Gaussion2.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 20228238 bytes
+(epstopdf)                    date: 2018-07-15 16:07:42
+(epstopdf)                    size: 20228222 bytes
 (epstopdf)             Output file: <Figure/Gaussion2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-15 17:53:10
 (epstopdf)                    size: 273268 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Gaussion2-eps-conve
 rted-to.pdf Figure/Gaussion2.eps>
@@ -1344,10 +1344,10 @@ ine 460.
  [17 <./Figure/Gaussion1-eps-converted-to.pdf> <./Figure/Gaussion2-eps-converte
 d-to.pdf>]
 Package epstopdf Info: Source file: <Figure/GaussionO1.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 20135184 bytes
+(epstopdf)                    date: 2018-07-15 16:09:36
+(epstopdf)                    size: 20135168 bytes
 (epstopdf)             Output file: <Figure/GaussionO1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-15 18:20:03
 (epstopdf)                    size: 32966 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/GaussionO1-eps-conv
 erted-to.pdf Figure/GaussionO1.eps>
@@ -1360,10 +1360,10 @@ Package pdftex.def Info: Figure/GaussionO1-eps-converted-to.pdf  used on input
 line 478.
 (pdftex.def)             Requested size: 417.1175pt x 117.38577pt.
 Package epstopdf Info: Source file: <Figure/GaussionO2.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 20137307 bytes
+(epstopdf)                    date: 2018-07-15 16:11:16
+(epstopdf)                    size: 20137291 bytes
 (epstopdf)             Output file: <Figure/GaussionO2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-15 18:20:07
 (epstopdf)                    size: 32545 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/GaussionO2-eps-conv
 erted-to.pdf Figure/GaussionO2.eps>
@@ -1376,10 +1376,10 @@ Package pdftex.def Info: Figure/GaussionO2-eps-converted-to.pdf  used on input
 line 484.
 (pdftex.def)             Requested size: 417.1175pt x 112.14531pt.
 Package epstopdf Info: Source file: <Figure/Gaussion3.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 20150573 bytes
+(epstopdf)                    date: 2018-07-15 16:13:06
+(epstopdf)                    size: 20150557 bytes
 (epstopdf)             Output file: <Figure/Gaussion3-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-15 18:24:22
 (epstopdf)                    size: 286976 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Gaussion3-eps-conve
 rted-to.pdf Figure/Gaussion3.eps>
@@ -1419,10 +1419,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--558
  []
 
 Package epstopdf Info: Source file: <Figure/GaussionOO.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 2559829 bytes
+(epstopdf)                    date: 2018-07-15 16:14:55
+(epstopdf)                    size: 2559813 bytes
 (epstopdf)             Output file: <Figure/GaussionOO-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-16 11:10:12
 (epstopdf)                    size: 34315 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/GaussionOO-eps-conv
 erted-to.pdf Figure/GaussionOO.eps>
@@ -1665,11 +1665,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 924.
  [31] [32] [33] [34] [35]
 Package epstopdf Info: Source file: <Figure/logistics_function.eps>
-(epstopdf)                    date: 2018-09-28 10:34:54
-(epstopdf)                    size: 310877 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 310893 bytes
 (epstopdf)             Output file: <Figure/logistics_function-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2018-09-28 10:35:03
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 44859 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/logistics_function-
 eps-converted-to.pdf Figure/logistics_function.eps>
@@ -1682,10 +1682,10 @@ Package pdftex.def Info: Figure/logistics_function-eps-converted-to.pdf  used o
 n input line 1084.
 (pdftex.def)             Requested size: 229.4159pt x 152.94528pt.
 Package epstopdf Info: Source file: <Figure/1412.eps>
-(epstopdf)                    date: 2018-09-28 11:17:11
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 15050 bytes
 (epstopdf)             Output file: <Figure/1412-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-09-28 11:21:16
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 15003 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/1412-eps-converted-
 to.pdf Figure/1412.eps>
@@ -1701,11 +1701,11 @@ Package pdftex.def Info: Figure/1412-eps-converted-to.pdf  used on input line 1
 erted-to.pdf>]
 [37]
 Package epstopdf Info: Source file: <Figure/geometric_margin.eps>
-(epstopdf)                    date: 2018-10-08 14:44:09
-(epstopdf)                    size: 802412 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 802428 bytes
 (epstopdf)             Output file: <Figure/geometric_margin-eps-converted-to.p
 df>
-(epstopdf)                    date: 2018-10-08 14:44:24
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 27490 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/geometric_margin-ep
 s-converted-to.pdf Figure/geometric_margin.eps>
@@ -1720,16 +1720,22 @@ input line 1127.
 (pdftex.def)             Requested size: 187.70158pt x 176.9553pt.
  [38 <./Figure/geometric_margin-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/support_vector.eps>
-(epstopdf)                    date: 2018-10-10 15:33:42
-(epstopdf)                    size: 5261385 bytes
+(epstopdf)                    date: 2018-10-15 09:48:47
+(epstopdf)                    size: 5261401 bytes
 (epstopdf)             Output file: <Figure/support_vector-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2018-10-10 15:33:51
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 47615 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/support_vector-eps-
 converted-to.pdf Figure/support_vector.eps>
 (epstopdf)             \includegraphics on input line 1163.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=Figure/support_vector-eps-converted-to.pdf Figure
+/support_vector.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <Figure/support_vector-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2018-10-15 09:51:26
+(epstopdf)                    size: 47615 bytes.
 <Figure/support_vector-eps-converted-to.pdf, id=1169, 433.62pt x 234.8775pt>
 File: Figure/support_vector-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/support_vector-eps-converted-to.pdf>
@@ -1757,10 +1763,10 @@ LaTeX Warning: Command \textcircled invalid in math mode on input line 1249.
 
 [41]
 Package epstopdf Info: Source file: <Figure/soft.eps>
-(epstopdf)                    date: 2018-10-09 14:51:36
-(epstopdf)                    size: 268523 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 268539 bytes
 (epstopdf)             Output file: <Figure/soft-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-09 14:52:27
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 5648 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/soft-eps-converted-
 to.pdf Figure/soft.eps>
@@ -1774,10 +1780,10 @@ Package pdftex.def Info: Figure/soft-eps-converted-to.pdf  used on input line 1
 (pdftex.def)             Requested size: 325.35112pt x 117.89952pt.
  [42 <./Figure/soft-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/kernel.eps>
-(epstopdf)                    date: 2018-10-09 15:46:37
-(epstopdf)                    size: 453207 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 453223 bytes
 (epstopdf)             Output file: <Figure/kernel-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-09 16:01:57
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 88340 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/kernel-eps-converte
 d-to.pdf Figure/kernel.eps>
@@ -1810,11 +1816,11 @@ LaTeX Warning: Command \textcircled invalid in math mode on input line 1319.
 
 [44]
 Package epstopdf Info: Source file: <Figure/Gradient_descent.eps>
-(epstopdf)                    date: 2018-10-10 09:06:10
-(epstopdf)                    size: 5424843 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 5424859 bytes
 (epstopdf)             Output file: <Figure/Gradient_descent-eps-converted-to.p
 df>
-(epstopdf)                    date: 2018-10-10 09:36:15
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 38786 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Gradient_descent-ep
 s-converted-to.pdf Figure/Gradient_descent.eps>
@@ -1828,11 +1834,11 @@ Package pdftex.def Info: Figure/Gradient_descent-eps-converted-to.pdf  used on
 input line 1351.
 (pdftex.def)             Requested size: 160.43948pt x 126.58563pt.
 Package epstopdf Info: Source file: <Figure/Coordinate_ascent.eps>
-(epstopdf)                    date: 2018-10-10 09:03:04
-(epstopdf)                    size: 2645645 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 2645661 bytes
 (epstopdf)             Output file: <Figure/Coordinate_ascent-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2018-10-10 09:36:17
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 28504 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Coordinate_ascent-e
 ps-converted-to.pdf Figure/Coordinate_ascent.eps>
@@ -1858,10 +1864,10 @@ fier (name{equation.1.3}) has been already used, duplicate ignored
 l.1395 \end{align}
                    [46]
 Package epstopdf Info: Source file: <Figure/clipped.eps>
-(epstopdf)                    date: 2018-10-10 15:35:47
-(epstopdf)                    size: 3431629 bytes
+(epstopdf)                    date: 2018-10-15 09:48:46
+(epstopdf)                    size: 3431645 bytes
 (epstopdf)             Output file: <Figure/clipped-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-10 15:37:15
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 67086 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/clipped-eps-convert
 ed-to.pdf Figure/clipped.eps>
@@ -1931,10 +1937,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1512--1520
 
 [50] [51] [52]
 Package epstopdf Info: Source file: <Figure/SMOSimple.eps>
-(epstopdf)                    date: 2018-10-11 17:39:25
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 21521 bytes
 (epstopdf)             Output file: <Figure/SMOSimple-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-11 17:45:27
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 18479 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/SMOSimple-eps-conve
 rted-to.pdf Figure/SMOSimple.eps>
@@ -1953,10 +1959,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1616--1621
 
 [53 <./Figure/SMOSimple-eps-converted-to.pdf>] [54] [55] [56]
 Package epstopdf Info: Source file: <Figure/SMOComplete.eps>
-(epstopdf)                    date: 2018-10-11 18:06:19
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 22186 bytes
 (epstopdf)             Output file: <Figure/SMOComplete-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-10-11 18:07:01
+(epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 18510 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/SMOComplete-eps-con
 verted-to.pdf Figure/SMOComplete.eps>
@@ -2063,10 +2069,10 @@ entifier (name{equation.2.6}) has been already used, duplicate ignored
 l.2248 \begin{equation}
                        \nonumber [70]
 Package epstopdf Info: Source file: <Figure/2141.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 11:53:12
 (epstopdf)                    size: 17325 bytes
 (epstopdf)             Output file: <Figure/2141-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 12:00:11
 (epstopdf)                    size: 35134 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/2141-eps-converted-
 to.pdf Figure/2141.eps>
@@ -2095,10 +2101,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2344--2353
 
 [72 <./Figure/2141-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/tau.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
-(epstopdf)                    size: 750505 bytes
+(epstopdf)                    date: 2018-07-12 18:17:37
+(epstopdf)                    size: 750489 bytes
 (epstopdf)             Output file: <Figure/tau-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 18:20:21
 (epstopdf)                    size: 183888 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/tau-eps-converted-t
 o.pdf Figure/tau.eps>
@@ -2115,10 +2121,10 @@ Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 23
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <Figure/lwlr1.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 17:23:53
 (epstopdf)                    size: 17506 bytes
 (epstopdf)             Output file: <Figure/lwlr1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 17:29:51
 (epstopdf)                    size: 32386 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr1-eps-converted
 -to.pdf Figure/lwlr1.eps>
@@ -2131,10 +2137,10 @@ Package pdftex.def Info: Figure/lwlr1-eps-converted-to.pdf  used on input line
 2393.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 17:26:20
 (epstopdf)                    size: 19453 bytes
 (epstopdf)             Output file: <Figure/lwlr0_01-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 17:32:53
 (epstopdf)                    size: 32637 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_01-eps-conver
 ted-to.pdf Figure/lwlr0_01.eps>
@@ -2147,10 +2153,10 @@ Package pdftex.def Info: Figure/lwlr0_01-eps-converted-to.pdf  used on input li
 ne 2398.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 17:26:47
 (epstopdf)                    size: 20794 bytes
 (epstopdf)             Output file: <Figure/lwlr0_003-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-19 16:25:10
+(epstopdf)                    date: 2018-07-12 17:32:55
 (epstopdf)                    size: 33079 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_003-eps-conve
 rted-to.pdf Figure/lwlr0_003.eps>
@@ -2185,52 +2191,59 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 56DF6DC87FD426DFB5FC5ED6650975E7;6647.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: A2713E8073AAA68CAEA78DAE4B3ED13F;6692
+(rerunfilecheck)             After:  56DF6DC87FD426DFB5FC5ED6650975E7;6647.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 28401 strings out of 494534
- 486258 string characters out of 6176265
- 541342 words of memory out of 5000000
- 30183 multiletter control sequences out of 15000+600000
+ 28401 strings out of 492649
+ 486258 string characters out of 6133384
+ 546080 words of memory out of 5000000
+ 30423 multiletter control sequences out of 15000+600000
  618830 words of font info for 342 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  42i,27n,56p,10410b,2796s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
-imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows
-/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
-/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
-.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Font
-s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wind
-ows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf>
-<c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
-hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
-onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
-indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
-tf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/
-simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
-s/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c
-:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhe
-i.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
-ts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Win
-dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc
-><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/si
-msun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/
-Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
-Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
-ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts
-/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windo
-ws/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><
-c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simh
-ei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fo
-nts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wi
-ndows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.tt
-f><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
-imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
-/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:
-/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
-.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Font
+<c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/s
+imsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS
+/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:
+/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun
+.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Font
+s/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WIND
+OWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf>
+<c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/sim
+hei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/F
+onts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/W
+INDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.t
+tf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/
+simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOW
+S/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c
+:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhe
+i.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fon
+ts/simhei.ttf><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WIN
+DOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc
+><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/si
+msun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/
+Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/
+WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.
+ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts
+/simsun.ttc><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDO
+WS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><
+c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simh
+ei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fo
+nts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WI
+NDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.tt
+f><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/s
+imhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS
+/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Fonts/simhei.ttf><c:
+/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simsun
+.ttc><c:/WINDOWS/Fonts/simsun.ttc><c:/WINDOWS/Fonts/simhei.ttf><c:/WINDOWS/Font
 s/simhei.ttf><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10
 .pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2
@@ -2308,7 +2321,7 @@ t/fonts/type1/arphic/gbsnu/gbsnu99.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
 arphic/gbsnu/gbsnu9a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
 bsnu9c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9f.pfb><c:
 /texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on main.pdf (77 pages, 3282064 bytes).
+Output written on main.pdf (77 pages, 3282062 bytes).
 PDF statistics:
  2962 PDF objects out of 2984 (max. 8388607)
  2358 compressed objects within 24 object streams
