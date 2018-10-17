@@ -61,8 +61,7 @@ L(w,b)=-\sum_{i=1}^{F}y_i(w\cdot x_i+b)  \nonumber
 
 
 \subsubsection{实战：实现两种形式的感知机算法}
-\textbf{原始问题的实现}
-
+\textbf{原始问题的实现}\\
 \noindent程序核心函数代码：
 \begin{lstlisting}
 def trainPerceptron(dataMat, labelMat, eta):
@@ -97,8 +96,11 @@ if __name__ == "__main__":
   \caption{原始优化运行结果图}
 \end{figure}
 
-\textbf{对偶问题的实现}
 
+
+
+
+\textbf{对偶问题的实现}\\
 \noindent程序核心函数代码：
 \begin{lstlisting}
 def trainModel(dataMatIn,labelMatIn,eta):
@@ -120,11 +122,11 @@ def trainModel(dataMatIn,labelMatIn,eta):
                 flag = False
     w = (np.multiply(labelMat,alpha).T*dataMat).T
     return w,b
-    
+
 if __name__ == "__main__":
     dataMatIn, labelMatIn = loadDataSet('testSet.txt')
     weight,bias = trainModel(dataMatIn,labelMatIn,1)
-    drawing(dataMatIn, labelMatIn, weight, bias)    
+    drawing(dataMatIn, labelMatIn, weight, bias)
 \end{lstlisting}
 
 
