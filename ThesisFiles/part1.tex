@@ -5,139 +5,7 @@
 
 \section{分类}
 监督学习的分类算法有很多，最简单的k-邻近算法，还有决策树，朴素贝叶斯，逻辑回归，支持向量机，Adaboost算法等。这些算法都有其特性，或多或少的公式推理，我都要去熟悉，学习，加实战。
-\subsection{感知机}
-感知机（perceptron）是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别， 取~＋l~和~－1~二值;感知机 ~1957 ~年Rosenbla提出， 是神经网络与支持向量机的基础．在之前已经看完支持向量机，所以看感知机比较简单，做一下简单的笔记。
-\subsubsection{感知机模型，策略，学习算法}
-\textbf{感知机模型}的\textbf{输入到输出空间的函数：}
-\begin{align}
-f(x) = sign (w\cdot x+b)  \nonumber
-\end{align}
-感知机模型通过上述分隔超平面将特征空间分成两类，实现对数据的分类，属于判别学习算法。
 
-假设训练数据集是线性可分的，\textbf{感知机学习的目标}是求得一个能够将训练集实例点和负实例点完全正确分开的分离超平面为了找出这样的超平面， 即确定感知机模型参数~w,b~ ， 需要确定一个\textbf{学习策略}，即定义（经验）损失函数并将损失函数极小化。损失函数定义为
-\begin{align}
-L(w,b)=-\sum_{i=1}^{F}y_i(w\cdot x_i+b)  \nonumber
-\end{align}
-
-事实上损失函数是训练集所有分错的训练样本的函数间隔和的相反数，至于什么是函数间隔会在支持向量机中介绍。显然， 损失函数是非负的，如果没有误分类点， 损失函数值是~0~。而且， 误分类点越少， 误分类点离超平面越远， 损失函数值就越小。一个特定的样本点的损失函数在误分类时是参数~w,b~ 的线性函数， 在正确分类时是~0~.因此， 给定训练数据集T， 损失函数L的是w,b 的连续可导函数。
-
-\textbf{感知机学习算法}~~感知机学习问题转化为求解损失函数式的最优化问题，最优化的方法是随机梯度降法，学习算法包括原始形式和对偶形式。最后给出了在训练数据钱性可分条件下感知机学习算法的收敛性定理。
-
-\textcolor{red}{感知机的学习算法是由错误分点驱动的}。具体的算法采用随机梯度下降算法。关于随机梯度算法不做关注。假设误分类点集合~M~是固定的， 那么损失函数的梯度是
-\begin{align}
-&\nabla_wL(w,b)=-\sum_{x_i \in M}y_ix_i  \nonumber\\
-&\nabla_bL(w,b)=-\sum_{x_i \in M}y_i     \nonumber
-\end{align}
-随机选取一个误分类点$~(x_i,y_i)~$对$~w,b~$进行更新
-\begin{align}
-&w\leftarrow    w+\eta y_ix_i  \nonumber\\
-&b\leftarrow    b+\eta y_i     \nonumber
-\end{align}
-式中$~\eta~$是步长， 在统计学习中又称为学习率（learning rate）。
-
-\textbf{对偶形式}~~
-逐步修改$~w,b~$，设修改~n~次则$~w,b~$关于$~(x_i,y_i)~$的增量分别是$~\alpha_iy_ix_i~$和$~\alpha_iy_i~$，这里$~\alpha_i=n\eta_i~$这样，从学习过程不难看出，最后学习到的$~w,b~$可以分别表示为
-\begin{align}
-&w = \sum_{i=1}^{m}\alpha_iy_ix_i  \nonumber\\
-&b = \sum_{i=1}^{m}\alpha_iy_i     \nonumber
-\end{align}
-这里，$~\alpha_i\geq 0,i=1,2,3,...,m~$,当$~\eta=1~$时，表示第~i~个实例点由于误分而进行更新的次数．实例点更新次数越多，意味着它距离分离超平面越近，也就越难正确分类，换句话说，这样的实例对学习结果影响最大。
-
-
-\subsubsection{算法的收敛性定理}
-\textbf{定理}~~设训练集数据集$~T=\{(x_1,y_1),(x_2,y_2),...,(x_m,y_m)\}~$实现线性可分的，其中$~y_i \in \chi=R^n ,y_i \in \{-1,+1\},i=1,2,...,m ~$，则\\
-\indent \textcircled{\footnotesize{1}} 存在满足条件$~||\hat{w}_{opt}||=1~$的超平面$~\hat{w}_{opt}\cdot \hat{x_i} = w_{opt}x_i+b=0~$将训练数据集完全正确分开;且存在$~\gamma>0~$，对所有$~i=1,2,3,..,m~$
-\begin{align}
-  y_i(\hat{w}_{opt}\cdot \hat{x_i}) = y_i(w_{opt}x_i+b)\geq \gamma \nonumber
-\end{align}
-\indent \textcircled{\footnotesize{2}} 令$~R=\max \limits_{1\leq i\leq m}||x_i||~$,则原始问题感知机算法在训练集上的误差分类次数k满足不等式
-\begin{align}
-  k\leq \Big(\frac{R}{\gamma}\Big)^2 \nonumber
-\end{align}
-
-定理表明，误分类的次数k是有上界的，经过有限次搜索可以找到将训练数据完全正确分开的分离超平面,也就是说，当训练数据集线性可分时，感知机学习算法原始形式法代是收敛的。\textcolor{red}{但是感知机学习算法存在许多解}，这些解既依赖于初值的选择和误分类点的选择顺序。为了得到唯一的超平面，需要对分离超平面增加约束条件，这就是线性支持向量机的想法。当训练集线性不可分时，感知机学习算法不收敛，迭代结果会发生震荡。
-
-
-
-
-\subsubsection{实战：实现两种形式的感知机算法}
-\textbf{原始问题的实现}\\
-\noindent程序核心函数代码：
-\begin{lstlisting}
-def trainPerceptron(dataMat, labelMat, eta):
-    m, n = np.shape(np.mat(dataMat))
-    weight = np.zeros(n)
-    bias = 0
-    flag = True
-    while flag:
-        for i in range(m):
-            if np.any(labelMat[i] * (np.dot(weight, dataMat[i]) + bias) <= 0):
-                weight = weight + eta * np.dot(labelMat[i],dataMat[i])
-                bias = bias + eta * labelMat[i]
-                print("weight, bias: ", end="")
-                print(weight, end="  ")
-                print(bias)
-                flag = True
-                break
-            else:
-                flag = False
-    return weight, bias
-
-if __name__ == "__main__":
-    dataMat, labelMat = loadDataSet('testSet.txt')
-    weight, bias = trainPerceptron(dataMat, labelMat, 1)
-    drawing(dataMat, labelMat, weight, bias)
-\end{lstlisting}
-
-\noindent运行结果可视化图：
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.65\textwidth]{PerceptronOrigin.eps}
-  \caption{原始优化运行结果图}
-\end{figure}
-
-
-
-
-
-\textbf{对偶问题的实现}\\
-\noindent程序核心函数代码：
-\begin{lstlisting}
-def trainModel(dataMatIn,labelMatIn,eta):
-    dataMat = np.mat(dataMatIn); labelMat = np.mat(labelMatIn).transpose()
-    b = 0; m,n = np.shape(dataMat)
-    alpha = np.mat(np.zeros((m,1)))
-    flag = True
-    while flag:
-        for i in range(m):
-            if  labelMatIn[i]*(float(np.multiply(alpha,labelMat).\
-            T*(dataMat*dataMat[i,:].T)) + b)<= 0:
-                alpha[i] = alpha[i] + eta
-                b = b + eta * labelMat[i]
-                w = np.multiply(labelMat,alpha).T*dataMat
-                print (i,alpha[i],w,b)
-                flag = True
-                break
-            else:
-                flag = False
-    w = (np.multiply(labelMat,alpha).T*dataMat).T
-    return w,b
-
-if __name__ == "__main__":
-    dataMatIn, labelMatIn = loadDataSet('testSet.txt')
-    weight,bias = trainModel(dataMatIn,labelMatIn,1)
-    drawing(dataMatIn, labelMatIn, weight, bias)
-\end{lstlisting}
-
-
-\noindent运行结果可视化图：
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=0.65\textwidth]{PerceptronDuality.eps}
-  \caption{对偶优化运行结果图}
-\end{figure}
-
-因为原始问题与对偶问题具有相同的初值以及相同训练集样本选择顺序，因此具有相同的结果。经过对感知机原始问题与对偶问题的实现我们可以有对支持向量机更好的理解。
 
 
 \subsection{逻辑回归}
@@ -1211,6 +1079,133 @@ def spamTest():#process function
 
 
 \newpage
+
+
+\subsection{感知机}
+感知机(perceptron)是二分类的线性分类模型，其输入为实例的特征向量,输出为实例的类别,取＋l和－1二值;感知机1957年Rosenbla提出,是神经网络与支持向量机的基础。
+\subsubsection{感知机模型，策略，学习算法}
+\textbf{感知机模型}的\textbf{输入到输出空间的函数：}$~f(x) = SIGN(w\cdot x+b)~$\\
+感知机模型通过上述分隔超平面将特征空间分成两类，实现对数据的分类，属于判别学习算法。
+
+假设训练数据集是线性可分的，\textbf{感知机学习的目标}是求得一个能够将训练集实例点和负实例点完全正确分开的分离超平面,为了找出这样的超平面， 即确定感知机模型参数~w,b~ ， 需要确定一个\textbf{学习策略}，即定义（经验）损失函数并将损失函数极小化。损失函数定义为
+\begin{align}
+L(w,b)=-\sum_{i=1}^{F}y_i(w\cdot x_i+b)  \nonumber
+\end{align}
+
+事实上损失函数是训练集所有分错的训练样本的函数间隔和的相反数，至于什么是函数间隔会在支持向量机中介绍。显然， 损失函数是非负的，如果没有误分类点， 损失函数值是~0~。而且， 误分类点越少， 误分类点离超平面越远， 损失函数值就越小。一个特定的样本点的损失函数在误分类时是参数~w,b~ 的线性函数， 在正确分类时是~0~.因此， 给定训练数据集~T~， 损失函数L的是~w,b~的连续可导函数。
+
+\textbf{感知机学习算法}~~感知机学习问题转化为求解损失函数式的最优化问题，最优化的方法是随机梯度降法，学习算法包括原始形式和对偶形式。最后给出了在训练数据钱性可分条件下感知机学习算法的收敛性定理。
+
+\textcolor{red}{感知机的学习算法是由错误分点驱动的}。具体的算法采用随机梯度下降算法。关于随机梯度算法不做关注。假设误分类点集合~M~是固定的， 那么损失函数的梯度是
+\begin{align}
+&\nabla_wL(w,b)=-\sum_{x_i \in M}y_ix_i  \nonumber\\
+&\nabla_bL(w,b)=-\sum_{x_i \in M}y_i     \nonumber
+\end{align}
+随机选取一个误分类点$~(x_i,y_i)~$对$~w,b~$进行更新
+\begin{align}
+&w\leftarrow    w+\eta y_ix_i  \nonumber\\
+&b\leftarrow    b+\eta y_i     \nonumber
+\end{align}
+式中$~\eta~$是步长， 在统计学习中又称为学习率(learning rate)。
+
+\textbf{对偶形式}~~
+逐步修改$~w,b~$,设修改~n~次,则$~w,b~$关于$~(x_i,y_i)~$的增量分别是$~\alpha_iy_ix_i~$和$~\alpha_iy_i~$，这里$~\alpha_i=n\eta_i~$这样，从学习过程不难看出，最后学习到的$~w,b~$可以分别表示为
+\begin{align}
+&w = \sum_{i=1}^{m}\alpha_iy_ix_i  \nonumber\\
+&b = \sum_{i=1}^{m}\alpha_iy_i     \nonumber
+\end{align}
+这里，$~\alpha_i\geq 0,i=1,2,3,...,m~$,当$~\eta=1~$时，表示第~i~个实例点由于误分而进行更新的次数．实例点更新次数越多，意味着它距离分离超平面越近，也就越难正确分类，换句话说，这样的实例对学习结果影响最大。
+
+
+\subsubsection{算法的收敛性定理}
+\textbf{定理}~~设训练集数据集$~T=\{(x_1,y_1),(x_2,y_2),...,(x_m,y_m)\}~$实现线性可分的，其中$~y_i \in \chi=R^n ,y_i \in \{-1,+1\},i=1,2,...,m ~$，则\\
+\indent \textcircled{\footnotesize{1}} 存在满足条件$~||\hat{w}_{opt}||=1~$的超平面$~\hat{w}_{opt}\cdot \hat{x_i} = w_{opt}x_i+b=0~$将训练数据集完全正确分开;且存在$~\gamma>0~$，对所有$~i=1,2,3,..,m~$
+\begin{align}
+  y_i(\hat{w}_{opt}\cdot \hat{x_i}) = y_i(w_{opt}x_i+b)\geq \gamma \nonumber
+\end{align}
+\indent \textcircled{\footnotesize{2}} 令$~R=\max \limits_{1\leq i\leq m}||x_i||~$,则原始问题感知机算法在训练集上的误差分类次数k满足不等式
+\begin{align}
+  k\leq \Big(\frac{R}{\gamma}\Big)^2 \nonumber
+\end{align}
+
+定理表明，误分类的次数~k~是有上界的，经过有限次搜索可以找到将训练数据完全正确分开的分离超平面，也就是说，当训练数据集线性可分时，感知机学习算法原始形式法代是收敛的。\textcolor{red}{但是感知机学习算法存在许多解}，这些解既依赖于初值的选择和误分类点的选择顺序。为了得到唯一的超平面，需要对分离超平面增加约束条件，这就是线性支持向量机的想法。当训练集线性不可分时，感知机学习算法不收敛，迭代结果会发生震荡。
+
+
+
+
+\subsubsection{实战：实现两种形式的感知机算法}
+\textbf{原始问题的实现}\\
+~\\
+\noindent程序核心函数代码：
+\begin{lstlisting}
+def trainPerceptron(dataMat, labelMat, eta):
+    m, n = np.shape(np.mat(dataMat))
+    weight = np.zeros(n)
+    bias = 0
+    flag = True
+    while flag:
+        for i in range(m):
+            if np.any(labelMat[i] * (np.dot(weight, dataMat[i]) + bias) <= 0):
+                weight = weight + eta * np.dot(labelMat[i],dataMat[i])
+                bias = bias + eta * labelMat[i]
+                print("weight, bias: ", end="")
+                print(weight, end="  ")
+                print(bias)
+                flag = True
+                break
+            else:
+                flag = False
+    return weight, bias
+\end{lstlisting}
+
+\noindent运行结果可视化图：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.65\textwidth]{PerceptronOrigin.eps}
+  \caption{原始优化运行结果图}
+\end{figure}
+
+
+
+
+
+\textbf{对偶问题的实现}\\
+\noindent程序核心函数代码：
+\begin{lstlisting}
+def trainModel(dataMatIn,labelMatIn,eta):
+    dataMat = np.mat(dataMatIn); labelMat = np.mat(labelMatIn).transpose()
+    b = 0; m,n = np.shape(dataMat)
+    alpha = np.mat(np.zeros((m,1)))
+    flag = True
+    while flag:
+        for i in range(m):
+            if  labelMatIn[i]*(float(np.multiply(alpha,labelMat).\
+            T*(dataMat*dataMat[i,:].T)) + b)<= 0:
+                alpha[i] = alpha[i] + eta
+                b = b + eta * labelMat[i]
+                w = np.multiply(labelMat,alpha).T*dataMat
+                print (i,alpha[i],w,b)
+                flag = True
+                break
+            else:
+                flag = False
+    w = (np.multiply(labelMat,alpha).T*dataMat).T
+    return w,b
+\end{lstlisting}
+
+
+\noindent运行结果可视化图：
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.65\textwidth]{PerceptronDuality.eps}
+  \caption{对偶优化运行结果图}
+\end{figure}
+
+因为原始问题与对偶问题具有相同的初值以及相同训练集样本选择顺序，因此具有相同的结果。经过对感知机原始问题与对偶问题的实现我们可以有对支持向量机更好的理解。
+
+\newpage 
+
+
 \subsection{支持向量机}
 \subsubsection{逻辑回归与支持向量机}
 对于支持向量机我的理解是决定模型的生成只与支持向量相关；支持向量机一度被认为\textbf{最高效}的分类算法。那么逻辑回归与支持向量机都属于\textbf{判别学习算法}，来看看他们的区别于联系。
