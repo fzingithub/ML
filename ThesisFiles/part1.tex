@@ -415,7 +415,7 @@ k-近邻法（K-NN）是一种基本分类与回归方法，那么我现只接�
     p=2~~~&\text{欧氏距离}:\nonumber\\
     &L_2(x_i,x_j)=\Big(\sum_{l=1}^{n}|x_i^{(l)}-x_j^{(l)}|^2\Big)^{\frac{1}{2}} \nonumber \\
     p=\infty~&~:\nonumber\\
-    &L_\infty(x_i,x_j)=\max\limits_l |x_i^{(l)}-x_j^{(l)}| \nonumber 
+    &L_\infty(x_i,x_j)=\max\limits_l |x_i^{(l)}-x_j^{(l)}| \nonumber
 \end{align}
 下图表示二维空间中p取不同值时，与原点的$~L_p~$距离为1$~(L_p=1)~$的点的图形，
 \begin{figure}
@@ -557,7 +557,7 @@ def classify0(inX, dataSet, labels, k):
         classCount[voteIlabel] = classCount.get(voteIlabel,0) + 1  # value default 0
     sortedClassCount = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True) #iterator,Specified sort field,Descending order
     return sortedClassCount[0][0]
-    
+
 def handwritingClassTest():
     hwLabels = []
     trainingFileList = listdir('trainingDigits')           #load the training set
@@ -957,7 +957,7 @@ $$P(Y|X)=P(X,Y)/P(X)$$
 $$P(X|Y)=P(Y,X)/P(Y)$$
 $$P(X|Y)=\frac{P(Y|X)P(X)}{P(Y)}$$
 \noindent\textbf{全概率公式}\\
-$$P(X)=\sum_{i=1}^{m}P(X|Y=Y_i)P(Y_i)~~,~~\sum_{i=1}^{m}Y_i=1$$
+$$P(X)=\sum_{i=1}^{m}P(X|Y=Y_i)P(Y_i)~~,~~\sum_{i=1}^{m}P(Y_i)=1$$
 \noindent\textbf{贝叶斯公式}\\
 $$P(Y_j|X)=\frac{P(X|Y_j)P(Y_j)}{\sum_{i=1}^{m}P(X|Y=Y_i)P(Y_i)}$$
 其中，\\
