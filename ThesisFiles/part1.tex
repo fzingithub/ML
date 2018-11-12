@@ -286,7 +286,7 @@ def stocGradAscent1(dataMatrix, classLabels, numIter=150):
 \indent改进的随机梯度下降优化算法与批量梯度下降优化算法相比，分类结果的效果差不多，但是所使用的计算量更少，
 再利用小量的训练集时间差别不大，但是如果处理数以十亿计的训练样本和成千上万的特征时，两者的优越性则显露无疑。
 
-\subsubsection{实战：利用逻辑回归，从疝气病症预测病马的死亡率}
+\subsubsection{实战：从疝气病症预测病马的死亡率}
 将使用Logistic回归来预测患有疝病的马的存活问题。
 这里数据包含368个样本，与28个特征；但有的指标比较主观，有的指标难以测量，例如马的疼痛级别。
 
@@ -2664,20 +2664,214 @@ Time For Run CompleteSMOWithKernel:9.26518176738s
 支持向量机是一个二类分类器。当用其解决多类问题时，则需要额外的方法对其进行扩展。
 ~SVM~的效果也对优化参数和所用核函数中的参数敏感。
 
+\newpage
+\subsection{AdaBoost算法}
+当做重要决定时，大家可能都会考虑吸取多个专家而不只是一个人的意见。那么机器学习处理的问题也是这样。
+这就是元算法（meta-algorithm）背后的思路。元算法是对其他算法进行组合的一种方式。接下来我们将集中关注一个称作AdaBoost的最流行的元算法。由于某些人认为AdaBoost是最好的监督学习的方法，所以该方法是机器学习工具箱中最强有力的工具之一。
+
+首先讨论不同分类器的集成方法（bagging），然后主要关注boosting方法及其代表分类器Adaboost。
+AdaBoost算法将应用在上述单层决策树分类器之上。
+将在一个难数据集上应用AdaBoost分类器，以了解该算法是如何迅速超越其他分类器的。
+
+\subsubsection{集成方法}
+我们自然可以将不同的分类器组合，而这种组合结果则被称为集成方法（ensemble method）或者元算法（meta-algorithm）。使用集成方法时会有多种形式：可以是不同算法的集成，也可以是同一算法在不同设置下的集成，还可以是数据集不同部分分配给不同分类器之后的集成。
+
+\noindent\textbf{bagging~:~~基于数据重抽样的分类器方法}
+
+\indent 自举汇聚法（bootstrap aggregating），也称为bagging方法，是在从原始数据集选择S次后得到S个新数据集的一种技术。新数据集和原数据集的大小相等。每个数据集都是通过在原始数据集中随机选择一个样本来进行替换而得到的①。这里的替换就意味着可以多次地选择同一样本。这一性质就允许新数据集中可以有重复的值，而原始数据集的某些值在新集合中则不再出现。\\
+\indent在S个数据集建好之后，将某个学习算法分别作用于每个数据集就得到了S个分类器。当我们要对新数据进行分类时，就可以应用这S个分类器进行分类。与此同时，选择分类器投票结果中最多的类别作为最后的分类结果。\\
+\indent当然，还有一些更先进的bagging方法，比如随机森林（random forest）。
+
+\noindent\textbf{boosting~:~~基于错误提升分类器性能}
+
+boosting是一种与bagging很类似的技术。不论是在boosting还是bagging当中，所使用的多个分类器的类型都是一致的。但是在前者当中，不同的分类器是通过串行训练而获得的，每个新分类器都根据已训练出的分类器的性能来进行训练。boosting是通过集中关注被已有分类器错分的那些数据来获得新的分类器。\\
+\indent因boosting分类的结果是基于所有分类器的加权求和结果的，boosting与bagging不太一样。bagging中的分类器权重是相等的，而boosting中的分类器权重并不相等，每个权重代表的是其对应分类器在上一轮迭代中的成功度。
+
+\subsubsection{AdaBoost}
+AdaBoost是boosting方法中一个最流行的版本。AdaBoost是adaptive boosting（自适应boosting）的缩写。
+
+能否使用弱分类器和多个实例来构建一个强分类器？这是一个非常有趣的理论问题。这里的
+“弱”意味着分类器的性能比随机猜测要略好，但是也不会好太多。这就是说，在二分类情况下弱分类器的错误率会高于50\%，而“强”分类器的错误率将会低很多。AdaBoost算法即脱胎于上述理论问题。
+
+\textbf{运行过程}
+
+训练数据中的每个样本，并赋予其一个权重，这些权重构成了向量D。一开始，这些权重都初始化成相等值。首先在训练数据上训练出一个弱分类器并计算该分类器的错误率，然后在同一数据集上再次训练弱分类器。在分类器的第二次训练当中，将会重新调整每个样本的权重，其中第一次分对的样本的权重将会降低，而第一次分错的样本的权重将会提高。为了从所有弱分类器中得到最终的分类结果，AdaBoost为每个分类器都分配了一个权重值$~\alpha$，这些$~\alpha~$值是基于每个弱分类器的错误率进行计算的。其中，错误率$~\epsilon~$的定义为： 
+$$\epsilon = \frac{\text{未正确分类的样本数目}}{\text{所有样本数目}}$$
+而$~\alpha~$的计算公式如下：
+$$\alpha = \frac{1}{2}\ln(\frac{1-\epsilon}{\epsilon})$$
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.78\textwidth]{Adaboost.eps}
+  \caption{算法流程}
+\end{figure}
+计算出$~\alpha~$值之后，可以对权重向量D进行更新，以使得那些正确分类的样本的权重降低而错分样本的权重升高。D的计算方法如下。  
+$$D_i^{(t+1)}=\frac{D_i^{(t)e^{-\alpha}}}{\sum D}~~~~\text{该样本被正确分类} $$
+$$D_i^{(t+1)}=\frac{D_i^{(t)e^{\alpha~}}}{\sum D}~~~~\text{该样本被错误分类} $$
+
+在计算出D之后，AdaBoost又开始进入下一轮迭代。AdaBoost算法会不断地重复训练和调整权重的过程，直到训练错误率为0或者弱分类器的数目达到用户的指定值为止。
+
+\textbf{AdaBoost训练误差界}
+
+AdaBoost算法最终分类器的训练误差界为
+$$\frac{1}{N}\sum_{i=1}^{N}I(G(x_i)\neq y_i)\leq \frac{1}{N}\sum_{i}\exp(-y_if(x_i))=\prod_mZ_m$$
+
+\textbf{AdaBoost~算法还有另一个解释，即可以认为 AdaBoost 算法是模型为加法模型、损失函数为指数函数、学习算法为前向分步算法时的二分类学习方法。}
+
+\textcolor{red}{AdaBoost~算法是前向分步加法算法的特例．这时，模型是由基本分类器组成的加法模型，损失函数是指数函数。}
+
+\subsubsection{实战：实现Adaboost基于决策树桩}
+
+\noindent\textbf{AdaBoost的一般流程}
+
+\noindent\textbf{(1)	收集数据}：可以使用任意方法。\\
+\textbf{(2)	准备数据}：依赖于所使用的弱分类器类型，本章使用的是单层决策树，这种分类器可以处理任何数据类型。当然也可以使用任意分类器作为弱分类器。作为弱分类器，简单分类器的效果更好。\\
+\textbf{(3)	分析数据}：可以使用任意方法。\\
+\textbf{(4)	训练算法}：AdaBoost的大部分时间都用在训练上，分类器将多次在同一数据集上训练弱分类器。\\
+\textbf{(5)	测试算法}：计算分类的错误率。\\
+\textbf{(6)	使用算法}：同SVM一样，AdaBoost预测两个类别中的一个。如果想把它应用到多个类别的场合，那么就要像多类SVM中的做法一样对AdaBoost进行修改。\\
+~\\
+~\\
+
+\noindent核心函数：
+\begin{lstlisting}
+def stumpClassify(dataMatrix,dimen,threshVal,threshIneq):#just classify the data
+    retArray = np.ones((np.shape(dataMatrix)[0],1))
+    if threshIneq == 'lt':
+        retArray[dataMatrix[:,dimen] <= threshVal] = -1.0
+    else:
+        retArray[dataMatrix[:,dimen] > threshVal] = -1.0
+    return retArray
+
+def buildStump(dataArr,classLabels,D):
+    dataMatrix = np.mat(dataArr); labelMat = np.mat(classLabels).T
+    m,n = np.shape(dataMatrix)
+    numSteps = 10.0; bestStump = {}; bestClasEst = np.mat(np.zeros((m,1)))
+    minError = np.inf #init error sum, to +infinity
+    for i in range(n):#loop over all dimensions
+        rangeMin = dataMatrix[:,i].min(); rangeMax = dataMatrix[:,i].max();
+        stepSize = (rangeMax-rangeMin)/numSteps
+        for j in range(-1,int(numSteps)+1):#loop over all range in current dimension
+            for inequal in ['lt', 'gt']: #go over less than and greater than
+                threshVal = (rangeMin + float(j) * stepSize)
+                predictedVals = stumpClassify(dataMatrix,i,threshVal,inequal)#call stump classify with i, j, lessThan
+                errArr = np.mat(np.ones((m,1)))
+                errArr[predictedVals == labelMat] = 0
+                weightedError = D.T*errArr  #calc total error multiplied by D
+#                print ('split: dim %d, thresh %.2f, thresh ineqal: %s, the weighted error is %.3f' %(i, threshVal, inequal, weightedError))
+                if weightedError < minError:
+                    minError = weightedError
+                    bestClasEst = predictedVals.copy()
+                    bestStump['dim'] = i
+                    bestStump['thresh'] = threshVal
+                    bestStump['ineq'] = inequal
+    return bestStump,minError,bestClasEst
 
 
+def adaBoostTrainDS(dataArr,classLabels,numIt=40):
+    weakClassArr = []
+    m = np.shape(dataArr)[0]
+    D = np.mat(np.ones((m,1))/m)   #init D to all equal
+    aggClassEst = np.mat(np.zeros((m,1)))
+    for i in range(numIt):
+        bestStump,error,classEst = buildStump(dataArr,classLabels,D)#build Stump
+#        print ("D:",D.T)
+        alpha = float(0.5*np.log((1.0-error)/max(error,1e-16)))#calc alpha, throw in max(error,eps) to account for error=0
+        bestStump['alpha'] = alpha
+        weakClassArr.append(bestStump)                  #store Stump Params in Array
+#        print ("classEst: ",classEst.T)
+        expon = np.multiply(-1*alpha*np.mat(classLabels).T,classEst) #exponent for D calc, getting messy
+        D = np.multiply(D,np.exp(expon))                              #Calc New D for next iteration
+        D = D/D.sum()
+        #calc training error of all classifiers, if this is 0 quit for loop early (use break)
+        aggClassEst += alpha*classEst
+#        print ("aggClassEst: ",aggClassEst.T)
+        aggErrors = np.multiply(np.sign(aggClassEst) != np.mat(classLabels).T,np.ones((m,1)))
+        errorRate = aggErrors.sum()/m
+        print ("total error: ",errorRate)
+        if errorRate == 0.0: break
+    return weakClassArr,aggClassEst
+\end{lstlisting}
+
+以决策树桩为基本的弱分类器，实现Adaboost算法，具有很理想的训练误差，当弱分类器的数目不断增加训练错误率会下降，但是模型的泛化能力则会降低。
+
+\subsubsection{实战：从疝气病症预测病马的死亡率}
+\noindent运行结果：
+\begin{lstlisting}
+total error:  0.284280936455
+total error:  0.284280936455
+total error:  0.247491638796
+total error:  0.247491638796
+total error:  0.254180602007
+total error:  0.240802675585
+total error:  0.240802675585
+total error:  0.220735785953
+total error:  0.247491638796
+total error:  0.230769230769
+error rate:  0.238805970149
+the Area Under the Curve is:  0.8582969635063604
+\end{lstlisting}
+
+从结果来看，相比逻辑回归的错误率34\%，AdaBoostd的错误率已经有了较大的提升。
 
 
+\subsubsection{非均衡分类问题}
+在之前所有的分类问题，我们的假设所有类别的分类代价是一样的。这样显然与现实情况的结果代价是不符合的，例如垃圾邮件宁愿不分也不愿错分。事实上在大多数情况下不同类别的分类代价并不相等。对于非均衡的分类问题，常用的措施是\textcolor{red}{其他分类指标衡量；代价函数的分类器决策控制；处理非均衡问题的数据抽样方法。}
+
+\textbf{其他分类性能度量指标：正确率、召回率及 ROC 曲线 }
+
+到现在为止，本书都是基于错误率来衡量分类器任务的成功程度的。错误率指的是在所有测试样例中错分的样例比例。实际上，这样的度量错误掩盖了样例如何被分错的事实。在机器学习中，有一个普遍适用的称为混淆矩阵（confusion matrix）的工具，它可以帮助人们更好地了解分类中的错误。
+
+针对一个简单的二类问题。在这个二类问题中，如果将一个正例判为正例，那么就可以认为产生了一个真正例（True Positive，TP，也称真阳）；如果对一个反例正确地判为反例，则认为产生了一个真反例（True Negative，TN，也称真阴）。相应地，另外两种情况则分别称为伪反例（False Negative， FN，也称假阴）和伪正例（False Positive，FP，也称假阳）。
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1\textwidth]{TFPN.eps}
+\end{figure}
 
 
+在分类中，当某个类别的重要性高于其他类别时，就可以利用上述定义来定义出多个比错误率更好的新指标。第一个指标是正确率（Precision），它等于TP/(TP+FP)，给出的是预测为正例的样本中的真正正例的比例。第二个指标是召回率（Recall），它等于TP/(TP+FN)，给出的是预测为正例的真实正例占所有真实正例的比例。在召回率很大的分类器中，真正判错的正例的数目并不多。
 
+可以很容易构造一个高正确率或高召回率的分类器，但是很难同时保证两者成立。如果将任何样本都判为正例，那么召回率达到百分之百而此时正确率很低。构建一个同时使正确率和召回率最大的分类器是有难度的。
 
+另一个用于度量分类中的非均衡性的工具是ROC曲线（ROC curve），ROC代表接收者操作特征（receiver operating characteristic），它最早在二战期间由电气工程师构建雷达系统时使用过。
 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{ROC.eps}
+  \caption{实战ROC曲线}
+\end{figure}
 
+给出了两条线，一条虚线一条实线。图中的横轴假阳率=FP/(FP+TN)，而纵轴真阳率=TP/(TP+FN)。ROC曲线给出的是当阈值变化时假阳率和真阳率的变化情况。左下角的点所对应的是将所有样例判为反例的情况，而右上角的点对应的则是将所有样例判为正例的情况。虚线给出的是随机猜测的结果曲线。
 
+ROC曲线不但可以用于比较分类器，还可以基于成本效益（cost-versus-benefit）分析来做出决策。由于在不同的阈值下，不同的分类器的表现情况可能各不相同，因此以某种方式将它们组合起来或许会更有意义。如果只是简单地观察分类器的错误率，那么我们就难以得到这种更深入的洞察效果了。
+在理想的情况下，最佳的分类器应该尽可能地处于左上角，这就意味着分类器在假阳率很低的同时获得了很高的真阳率。例如在垃圾邮件的过滤中，这就相当于过滤了所有的垃圾邮件，但没有将任何合法邮件误识为垃圾邮件而放入垃圾邮件的文件夹中。
 
+对不同的ROC曲线进行比较的一个指标是曲线下的面积（Area Unser the Curve，AUC）。AUC给出的是分类器的平均性能值，当然它并不能完全代替对整条曲线的观察。一个完美分类器的AUC为1.0，而随机猜测的AUC则为0.5。
 
+为了画出ROC曲线，分类器必须提供每个样例被判为阳性或者阴性的可信程度值。尽管大多数分类器都能做到这一点，但是通常情况下，这些值会在最后输出离散分类标签之前被清除。朴素贝叶斯能够提供一个可能性，而在Logistic回归中输入到Sigmoid函数中的是一个数值。在AdaBoost和SVM中，都会计算出一个数值然后输入到sign()函数中。所有的这些值都可以用于衡量给定分类器的预测强度。为了创建ROC曲线，首先要将分类样例按照其预测强度排序。先从
+排名最低的样例开始，所有排名更低的样例都被判为反例，而所有排名更高的样例都被判为正例。该情况的对应点为<1.0,1.0>。然后，将其移到排名次低的样例中去，如果该样例属于正例，那么对真阳率进行修改；如果该样例属于反例，那么对假阴率进行修改。
 
+\textbf{基于代价函数的分类器决策控制}
+
+除了调节分类器的阈值之外，我们还有一些其他可以用于处理非均衡分类代价的方法，其中的一种称为代价敏感的学习（cost-sensitive learning）。考虑表7-4中的代价矩阵，第一张表给出的是到目前为止分类器的代价矩阵（代价不是0就是1）。我们可以基于该代价矩阵计算其总代价：TP*0+FN*1+FP*1+TN*0。接下来我们考虑下面的第二张表，基于该代价矩阵的分类代价的计算公式为：TP*(-5)+FN*1+FP*50+TN*0。采用第二张表作为代价矩阵时，两种分类错误的代价是不一样的。类似地，这两种正确分类所得到的收益也不一样。如果在构建分类器时，知道了这些代价值，那么就可以选择付出最小代价的分类器。
+
+在分类算法中，我们有很多方法可以用来引入代价信息。在AdaBoost中，可以基于代价函数来调整错误权重向量D。在朴素贝叶斯中，可以选择具有最小期望代价而不是最大概率的类别作为最后的结果。在SVM中，可以在代价函数中对于不同的类别选择不同的参数C。上述做法就会给较小类更多的权重，即在训练时，小类当中只允许更少的错误。
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=1\textwidth]{costMatrix.eps}
+  \caption{代价矩阵}
+\end{figure}
+
+\textbf{处理非均衡问题的数据抽样方法  }
+
+另外一种针对非均衡问题调节分类器的方法，就是对分类器的训练数据进行改造。这可以通过欠抽样（undersampling）或者过抽样（oversampling）来实现。过抽样意味着复制样例，而欠抽样意味着删除样例。不管采用哪种方式，数据都会从原始形式改造为新形式。抽样过程则可以通过随机方式或者某个预定方式来实现。
+
+通常也会存在某个罕见的类别需要我们来识别，比如在信用卡欺诈当中。如前所述，正例类别属于罕见类别。我们希望对于这种罕见类别能尽可能保留更多的信息，因此，我们应该保留正例类别中的所有样例，而对反例类别进行欠抽样或者样例删除处理。这种方法的一个缺点就在于要确定哪些样例需要进行剔除。但是，在选择剔除的样例中可能携带了剩余样例中并不包含的有价值信息。
+
+上述问题的一种解决办法，就是选择那些离决策边界较远的样例进行删除。假定我们有一个数据集，其中有50例信用卡欺诈交易和5000例合法交易。如果我们想要对合法交易样例进行欠抽样处理，使得这两类数据比较均衡的话，那么我们就需要去掉4950个样例，而这些样例中可能包含很多有价值的信息。这看上去有些极端，因此有一种替代的策略就是使用反例类别的欠抽样和正例类别的过抽样相混合的方法。
+
+要对正例类别进行过抽样，我们可以复制已有样例或者加入与已有样例相似的点。一种方法是加入已有数据点的插值点，但是这种做法可能会导致过拟合的问题。  
 
 
 \newpage

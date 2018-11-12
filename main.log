@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  5 NOV 2018 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  12 NOV 2018 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,7 +1205,7 @@ Package epstopdf Info: Source file: <Figure/1141.eps>
 to.pdf Figure/1141.eps>
 (epstopdf)             \includegraphics on input line 191.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1141-eps-converted-to.pdf, id=574, 433.62pt x 289.08pt>
+<Figure/1141-eps-converted-to.pdf, id=604, 433.62pt x 289.08pt>
 File: Figure/1141-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1141-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1141-eps-converted-to.pdf  used on input line 1
@@ -1227,7 +1227,7 @@ Package epstopdf Info: Source file: <Figure/1142.eps>
 to.pdf Figure/1142.eps>
 (epstopdf)             \includegraphics on input line 228.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1142-eps-converted-to.pdf, id=608, 433.62pt x 289.08pt>
+<Figure/1142-eps-converted-to.pdf, id=639, 433.62pt x 289.08pt>
 File: Figure/1142-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1142-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1142-eps-converted-to.pdf  used on input line 2
@@ -1245,7 +1245,7 @@ Package epstopdf Info: Source file: <Figure/1143.eps>
 to.pdf Figure/1143.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1143-eps-converted-to.pdf, id=609, 289.08pt x 213.79875pt>
+<Figure/1143-eps-converted-to.pdf, id=640, 289.08pt x 213.79875pt>
 File: Figure/1143-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1143-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1143-eps-converted-to.pdf  used on input line 2
@@ -1268,7 +1268,7 @@ Package epstopdf Info: Source file: <Figure/1144.eps>
 to.pdf Figure/1144.eps>
 (epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1144-eps-converted-to.pdf, id=732, 433.62pt x 289.08pt>
+<Figure/1144-eps-converted-to.pdf, id=762, 433.62pt x 289.08pt>
 File: Figure/1144-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1144-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1144-eps-converted-to.pdf  used on input line 2
@@ -1284,7 +1284,7 @@ Package epstopdf Info: Source file: <Figure/1145.eps>
 to.pdf Figure/1145.eps>
 (epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1145-eps-converted-to.pdf, id=733, 336.25626pt x 253.94875pt>
+<Figure/1145-eps-converted-to.pdf, id=763, 336.25626pt x 253.94875pt>
 File: Figure/1145-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1145-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1145-eps-converted-to.pdf  used on input line 2
@@ -1318,7 +1318,7 @@ Package epstopdf Info: Source file: <Figure/distance.eps>
 ted-to.pdf Figure/distance.eps>
 (epstopdf)             \includegraphics on input line 423.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/distance-eps-converted-to.pdf, id=909, 89.33376pt x 84.315pt>
+<Figure/distance-eps-converted-to.pdf, id=939, 89.33376pt x 84.315pt>
 File: Figure/distance-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/distance-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/distance-eps-converted-to.pdf  used on input li
@@ -1336,7 +1336,7 @@ Package epstopdf Info: Source file: <Figure/tree.eps>
 to.pdf Figure/tree.eps>
 (epstopdf)             \includegraphics on input line 818.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/tree-eps-converted-to.pdf, id=1268, 462.72874pt x 344.28625pt>
+<Figure/tree-eps-converted-to.pdf, id=1298, 462.72874pt x 344.28625pt>
 File: Figure/tree-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/tree-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/tree-eps-converted-to.pdf  used on input line 8
@@ -1353,7 +1353,7 @@ Package epstopdf Info: Source file: <Figure/decisionTree.eps>
 nverted-to.pdf Figure/decisionTree.eps>
 (epstopdf)             \includegraphics on input line 859.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/decisionTree-eps-converted-to.pdf, id=1311, 462.72874pt x 344.28625pt>
+<Figure/decisionTree-eps-converted-to.pdf, id=1341, 462.72874pt x 344.28625pt>
 File: Figure/decisionTree-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/decisionTree-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/decisionTree-eps-converted-to.pdf  used on inpu
@@ -1381,7 +1381,7 @@ Package epstopdf Info: Source file: <Figure/Gaussion1.eps>
 rted-to.pdf Figure/Gaussion1.eps>
 (epstopdf)             \includegraphics on input line 909.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gaussion1-eps-converted-to.pdf, id=1369, 402.50375pt x 107.40125pt>
+<Figure/Gaussion1-eps-converted-to.pdf, id=1399, 402.50375pt x 107.40125pt>
 File: Figure/Gaussion1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gaussion1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gaussion1-eps-converted-to.pdf  used on input l
@@ -1397,7 +1397,7 @@ Package epstopdf Info: Source file: <Figure/Gaussion2.eps>
 rted-to.pdf Figure/Gaussion2.eps>
 (epstopdf)             \includegraphics on input line 926.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gaussion2-eps-converted-to.pdf, id=1370, 396.48125pt x 107.40125pt>
+<Figure/Gaussion2-eps-converted-to.pdf, id=1400, 396.48125pt x 107.40125pt>
 File: Figure/Gaussion2-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gaussion2-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gaussion2-eps-converted-to.pdf  used on input l
@@ -1415,7 +1415,7 @@ Package epstopdf Info: Source file: <Figure/GaussionO1.eps>
 erted-to.pdf Figure/GaussionO1.eps>
 (epstopdf)             \includegraphics on input line 944.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/GaussionO1-eps-converted-to.pdf, id=1403, 399.4925pt x 112.42pt>
+<Figure/GaussionO1-eps-converted-to.pdf, id=1434, 399.4925pt x 112.42pt>
 File: Figure/GaussionO1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/GaussionO1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/GaussionO1-eps-converted-to.pdf  used on input 
@@ -1431,7 +1431,7 @@ Package epstopdf Info: Source file: <Figure/GaussionO2.eps>
 erted-to.pdf Figure/GaussionO2.eps>
 (epstopdf)             \includegraphics on input line 950.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/GaussionO2-eps-converted-to.pdf, id=1404, 399.4925pt x 107.40125pt>
+<Figure/GaussionO2-eps-converted-to.pdf, id=1435, 399.4925pt x 107.40125pt>
 File: Figure/GaussionO2-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/GaussionO2-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/GaussionO2-eps-converted-to.pdf  used on input 
@@ -1447,7 +1447,7 @@ Package epstopdf Info: Source file: <Figure/Gaussion3.eps>
 rted-to.pdf Figure/Gaussion3.eps>
 (epstopdf)             \includegraphics on input line 968.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gaussion3-eps-converted-to.pdf, id=1405, 399.4925pt x 115.43124pt>
+<Figure/Gaussion3-eps-converted-to.pdf, id=1436, 399.4925pt x 115.43124pt>
 File: Figure/Gaussion3-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gaussion3-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gaussion3-eps-converted-to.pdf  used on input l
@@ -1490,7 +1490,7 @@ Package epstopdf Info: Source file: <Figure/GaussionOO.eps>
 erted-to.pdf Figure/GaussionOO.eps>
 (epstopdf)             \includegraphics on input line 1028.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/GaussionOO-eps-converted-to.pdf, id=1447, 233.87375pt x 180.675pt>
+<Figure/GaussionOO-eps-converted-to.pdf, id=1477, 233.87375pt x 180.675pt>
 File: Figure/GaussionOO-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/GaussionOO-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/GaussionOO-eps-converted-to.pdf  used on input 
@@ -1769,7 +1769,7 @@ df>
 s-converted-to.pdf Figure/PerceptronOrigin.eps>
 (epstopdf)             \includegraphics on input line 1627.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/PerceptronOrigin-eps-converted-to.pdf, id=1670, 433.62pt x 289.08pt>
+<Figure/PerceptronOrigin-eps-converted-to.pdf, id=1700, 433.62pt x 289.08pt>
 File: Figure/PerceptronOrigin-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/PerceptronOrigin-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/PerceptronOrigin-eps-converted-to.pdf  used on 
@@ -1787,7 +1787,7 @@ pdf>
 ps-converted-to.pdf Figure/PerceptronDuality.eps>
 (epstopdf)             \includegraphics on input line 1663.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/PerceptronDuality-eps-converted-to.pdf, id=1721, 433.62pt x 289.08pt>
+<Figure/PerceptronDuality-eps-converted-to.pdf, id=1751, 433.62pt x 289.08pt>
 File: Figure/PerceptronDuality-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/PerceptronDuality-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/PerceptronDuality-eps-converted-to.pdf  used on
@@ -1805,7 +1805,7 @@ Package epstopdf Info: Source file: <Figure/logistics_function.eps>
 eps-converted-to.pdf Figure/logistics_function.eps>
 (epstopdf)             \includegraphics on input line 1677.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/logistics_function-eps-converted-to.pdf, id=1764, 602.25pt x 401.5pt>
+<Figure/logistics_function-eps-converted-to.pdf, id=1794, 602.25pt x 401.5pt>
 File: Figure/logistics_function-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/logistics_function-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/logistics_function-eps-converted-to.pdf  used o
@@ -1821,7 +1821,7 @@ Package epstopdf Info: Source file: <Figure/1412.eps>
 to.pdf Figure/1412.eps>
 (epstopdf)             \includegraphics on input line 1682.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1412-eps-converted-to.pdf, id=1765, 433.62pt x 289.08pt>
+<Figure/1412-eps-converted-to.pdf, id=1795, 433.62pt x 289.08pt>
 File: Figure/1412-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1412-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1412-eps-converted-to.pdf  used on input line 1
@@ -1840,7 +1840,7 @@ df>
 s-converted-to.pdf Figure/geometric_margin.eps>
 (epstopdf)             \includegraphics on input line 1720.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/geometric_margin-eps-converted-to.pdf, id=1798, 227.85126pt x 214.8025p
+<Figure/geometric_margin-eps-converted-to.pdf, id=1829, 227.85126pt x 214.8025p
 t>
 File: Figure/geometric_margin-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/geometric_margin-eps-converted-to.pdf>
@@ -1859,7 +1859,7 @@ Package epstopdf Info: Source file: <Figure/support_vector.eps>
 converted-to.pdf Figure/support_vector.eps>
 (epstopdf)             \includegraphics on input line 1756.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/support_vector-eps-converted-to.pdf, id=1821, 433.62pt x 234.8775pt>
+<Figure/support_vector-eps-converted-to.pdf, id=1851, 433.62pt x 234.8775pt>
 File: Figure/support_vector-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/support_vector-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/support_vector-eps-converted-to.pdf  used on in
@@ -1895,7 +1895,7 @@ Package epstopdf Info: Source file: <Figure/soft.eps>
 to.pdf Figure/soft.eps>
 (epstopdf)             \includegraphics on input line 1857.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/soft-eps-converted-to.pdf, id=1852, 357.335pt x 129.48375pt>
+<Figure/soft-eps-converted-to.pdf, id=1882, 357.335pt x 129.48375pt>
 File: Figure/soft-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/soft-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/soft-eps-converted-to.pdf  used on input line 1
@@ -1912,7 +1912,7 @@ Package epstopdf Info: Source file: <Figure/kernel.eps>
 d-to.pdf Figure/kernel.eps>
 (epstopdf)             \includegraphics on input line 1887.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/kernel-eps-converted-to.pdf, id=1865, 421.575pt x 202.7575pt>
+<Figure/kernel-eps-converted-to.pdf, id=1895, 421.575pt x 202.7575pt>
 File: Figure/kernel-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/kernel-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/kernel-eps-converted-to.pdf  used on input line
@@ -1949,7 +1949,7 @@ df>
 s-converted-to.pdf Figure/Gradient_descent.eps>
 (epstopdf)             \includegraphics on input line 1944.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gradient_descent-eps-converted-to.pdf, id=1882, 218.8175pt x 172.645pt>
+<Figure/Gradient_descent-eps-converted-to.pdf, id=1912, 218.8175pt x 172.645pt>
 
 File: Figure/Gradient_descent-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gradient_descent-eps-converted-to.pdf>
@@ -1967,7 +1967,7 @@ pdf>
 ps-converted-to.pdf Figure/Coordinate_ascent.eps>
 (epstopdf)             \includegraphics on input line 1951.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1883, 218.8175pt x 169.63374
+<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1913, 218.8175pt x 169.63374
 pt>
 File: Figure/Coordinate_ascent-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Coordinate_ascent-eps-converted-to.pdf>
@@ -1996,7 +1996,7 @@ Package epstopdf Info: Source file: <Figure/clipped.eps>
 ed-to.pdf Figure/clipped.eps>
 (epstopdf)             \includegraphics on input line 2020.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/clipped-eps-converted-to.pdf, id=1916, 433.62pt x 192.72pt>
+<Figure/clipped-eps-converted-to.pdf, id=1946, 433.62pt x 192.72pt>
 File: Figure/clipped-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/clipped-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/clipped-eps-converted-to.pdf  used on input lin
@@ -2069,7 +2069,7 @@ Package epstopdf Info: Source file: <Figure/SMOSimple.eps>
 rted-to.pdf Figure/SMOSimple.eps>
 (epstopdf)             \includegraphics on input line 2205.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/SMOSimple-eps-converted-to.pdf, id=2050, 433.62pt x 289.08pt>
+<Figure/SMOSimple-eps-converted-to.pdf, id=2081, 433.62pt x 289.08pt>
 File: Figure/SMOSimple-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/SMOSimple-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/SMOSimple-eps-converted-to.pdf  used on input l
@@ -2091,7 +2091,7 @@ Package epstopdf Info: Source file: <Figure/SMOComplete.eps>
 verted-to.pdf Figure/SMOComplete.eps>
 (epstopdf)             \includegraphics on input line 2340.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/SMOComplete-eps-converted-to.pdf, id=2209, 433.62pt x 289.08pt>
+<Figure/SMOComplete-eps-converted-to.pdf, id=2239, 433.62pt x 289.08pt>
 File: Figure/SMOComplete-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/SMOComplete-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/SMOComplete-eps-converted-to.pdf  used on input
@@ -2112,8 +2112,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 2508--2511
 
  []
 
-[81] [82] [83] [84] [85]
-Overfull \hbox (23.07275pt too wide) in paragraph at lines 2719--2722
+[81] [82] [83] [84] [85] [86]
+Package epstopdf Info: Source file: <Figure/Adaboost.eps>
+(epstopdf)                    date: 2018-11-12 15:35:43
+(epstopdf)                    size: 674334 bytes
+(epstopdf)             Output file: <Figure/Adaboost-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-12 15:36:25
+(epstopdf)                    size: 132720 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/Adaboost-eps-conver
+ted-to.pdf Figure/Adaboost.eps>
+(epstopdf)             \includegraphics on input line 2705.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/Adaboost-eps-converted-to.pdf, id=2583, 282.05376pt x 213.79875pt>
+File: Figure/Adaboost-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/Adaboost-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/Adaboost-eps-converted-to.pdf  used on input li
+ne 2705.
+(pdftex.def)             Requested size: 325.35112pt x 246.63654pt.
+ [87 <./Figure/Adaboost-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2727--2735
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2727--2735
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2727--2735
+
+ []
+
+[88] [89] [90]
+Package epstopdf Info: Source file: <Figure/TFPN.eps>
+(epstopdf)                    date: 2018-11-12 17:00:07
+(epstopdf)                    size: 570536 bytes
+(epstopdf)             Output file: <Figure/TFPN-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-12 17:00:47
+(epstopdf)                    size: 108849 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/TFPN-eps-converted-
+to.pdf Figure/TFPN.eps>
+(epstopdf)             \includegraphics on input line 2829.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/TFPN-eps-converted-to.pdf, id=2706, 549.05125pt x 66.2475pt>
+File: Figure/TFPN-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/TFPN-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/TFPN-eps-converted-to.pdf  used on input line 2
+829.
+(pdftex.def)             Requested size: 417.1175pt x 50.3294pt.
+ [91 <./Figure/TFPN-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figure/ROC.eps>
+(epstopdf)                    date: 2018-11-12 16:26:53
+(epstopdf)                    size: 55131 bytes
+(epstopdf)             Output file: <Figure/ROC-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-12 17:03:08
+(epstopdf)                    size: 16201 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/ROC-eps-converted-t
+o.pdf Figure/ROC.eps>
+(epstopdf)             \includegraphics on input line 2841.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/ROC-eps-converted-to.pdf, id=2753, 462.72874pt x 344.28625pt>
+File: Figure/ROC-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/ROC-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/ROC-eps-converted-to.pdf  used on input line 28
+41.
+(pdftex.def)             Requested size: 250.27304pt x 186.21124pt.
+ [92 <./Figure/ROC-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Figure/costMatrix.eps>
+(epstopdf)                    date: 2018-11-12 17:12:54
+(epstopdf)                    size: 525516 bytes
+(epstopdf)             Output file: <Figure/costMatrix-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-12 17:15:05
+(epstopdf)                    size: 107116 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figure/costMatrix-eps-conv
+erted-to.pdf Figure/costMatrix.eps>
+(epstopdf)             \includegraphics on input line 2862.
+Package epstopdf Info: Output file is already uptodate.
+<Figure/costMatrix-eps-converted-to.pdf, id=2797, 549.05125pt x 145.54375pt>
+File: Figure/costMatrix-eps-converted-to.pdf Graphic file (type pdf)
+<use Figure/costMatrix-eps-converted-to.pdf>
+Package pdftex.def Info: Figure/costMatrix-eps-converted-to.pdf  used on input 
+line 2862.
+(pdftex.def)             Requested size: 417.1175pt x 110.57219pt.
+ [93 <./Figure/costMatrix-eps-converted-to.pdf>] [94]
+Overfull \hbox (23.07275pt too wide) in paragraph at lines 2913--2916
 []\C70/gbsn/bx/n/10.95/5f S \C70/gbsn/bx/n/10.95/62 ^^Q \C70/gbsn/bx/n/10.95/4e
  ì \C70/gbsn/bx/n/10.95/97 b \C70/gbsn/bx/n/10.95/5b ù \C70/gbsn/bx/n/10.95/56 
 Þ \C70/gbsn/bx/n/10.95/5f R \C70/gbsn/bx/n/10.95/95 î \C70/gbsn/bx/n/10.95/98 ˜
@@ -2129,18 +2212,18 @@ bx/n/10.95/53 s\OT1/cmr/m/n/10.95 1/2\C70/gbsn/bx/n/10.95/76 „
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2719--2722
+Underfull \hbox (badness 10000) in paragraph at lines 2913--2916
 
  []
 
-[86pdfTeX warning (ext4): destination with the same identifier (name{equation.2
+[95pdfTeX warning (ext4): destination with the same identifier (name{equation.2
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2722 ...i)} = \theta^T x^{(i)}+ \epsilon^{(i)}$$
+l.2916 ...i)} = \theta^T x^{(i)}+ \epsilon^{(i)}$$
                                                   ]
-Underfull \hbox (badness 10000) in paragraph at lines 2726--2728
+Underfull \hbox (badness 10000) in paragraph at lines 2920--2922
 
  []
 
@@ -2148,25 +2231,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2731 \begin{equation}
+l.2925 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2743 \begin{equation}
+l.2937 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2754 \begin{equation}
-                       \nonumber [87]pdfTeX warning (ext4): destination with th
+l.2948 \begin{equation}
+                       \nonumber [96]pdfTeX warning (ext4): destination with th
 e same identifier (name{equation.2.1}) has been already used, duplicate ignored
 
 <to be read again> 
                    \relax 
-l.2765 \begin{equation}
+l.2959 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 2780--2781
+Underfull \hbox (badness 10000) in paragraph at lines 2974--2975
 
  []
 
@@ -2174,9 +2257,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2783 \begin{equation}
+l.2977 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 2790--2792
+Underfull \hbox (badness 10000) in paragraph at lines 2984--2986
 
  []
 
@@ -2184,13 +2267,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2800 \end{align}
-                   [88] [89]pdfTeX warning (ext4): destination with the same id
+l.2994 \end{align}
+                   [97] [98]pdfTeX warning (ext4): destination with the same id
 entifier (name{equation.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2841 \begin{equation}
-                       \nonumber [90]
+l.3035 \begin{equation}
+                       \nonumber [99]
 Package epstopdf Info: Source file: <Figure/2141.eps>
 (epstopdf)                    date: 2018-07-12 11:53:12
 (epstopdf)                    size: 17325 bytes
@@ -2199,30 +2282,30 @@ Package epstopdf Info: Source file: <Figure/2141.eps>
 (epstopdf)                    size: 35134 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/2141-eps-converted-
 to.pdf Figure/2141.eps>
-(epstopdf)             \includegraphics on input line 2913.
+(epstopdf)             \includegraphics on input line 3107.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/2141-eps-converted-to.pdf, id=2587, 433.62pt x 289.08pt>
+<Figure/2141-eps-converted-to.pdf, id=2888, 433.62pt x 289.08pt>
 File: Figure/2141-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/2141-eps-converted-to.pdf>
-Package pdftex.def Info: Figure/2141-eps-converted-to.pdf  used on input line 2
-913.
+Package pdftex.def Info: Figure/2141-eps-converted-to.pdf  used on input line 3
+107.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
- [91]pdfTeX warning (ext4): destination with the same identifier (name{equation
-.2.6}) has been already used, duplicate ignored
+ [100]pdfTeX warning (ext4): destination with the same identifier (name{equatio
+n.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2926 \begin{equation}
+l.3120 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2946 \begin{equation}
+l.3140 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 2937--2946
+Underfull \hbox (badness 10000) in paragraph at lines 3131--3140
 
  []
 
-[92 <./Figure/2141-eps-converted-to.pdf>]
+[101 <./Figure/2141-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/tau.eps>
 (epstopdf)                    date: 2018-07-12 18:17:37
 (epstopdf)                    size: 750489 bytes
@@ -2231,13 +2314,13 @@ Package epstopdf Info: Source file: <Figure/tau.eps>
 (epstopdf)                    size: 183888 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/tau-eps-converted-t
 o.pdf Figure/tau.eps>
-(epstopdf)             \includegraphics on input line 2979.
+(epstopdf)             \includegraphics on input line 3173.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/tau-eps-converted-to.pdf, id=2651, 268.00125pt x 204.765pt>
+<Figure/tau-eps-converted-to.pdf, id=2951, 268.00125pt x 204.765pt>
 File: Figure/tau-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/tau-eps-converted-to.pdf>
-Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 29
-79.
+Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 31
+73.
 (pdftex.def)             Requested size: 229.4159pt x 175.28209pt.
 
 
@@ -2251,13 +2334,13 @@ Package epstopdf Info: Source file: <Figure/lwlr1.eps>
 (epstopdf)                    size: 32386 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr1-eps-converted
 -to.pdf Figure/lwlr1.eps>
-(epstopdf)             \includegraphics on input line 2986.
+(epstopdf)             \includegraphics on input line 3180.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr1-eps-converted-to.pdf, id=2652, 433.62pt x 289.08pt>
+<Figure/lwlr1-eps-converted-to.pdf, id=2952, 433.62pt x 289.08pt>
 File: Figure/lwlr1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr1-eps-converted-to.pdf  used on input line 
-2986.
+3180.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 (epstopdf)                    date: 2018-07-12 17:26:20
@@ -2267,13 +2350,13 @@ Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 (epstopdf)                    size: 32637 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_01-eps-conver
 ted-to.pdf Figure/lwlr0_01.eps>
-(epstopdf)             \includegraphics on input line 2991.
+(epstopdf)             \includegraphics on input line 3185.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr0_01-eps-converted-to.pdf, id=2653, 433.62pt x 289.08pt>
+<Figure/lwlr0_01-eps-converted-to.pdf, id=2953, 433.62pt x 289.08pt>
 File: Figure/lwlr0_01-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_01-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_01-eps-converted-to.pdf  used on input li
-ne 2991.
+ne 3185.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 (epstopdf)                    date: 2018-07-12 17:26:47
@@ -2283,76 +2366,76 @@ Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 (epstopdf)                    size: 33079 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_003-eps-conve
 rted-to.pdf Figure/lwlr0_003.eps>
-(epstopdf)             \includegraphics on input line 2996.
+(epstopdf)             \includegraphics on input line 3190.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr0_003-eps-converted-to.pdf, id=2654, 433.62pt x 289.08pt>
+<Figure/lwlr0_003-eps-converted-to.pdf, id=2954, 433.62pt x 289.08pt>
 File: Figure/lwlr0_003-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_003-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_003-eps-converted-to.pdf  used on input l
-ine 2996.
+ine 3190.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2983--3003
+Underfull \hbox (badness 10000) in paragraph at lines 3177--3197
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[93] [94 <./Figure/tau-eps-converted-to.pdf> <./Figure/lwlr1-eps-converted-to.p
-df> <./Figure/lwlr0_01-eps-converted-to.pdf>]pdfTeX warning (ext4): destination
- with the same identifier (name{equation.2.6}) has been already used, duplicate
- ignored
+[102] [103 <./Figure/tau-eps-converted-to.pdf> <./Figure/lwlr1-eps-converted-to
+.pdf> <./Figure/lwlr0_01-eps-converted-to.pdf>]pdfTeX warning (ext4): destinati
+on with the same identifier (name{equation.2.6}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.3007 \begin{equation}
-                       \nonumber [95 <./Figure/lwlr0_003-eps-converted-to.pdf>]
-[96])
+l.3201 \begin{equation}
+                       \nonumber [104 <./Figure/lwlr0_003-eps-converted-to.pdf>
+] [105])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
- [97]
+ [106]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0E3945E4A6D4CC2E0DABEC644235D961;9116.
+(rerunfilecheck)             Checksum: EFFA27EED632D8F7CA026567B6B32199;9898.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 29258 strings out of 492649
- 500157 string characters out of 6133384
+ 29618 strings out of 492649
+ 506069 string characters out of 6133384
  546168 words of memory out of 5000000
- 30852 multiletter control sequences out of 15000+600000
- 622675 words of font info for 359 fonts, out of 8000000 for 9000
+ 31092 multiletter control sequences out of 15000+600000
+ 627026 words of font info for 375 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,27n,56p,10410b,2850s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,27n,56p,10410b,2918s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
 imsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows
-/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
+/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:
 /Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun
-.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
-s/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wind
-ows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf>
+.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Font
+s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wind
+ows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc>
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/sim
-hei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
+hei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/F
 onts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/W
-indows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
+indows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.t
 tf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/
-simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Window
-s/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c
-:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsu
-n.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fon
-ts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Win
-dows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf
-><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/si
-msun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/
+simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Window
+s/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c
+:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsu
+n.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fon
+ts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><c:/Win
+dows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf
+><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/si
+mhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/
 Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/
 Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.
 ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts
 /simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windo
 ws/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><
-c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simh
-ei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fo
+c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sims
+un.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fo
 nts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wi
 ndows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.tt
 f><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
@@ -2360,92 +2443,94 @@ imhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows
 /Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:
 /Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei
 .ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Font
-s/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Wind
-ows/Fonts/simsun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf>
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/tex
-live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu03.pfb><c:/texlive/2018/texm
-f-dist/fonts/type1/arphic/gbsnu/gbsnu20.pfb><c:/texlive/2018/texmf-dist/fonts/t
-ype1/arphic/gbsnu/gbsnu30.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gb
-snu/gbsnu4e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pf
-b><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu50.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu51.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/arphic/gbsnu/gbsnu52.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
-arphic/gbsnu/gbsnu53.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
-bsnu54.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu55.pfb><c:
-/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu56.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/arphic/gbsnu/gbsnu57.pfb><c:/texlive/2018/texmf-dist/fon
-ts/type1/arphic/gbsnu/gbsnu58.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphi
-c/gbsnu/gbsnu59.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5
-a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><c:/texl
-ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><c:/texlive/2018/texmf
--dist/fonts/type1/arphic/gbsnu/gbsnu5d.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/arphic/gbsnu/gbsnu5e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
-nu/gbsnu5f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb
-><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu61.pfb><c:/texlive/2
-018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu62.pfb><c:/texlive/2018/texmf-dist
-/fonts/type1/arphic/gbsnu/gbsnu63.pfb><c:/texlive/2018/texmf-dist/fonts/type1/a
-rphic/gbsnu/gbsnu64.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
-snu65.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb><c:/
-texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu67.pfb><c:/texlive/2018/t
-exmf-dist/fonts/type1/arphic/gbsnu/gbsnu68.pfb><c:/texlive/2018/texmf-dist/font
-s/type1/arphic/gbsnu/gbsnu69.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic
-/gbsnu/gbsnu6a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb><c:/texli
-ve/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6d.pfb><c:/texlive/2018/texmf-
-dist/fonts/type1/arphic/gbsnu/gbsnu6e.pfb><c:/texlive/2018/texmf-dist/fonts/typ
-e1/arphic/gbsnu/gbsnu70.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsn
-u/gbsnu71.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb>
-<c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu73.pfb><c:/texlive/20
-18/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu74.pfb><c:/texlive/2018/texmf-dist/
-fonts/type1/arphic/gbsnu/gbsnu75.pfb><c:/texlive/2018/texmf-dist/fonts/type1/ar
-phic/gbsnu/gbsnu76.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbs
-nu77.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu78.pfb><c:/t
-exlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu79.pfb><c:/texlive/2018/te
-xmf-dist/fonts/type1/arphic/gbsnu/gbsnu7a.pfb><c:/texlive/2018/texmf-dist/fonts
-/type1/arphic/gbsnu/gbsnu7b.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/
-gbsnu/gbsnu7c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.
-pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><c:/texliv
-e/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7f.pfb><c:/texlive/2018/texmf-d
-ist/fonts/type1/arphic/gbsnu/gbsnu80.pfb><c:/texlive/2018/texmf-dist/fonts/type
-1/arphic/gbsnu/gbsnu81.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu
-/gbsnu82.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb><
-c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu84.pfb><c:/texlive/201
-8/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu86.pfb><c:/texlive/2018/texmf-dist/f
-onts/type1/arphic/gbsnu/gbsnu88.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arp
-hic/gbsnu/gbsnu89.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
-u8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><c:/te
-xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8c.pfb><c:/texlive/2018/tex
-mf-dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/arphic/gbsnu/gbsnu8e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/g
-bsnu/gbsnu8f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.p
-fb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu91.pfb><c:/texlive
-/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu94.pfb><c:/texlive/2018/texmf-di
-st/fonts/type1/arphic/gbsnu/gbsnu95.pfb><c:/texlive/2018/texmf-dist/fonts/type1
-/arphic/gbsnu/gbsnu96.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/
-gbsnu97.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb><c
-:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu99.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb><c:/texlive/2018/texmf-dist/fo
-nts/type1/arphic/gbsnu/gbsnu9c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arph
-ic/gbsnu/gbsnu9f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
-ff.pfb>
-Output written on main.pdf (97 pages, 3518539 bytes).
+s/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Wind
+ows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc>
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/sim
+sun.ttc><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pf
+b><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2018/tex
+mf-dist/fonts/type1/arphic/gbsnu/gbsnu03.pfb><c:/texlive/2018/texmf-dist/fonts/
+type1/arphic/gbsnu/gbsnu20.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/g
+bsnu/gbsnu24.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.p
+fb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><c:/texlive
+/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><c:/texlive/2018/texmf-di
+st/fonts/type1/arphic/gbsnu/gbsnu50.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/arphic/gbsnu/gbsnu51.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/
+gbsnu52.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu53.pfb><c
+:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu54.pfb><c:/texlive/2018
+/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu55.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/arphic/gbsnu/gbsnu56.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arph
+ic/gbsnu/gbsnu57.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu
+58.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu59.pfb><c:/tex
+live/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5a.pfb><c:/texlive/2018/texm
+f-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><c:/texlive/2018/texmf-dist/fonts/t
+ype1/arphic/gbsnu/gbsnu5c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gb
+snu/gbsnu5d.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5e.pf
+b><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb><c:/texlive/
+2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb><c:/texlive/2018/texmf-dis
+t/fonts/type1/arphic/gbsnu/gbsnu61.pfb><c:/texlive/2018/texmf-dist/fonts/type1/
+arphic/gbsnu/gbsnu62.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/g
+bsnu63.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu64.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb><c:/texlive/2018/
+texmf-dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb><c:/texlive/2018/texmf-dist/fon
+ts/type1/arphic/gbsnu/gbsnu67.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphi
+c/gbsnu/gbsnu68.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6
+9.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6a.pfb><c:/texl
+ive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6b.pfb><c:/texlive/2018/texmf
+-dist/fonts/type1/arphic/gbsnu/gbsnu6c.pfb><c:/texlive/2018/texmf-dist/fonts/ty
+pe1/arphic/gbsnu/gbsnu6d.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbs
+nu/gbsnu6e.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu70.pfb
+><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu71.pfb><c:/texlive/2
+018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb><c:/texlive/2018/texmf-dist
+/fonts/type1/arphic/gbsnu/gbsnu73.pfb><c:/texlive/2018/texmf-dist/fonts/type1/a
+rphic/gbsnu/gbsnu74.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gb
+snu75.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb><c:/
+texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu77.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/arphic/gbsnu/gbsnu78.pfb><c:/texlive/2018/texmf-dist/font
+s/type1/arphic/gbsnu/gbsnu79.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic
+/gbsnu/gbsnu7a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7b
+.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7c.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7d.pfb><c:/texlive/2018/texmf-
+dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><c:/texlive/2018/texmf-dist/fonts/typ
+e1/arphic/gbsnu/gbsnu7f.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsn
+u/gbsnu80.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu81.pfb>
+<c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu82.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu83.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu84.pfb><c:/texlive/2018/texmf-dist/fonts/type1/ar
+phic/gbsnu/gbsnu86.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbs
+nu88.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu89.pfb><c:/t
+exlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8a.pfb><c:/texlive/2018/te
+xmf-dist/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/arphic/gbsnu/gbsnu8c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/
+gbsnu/gbsnu8d.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8e.
+pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8f.pfb><c:/texliv
+e/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu90.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/arphic/gbsnu/gbsnu91.pfb><c:/texlive/2018/texmf-dist/fonts/type
+1/arphic/gbsnu/gbsnu94.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu
+/gbsnu95.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb><
+c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu97.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu98.pfb><c:/texlive/2018/texmf-dist/f
+onts/type1/arphic/gbsnu/gbsnu99.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arp
+hic/gbsnu/gbsnu9a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsn
+u9c.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9f.pfb><c:/te
+xlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
+Output written on main.pdf (106 pages, 3957085 bytes).
 PDF statistics:
- 3715 PDF objects out of 4296 (max. 8388607)
- 2999 compressed objects within 30 object streams
- 1411 named destinations out of 1440 (max. 500000)
- 993 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4050 PDF objects out of 4296 (max. 8388607)
+ 3238 compressed objects within 33 object streams
+ 1499 named destinations out of 1728 (max. 500000)
+ 1065 words of extra memory for PDF output out of 10000 (max. 10000000)
 
