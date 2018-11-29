@@ -1834,20 +1834,23 @@ $
 \begin{align}
    &L(w,b,\alpha) ~=~ \frac{1}{2}||w||^2-\sum_{i=1}^{m}\alpha_i~[y^{(i)}(w^Tx^{(i)}+b)-1] \nonumber\\
    &\theta_D(\alpha)~=~\min \limits_{w,b} L(w,b,\alpha)   \nonumber\\
-   \text{求解：} &\textcircled{\footnotesize{1}} ~\text{先最小化lagrangian.$~L(w,b,\alpha)~$}  \nonumber\\
+   \text{求解：} &\textcircled{\footnotesize{1}} ~\text{先最小化lagrangian.$~L(w,b,\alpha)~$关于w和b.}  \nonumber\\
                 &\nabla_wL(w,b,\alpha)=w-\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}=0 \nonumber\\
                 &\textcolor{red}{w = \sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}} \nonumber \\
                 &\frac{\partial}{\partial b} L(w,b,\alpha) = \sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber\\
                 &\textcolor{red}{\sum_{i=1}^{m}\alpha_iy^{(i)}=0} \nonumber \\
                 &\textcircled{\footnotesize{2}} ~\text{代入到原式：}\nonumber\\
-                &L(w,b,\alpha) \nonumber \\
+                &\theta_D(\alpha)~=~\min \limits_{w,b} L(w,b,\alpha) \nonumber \\
                 &=\frac{1}{2}||w||^2-\sum_{i=1}^{m}\alpha_i~[y^{(i)}(w^Tx^{(i)}+b)-1] \nonumber\\
                 &=\frac{1}{2}ww^T-\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}w^T-\sum_{i=1}^{m}\alpha_iy^{(i)}b+\sum_{i=1}^{m}\alpha_i \nonumber \\
                 &=\frac{1}{2}ww^T-ww^T-\sum_{i=1}^{m}\alpha_iy^{(i)}b+\sum_{i=1}^{m}\alpha_i \nonumber \\
                 &=-\frac{1}{2}\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}(\sum_{j=1}^{m}\alpha_iy^{(j)}x^{(j)})^T-b\sum_{i=1}^{m}\alpha_iy^{(i)}+\sum_{i=1}^{m}\alpha_i \nonumber \\
-                W(\alpha)&=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber
+                \theta_D(\alpha)&=~\min \limits_{w,b} L(w,b,\alpha)=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\\
+                &\textcircled{\footnotesize{3}} ~\text{再对上式求关于$~\alpha~$的极大}  \nonumber\\
+                &\max \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\nonumber\\
+         &~~~~~~~~~~~~~~~~~~~~s.t.~~\alpha_i\geq 0,~~i=1,...,m \nonumber \\
+               &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber
 \end{align}
-
 \indent得到最终的对偶优化问题：
 \textcolor{red}{\begin{align}
             &\min \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}>-\sum_{i=1}^{m}\alpha_i \nonumber\nonumber\\
@@ -1856,12 +1859,12 @@ $
 \end{align}}
 \indent最终要解决此对偶问题，1998年John.C.platt发表了一篇论文~"Sequential Minimal Optimization:A Fast Algorithm For Training Support Vector Machines"~or SMO algorithm 很好的解决了这个优化问题。
 
-
+\newpage
 \subsubsection{软间隔支持向量机}
 在此之前所有的讨论都是建立在数据明显线性可分下进行的，接下来要介绍一种~SVM~的变化形式来解决允许少量错误分点的情况，就是引入~L1~范式的正则化项（松弛变量）。这样做的好处是防止模型过拟合，使模型更稳定。
-\begin{figure}[!htb]
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.78\textwidth]{soft.eps}
+  \includegraphics[width=0.8\textwidth]{soft.eps}
   \caption{软间隔支持向量机}
 \end{figure}
 
@@ -1872,6 +1875,28 @@ $
             ~~~&\xi_i\geq 0,~~i=1,...,m. \nonumber
 \end{align}
 
+\indent\textbf{对偶问题} ~~
+\begin{align}
+   &L(w,b,\alpha,\xi,\mu) ~=~ \frac{1}{2}||w||^2+C\sum_{i=1}^{m}\xi_i-\sum_{i=1}^{m}\alpha_i~[y^{(i)}(w^Tx^{(i)}+b)-1+\xi_i]-\sum_{i=1}^{m}\mu_i\xi_i \nonumber\\
+   &\theta_D(\alpha)~=~\min \limits_{w,b,\xi} L(w,b,\xi,\alpha,\mu)   \nonumber\\
+   \text{求解：} &\textcircled{\footnotesize{1}} ~\text{先最小化lagrangian.$~L(w,b,\xi,\alpha,\mu)~$}  \nonumber\\
+                &\nabla_wL(w,b,\xi,\alpha,\mu)=w-\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}=0 \nonumber\\
+                &\textcolor{red}{w = \sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}} \nonumber \\
+                &\frac{\partial}{\partial b} L(w,b,\xi,\alpha,\mu) = \sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber\\
+                &\textcolor{red}{\sum_{i=1}^{m}\alpha_iy^{(i)}=0} \nonumber \\
+                &\nabla_{\xi}L(w,b,\xi,\alpha,\mu)=C-\alpha_i-\mu_i=0 \nonumber\\
+                &\textcolor{red}{C-\alpha_i-\mu_i=0} \nonumber \\
+                &\textcircled{\footnotesize{2}} ~\text{代入到原式：}\nonumber\\
+                &\min \limits_{w,b,\xi} L(w,b,\xi,\alpha,\mu) \nonumber \\
+                &=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}>\nonumber\\
+                \theta_D(\alpha)&=~\min \limits_{w,b,\xi} L(w,b,\xi,\alpha,\mu)=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\\
+                &\textcircled{\footnotesize{3}} ~\text{再对上式求关于$~\alpha~$的极大}  \nonumber
+\end{align}
+\begin{align}
+            &\max \limits_\alpha ~~~\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\nonumber\\
+         s.&t.~~C-\alpha_i-\mu_i=0,~~~\alpha_i \geq 0,~~~\mu_i\geq 0, ~~~i=1,2,...,m \nonumber \\
+               &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber
+\end{align}
 \textbf{得到对偶问题} ~~
 \begin{align}
             &\min \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}>-\sum_{i=1}^{m}\alpha_i \nonumber\nonumber\\
@@ -3276,3 +3301,7 @@ errorlr = function.rssError(yHat.T.A,abY[100:199])   #518.63631532510897
 \end{lstlisting}
 
 %\subsection{缩减系数来理解数据}
+
+
+
+\newpage 
