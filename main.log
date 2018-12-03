@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  29 NOV 2018 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  3 DEC 2018 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1967,7 +1967,7 @@ LaTeX Warning: Command \textcircled invalid in math mode on input line 1944.
 
 LaTeX Warning: Command \textcircled invalid in math mode on input line 1944.
 
-[65 <./Figure/kernel-eps-converted-to.pdf>]
+[65 <./Figure/kernel-eps-converted-to.pdf>] [66]
 Package epstopdf Info: Source file: <Figure/Gradient_descent.eps>
 (epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 5424859 bytes
@@ -1977,14 +1977,14 @@ df>
 (epstopdf)                    size: 38786 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Gradient_descent-ep
 s-converted-to.pdf Figure/Gradient_descent.eps>
-(epstopdf)             \includegraphics on input line 1976.
+(epstopdf)             \includegraphics on input line 1990.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gradient_descent-eps-converted-to.pdf, id=1956, 218.8175pt x 172.645pt>
+<Figure/Gradient_descent-eps-converted-to.pdf, id=1960, 218.8175pt x 172.645pt>
 
 File: Figure/Gradient_descent-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gradient_descent-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gradient_descent-eps-converted-to.pdf  used on 
-input line 1976.
+input line 1990.
 (pdftex.def)             Requested size: 160.43948pt x 126.58563pt.
 Package epstopdf Info: Source file: <Figure/Coordinate_ascent.eps>
 (epstopdf)                    date: 2018-10-15 09:48:46
@@ -1995,29 +1995,26 @@ pdf>
 (epstopdf)                    size: 28504 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Coordinate_ascent-e
 ps-converted-to.pdf Figure/Coordinate_ascent.eps>
-(epstopdf)             \includegraphics on input line 1983.
+(epstopdf)             \includegraphics on input line 1997.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1957, 218.8175pt x 169.63374
+<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1961, 218.8175pt x 169.63374
 pt>
 File: Figure/Coordinate_ascent-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Coordinate_ascent-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Coordinate_ascent-eps-converted-to.pdf  used on
- input line 1983.
+ input line 1997.
 (pdftex.def)             Requested size: 160.43948pt x 124.37775pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 1974--1986
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 1988--2000
 []$[]$ $[]$ 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[66] [67 <./Figure/Gradient_descent-eps-converted-to.pdf> <./Figure/Coordinate_
-ascent-eps-converted-to.pdf>]pdfTeX warning (ext4): destination with the same i
-dentifier (name{equation.1.3}) has been already used, duplicate ignored
+[67 <./Figure/Gradient_descent-eps-converted-to.pdf> <./Figure/Coordinate_ascen
+t-eps-converted-to.pdf>]pdfTeX warning (ext4): destination with the same identi
+fier (name{equation.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2020 \end{align}
+l.2034 \end{align}
                    [68]
 Package epstopdf Info: Source file: <Figure/clipped.eps>
 (epstopdf)                    date: 2018-10-15 09:48:46
@@ -2027,66 +2024,66 @@ Package epstopdf Info: Source file: <Figure/clipped.eps>
 (epstopdf)                    size: 67086 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/clipped-eps-convert
 ed-to.pdf Figure/clipped.eps>
-(epstopdf)             \includegraphics on input line 2052.
+(epstopdf)             \includegraphics on input line 2066.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/clipped-eps-converted-to.pdf, id=2000, 433.62pt x 192.72pt>
+<Figure/clipped-eps-converted-to.pdf, id=1998, 433.62pt x 192.72pt>
 File: Figure/clipped-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/clipped-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/clipped-eps-converted-to.pdf  used on input lin
-e 2052.
+e 2066.
 (pdftex.def)             Requested size: 333.69527pt x 148.31544pt.
-
-Overfull \hbox (35.9664pt too wide) detected at line 2086
+ [69 <./Figure/clipped-eps-converted-to.pdf>]
+Overfull \hbox (35.9664pt too wide) detected at line 2100
 []
  []
 
-[69pdfTeX warning (ext4): destination with the same identifier (name{equation.1
+
+Overfull \hbox (12.94258pt too wide) detected at line 2113
+[]
+ []
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 2125.
+
+[70pdfTeX warning (ext4): destination with the same identifier (name{equation.1
 .9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2086 \end{align}
-                   <./Figure/clipped-eps-converted-to.pdf>]
-Overfull \hbox (12.94258pt too wide) detected at line 2099
-[]
- []
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 2111.
-
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2119
+l.2125 \end{align}
+                  ]
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2119
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2133
 
  []
 
 [71]
-Underfull \hbox (badness 10000) in paragraph at lines 2137--2145
+Underfull \hbox (badness 10000) in paragraph at lines 2151--2159
 
  []
 
@@ -2099,20 +2096,20 @@ Package epstopdf Info: Source file: <Figure/SMOSimple.eps>
 (epstopdf)                    size: 18479 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/SMOSimple-eps-conve
 rted-to.pdf Figure/SMOSimple.eps>
-(epstopdf)             \includegraphics on input line 2237.
+(epstopdf)             \includegraphics on input line 2251.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/SMOSimple-eps-converted-to.pdf, id=2116, 433.62pt x 289.08pt>
+<Figure/SMOSimple-eps-converted-to.pdf, id=2099, 433.62pt x 289.08pt>
 File: Figure/SMOSimple-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/SMOSimple-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/SMOSimple-eps-converted-to.pdf  used on input l
-ine 2237.
+ine 2251.
 (pdftex.def)             Requested size: 271.12381pt x 180.75836pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2241--2246
+Underfull \hbox (badness 10000) in paragraph at lines 2255--2260
 
  []
 
-[74 <./Figure/SMOSimple-eps-converted-to.pdf>] [75] [76] [77]
+[74] [75 <./Figure/SMOSimple-eps-converted-to.pdf>] [76] [77]
 Package epstopdf Info: Source file: <Figure/SMOComplete.eps>
 (epstopdf)                    date: 2018-10-15 09:48:46
 (epstopdf)                    size: 22186 bytes
@@ -2121,26 +2118,26 @@ Package epstopdf Info: Source file: <Figure/SMOComplete.eps>
 (epstopdf)                    size: 18510 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/SMOComplete-eps-con
 verted-to.pdf Figure/SMOComplete.eps>
-(epstopdf)             \includegraphics on input line 2372.
+(epstopdf)             \includegraphics on input line 2386.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/SMOComplete-eps-converted-to.pdf, id=2273, 433.62pt x 289.08pt>
+<Figure/SMOComplete-eps-converted-to.pdf, id=2258, 433.62pt x 289.08pt>
 File: Figure/SMOComplete-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/SMOComplete-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/SMOComplete-eps-converted-to.pdf  used on input
- line 2372.
+ line 2386.
 (pdftex.def)             Requested size: 271.12381pt x 180.75836pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2376--2381
+Underfull \hbox (badness 10000) in paragraph at lines 2390--2395
 
  []
 
-[78 <./Figure/SMOComplete-eps-converted-to.pdf>] [79] [80]
-Overfull \hbox (5.02882pt too wide) in paragraph at lines 2484--2485
+[78] [79 <./Figure/SMOComplete-eps-converted-to.pdf>] [80] [81]
+Overfull \hbox (5.02882pt too wide) in paragraph at lines 2498--2499
 [][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
-[81] [82]
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2543
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2557
 
  []
 
@@ -2153,26 +2150,26 @@ Package epstopdf Info: Source file: <Figure/Adaboost.eps>
 (epstopdf)                    size: 132720 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/Adaboost-eps-conver
 ted-to.pdf Figure/Adaboost.eps>
-(epstopdf)             \includegraphics on input line 2737.
+(epstopdf)             \includegraphics on input line 2751.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/Adaboost-eps-converted-to.pdf, id=2631, 282.05376pt x 213.79875pt>
 File: Figure/Adaboost-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Adaboost-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Adaboost-eps-converted-to.pdf  used on input li
-ne 2737.
+ne 2751.
 (pdftex.def)             Requested size: 325.35112pt x 246.63654pt.
  [89 <./Figure/Adaboost-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2759--2767
+Underfull \hbox (badness 10000) in paragraph at lines 2773--2781
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2759--2767
+Underfull \hbox (badness 10000) in paragraph at lines 2773--2781
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2759--2767
+Underfull \hbox (badness 10000) in paragraph at lines 2773--2781
 
  []
 
@@ -2185,13 +2182,13 @@ Package epstopdf Info: Source file: <Figure/TFPN.eps>
 (epstopdf)                    size: 108849 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/TFPN-eps-converted-
 to.pdf Figure/TFPN.eps>
-(epstopdf)             \includegraphics on input line 2861.
+(epstopdf)             \includegraphics on input line 2875.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/TFPN-eps-converted-to.pdf, id=2755, 549.05125pt x 66.2475pt>
 File: Figure/TFPN-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/TFPN-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/TFPN-eps-converted-to.pdf  used on input line 2
-861.
+875.
 (pdftex.def)             Requested size: 417.1175pt x 50.3294pt.
  [93 <./Figure/TFPN-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/ROC.eps>
@@ -2202,13 +2199,13 @@ Package epstopdf Info: Source file: <Figure/ROC.eps>
 (epstopdf)                    size: 16201 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/ROC-eps-converted-t
 o.pdf Figure/ROC.eps>
-(epstopdf)             \includegraphics on input line 2873.
+(epstopdf)             \includegraphics on input line 2887.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/ROC-eps-converted-to.pdf, id=2802, 462.72874pt x 344.28625pt>
 File: Figure/ROC-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/ROC-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/ROC-eps-converted-to.pdf  used on input line 28
-73.
+87.
 (pdftex.def)             Requested size: 250.27304pt x 186.21124pt.
  [94 <./Figure/ROC-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figure/costMatrix.eps>
@@ -2219,16 +2216,16 @@ Package epstopdf Info: Source file: <Figure/costMatrix.eps>
 (epstopdf)                    size: 107116 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/costMatrix-eps-conv
 erted-to.pdf Figure/costMatrix.eps>
-(epstopdf)             \includegraphics on input line 2894.
+(epstopdf)             \includegraphics on input line 2908.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/costMatrix-eps-converted-to.pdf, id=2846, 549.05125pt x 145.54375pt>
 File: Figure/costMatrix-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/costMatrix-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/costMatrix-eps-converted-to.pdf  used on input 
-line 2894.
+line 2908.
 (pdftex.def)             Requested size: 417.1175pt x 110.57219pt.
  [95 <./Figure/costMatrix-eps-converted-to.pdf>] [96]
-Overfull \hbox (23.07275pt too wide) in paragraph at lines 2945--2948
+Overfull \hbox (23.07275pt too wide) in paragraph at lines 2959--2962
 []\C70/gbsn/bx/n/10.95/5f S \C70/gbsn/bx/n/10.95/62 ^^Q \C70/gbsn/bx/n/10.95/4e
  ì \C70/gbsn/bx/n/10.95/97 b \C70/gbsn/bx/n/10.95/5b ù \C70/gbsn/bx/n/10.95/56 
 Þ \C70/gbsn/bx/n/10.95/5f R \C70/gbsn/bx/n/10.95/95 î \C70/gbsn/bx/n/10.95/98 ˜
@@ -2244,7 +2241,7 @@ bx/n/10.95/53 s\OT1/cmr/m/n/10.95 1/2\C70/gbsn/bx/n/10.95/76 „
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2945--2948
+Underfull \hbox (badness 10000) in paragraph at lines 2959--2962
 
  []
 
@@ -2253,9 +2250,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2945--2948
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2948 ...i)} = \theta^T x^{(i)}+ \epsilon^{(i)}$$
+l.2962 ...i)} = \theta^T x^{(i)}+ \epsilon^{(i)}$$
                                                   ]
-Underfull \hbox (badness 10000) in paragraph at lines 2952--2954
+Underfull \hbox (badness 10000) in paragraph at lines 2966--2968
 
  []
 
@@ -2263,25 +2260,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2957 \begin{equation}
+l.2971 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2969 \begin{equation}
+l.2983 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2980 \begin{equation}
+l.2994 \begin{equation}
                        \nonumber [98]pdfTeX warning (ext4): destination with th
 e same identifier (name{equation.2.1}) has been already used, duplicate ignored
 
 <to be read again> 
                    \relax 
-l.2991 \begin{equation}
+l.3005 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 3006--3007
+Underfull \hbox (badness 10000) in paragraph at lines 3020--3021
 
  []
 
@@ -2289,9 +2286,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3009 \begin{equation}
+l.3023 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 3016--3018
+Underfull \hbox (badness 10000) in paragraph at lines 3030--3032
 
  []
 
@@ -2299,12 +2296,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3026 \end{align}
+l.3040 \end{align}
                    [99] [100]pdfTeX warning (ext4): destination with the same i
 dentifier (name{equation.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3067 \begin{equation}
+l.3081 \begin{equation}
                        \nonumber [101]
 Package epstopdf Info: Source file: <Figure/2141.eps>
 (epstopdf)                    date: 2018-07-12 11:53:12
@@ -2314,26 +2311,26 @@ Package epstopdf Info: Source file: <Figure/2141.eps>
 (epstopdf)                    size: 35134 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/2141-eps-converted-
 to.pdf Figure/2141.eps>
-(epstopdf)             \includegraphics on input line 3139.
+(epstopdf)             \includegraphics on input line 3153.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/2141-eps-converted-to.pdf, id=2936, 433.62pt x 289.08pt>
 File: Figure/2141-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/2141-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/2141-eps-converted-to.pdf  used on input line 3
-139.
+153.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
  [102]pdfTeX warning (ext4): destination with the same identifier (name{equatio
 n.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3152 \begin{equation}
+l.3166 \begin{equation}
                        \nonumberpdfTeX warning (ext4): destination with the sam
 e identifier (name{equation.2.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3172 \begin{equation}
+l.3186 \begin{equation}
                        \nonumber
-Underfull \hbox (badness 10000) in paragraph at lines 3163--3172
+Underfull \hbox (badness 10000) in paragraph at lines 3177--3186
 
  []
 
@@ -2346,13 +2343,13 @@ Package epstopdf Info: Source file: <Figure/tau.eps>
 (epstopdf)                    size: 183888 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/tau-eps-converted-t
 o.pdf Figure/tau.eps>
-(epstopdf)             \includegraphics on input line 3205.
+(epstopdf)             \includegraphics on input line 3219.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/tau-eps-converted-to.pdf, id=3000, 268.00125pt x 204.765pt>
 File: Figure/tau-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/tau-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 32
-05.
+19.
 (pdftex.def)             Requested size: 229.4159pt x 175.28209pt.
 
 
@@ -2366,13 +2363,13 @@ Package epstopdf Info: Source file: <Figure/lwlr1.eps>
 (epstopdf)                    size: 32386 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr1-eps-converted
 -to.pdf Figure/lwlr1.eps>
-(epstopdf)             \includegraphics on input line 3212.
+(epstopdf)             \includegraphics on input line 3226.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/lwlr1-eps-converted-to.pdf, id=3001, 433.62pt x 289.08pt>
 File: Figure/lwlr1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr1-eps-converted-to.pdf  used on input line 
-3212.
+3226.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 (epstopdf)                    date: 2018-07-12 17:26:20
@@ -2382,13 +2379,13 @@ Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 (epstopdf)                    size: 32637 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_01-eps-conver
 ted-to.pdf Figure/lwlr0_01.eps>
-(epstopdf)             \includegraphics on input line 3217.
+(epstopdf)             \includegraphics on input line 3231.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/lwlr0_01-eps-converted-to.pdf, id=3002, 433.62pt x 289.08pt>
 File: Figure/lwlr0_01-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_01-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_01-eps-converted-to.pdf  used on input li
-ne 3217.
+ne 3231.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 (epstopdf)                    date: 2018-07-12 17:26:47
@@ -2398,16 +2395,16 @@ Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 (epstopdf)                    size: 33079 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figure/lwlr0_003-eps-conve
 rted-to.pdf Figure/lwlr0_003.eps>
-(epstopdf)             \includegraphics on input line 3222.
+(epstopdf)             \includegraphics on input line 3236.
 Package epstopdf Info: Output file is already uptodate.
 <Figure/lwlr0_003-eps-converted-to.pdf, id=3003, 433.62pt x 289.08pt>
 File: Figure/lwlr0_003-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_003-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_003-eps-converted-to.pdf  used on input l
-ine 3222.
+ine 3236.
 (pdftex.def)             Requested size: 250.27304pt x 166.85048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3209--3229
+Underfull \hbox (badness 10000) in paragraph at lines 3223--3243
 
  []
 
@@ -2420,7 +2417,7 @@ on with the same identifier (name{equation.2.6}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.3233 \begin{equation}
+l.3247 \begin{equation}
                        \nonumber [106 <./Figure/lwlr0_003-eps-converted-to.pdf>
 ] [107] [108]) (./ThesisFiles/part2.tex
 Package epstopdf Info: Source file: <Figure/KM.eps>
@@ -2512,7 +2509,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 165.
 Here is how much of TeX's memory you used:
  29719 strings out of 492649
  507895 string characters out of 6133384
- 550168 words of memory out of 5000000
+ 548168 words of memory out of 5000000
  31151 multiletter control sequences out of 15000+600000
  628129 words of font info for 379 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2636,7 +2633,7 @@ nu/gbsnu99.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb
 ><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9c.pfb><c:/texlive/2
 018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9f.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on main.pdf (112 pages, 4155563 bytes).
+Output written on main.pdf (112 pages, 4158440 bytes).
 PDF statistics:
  4213 PDF objects out of 4296 (max. 8388607)
  3348 compressed objects within 34 object streams

@@ -49,12 +49,12 @@
 \contentsline {subsubsection}{\numberline {1.7.5}利用对偶问题求解最优间隔分类器}{61}{subsubsection.1.7.5}
 \contentsline {subsubsection}{\numberline {1.7.6}软间隔支持向量机}{63}{subsubsection.1.7.6}
 \contentsline {subsubsection}{\numberline {1.7.7}引入核函数}{64}{subsubsection.1.7.7}
-\contentsline {subsubsection}{\numberline {1.7.8}SMO\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 算法}{66}{subsubsection.1.7.8}
-\contentsline {subsubsection}{\numberline {1.7.9}实战：简化版的SMO算法处理小规模数据集}{71}{subsubsection.1.7.9}
+\contentsline {subsubsection}{\numberline {1.7.8}SMO\hspace {0.25em plus 0.125em minus 0.08em}\ignorespaces 算法}{67}{subsubsection.1.7.8}
+\contentsline {subsubsection}{\numberline {1.7.9}实战：简化版的SMO算法处理小规模数据集}{72}{subsubsection.1.7.9}
 \contentsline {subsubsection}{\numberline {1.7.10}实战：完整版的SMO算法加速优化}{75}{subsubsection.1.7.10}
 \contentsline {subsubsection}{\numberline {1.7.11}实战：引入核函数处理线性不可分情况}{79}{subsubsection.1.7.11}
 \contentsline {subsubsection}{\numberline {1.7.12}实战：利用SVM进行识别字体}{83}{subsubsection.1.7.12}
-\contentsline {subsubsection}{\numberline {1.7.13}小结}{86}{subsubsection.1.7.13}
+\contentsline {subsubsection}{\numberline {1.7.13}小结}{87}{subsubsection.1.7.13}
 \contentsline {subsection}{\numberline {1.8}AdaBoost算法}{88}{subsection.1.8}
 \contentsline {subsubsection}{\numberline {1.8.1}集成方法}{88}{subsubsection.1.8.1}
 \contentsline {subsubsection}{\numberline {1.8.2}AdaBoost}{89}{subsubsection.1.8.2}

@@ -1847,7 +1847,7 @@ $
                 &=-\frac{1}{2}\sum_{i=1}^{m}\alpha_iy^{(i)}x^{(i)}(\sum_{j=1}^{m}\alpha_iy^{(j)}x^{(j)})^T-b\sum_{i=1}^{m}\alpha_iy^{(i)}+\sum_{i=1}^{m}\alpha_i \nonumber \\
                 \theta_D(\alpha)&=~\min \limits_{w,b} L(w,b,\alpha)=\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\\
                 &\textcircled{\footnotesize{3}} ~\text{再对上式求关于$~\alpha~$的极大}  \nonumber\\
-                &\max \limits_\alpha ~~~\frac{1}{2}\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\nonumber\\
+                &\max \limits_\alpha ~~~\sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy^{(i)}y^{(j)}<x^{(i)},x^{(j)}> \nonumber\nonumber\\
          &~~~~~~~~~~~~~~~~~~~~s.t.~~\alpha_i\geq 0,~~i=1,...,m \nonumber \\
                &~~~~~~~~~~~~~~~~~~~~~~~~~~~\sum_{i=1}^{m}\alpha_iy^{(i)}=0 \nonumber
 \end{align}
@@ -1940,8 +1940,22 @@ $
     ~&~    \nonumber\\
     \textcircled{\footnotesize{3}}&~~\text{径向基函数(radial basis function)} \nonumber \\
     K(x,y) &~=~\exp\Big(\frac{-||x-y||^2}{2\sigma^2}\Big) ~~~~~~~~~~\textcolor{red}{O(n)} \nonumber \\
-    ~&~~\Phi(x)~ \text{无限维}~~~~~~~~~~~~~~~~~~~~~~~~~\textcolor{red}{O(\infty)} \nonumber
+    ~&~~\Phi(x)~ \text{无限维?}~~~~~~~~~~~~~~~~~~~~~~~~~\textcolor{red}{O(\infty)} \nonumber
 \end{align}
+\begin{align}
+    &e^x = 1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+...+\frac{x^n}{n!}+R_n\nonumber\\
+    K(x_1,x_2)&=e^{-\frac{||x_1-x_2||^2}{2\sigma^2}}
+    =e^{-\frac{(x_1-x_2)^2}{2\sigma^2}}
+    =e^{-\frac{x_1^2+x_2^2-2x_1x_2}{2\sigma^2}}\nonumber\\
+    &=e^{-\frac{x_1^2+x_2^2}{2\sigma^2}}e^{\frac{x_1x_2}{\sigma^2}}\nonumber\\
+    &=e^{-\frac{x_1^2+x_2^2}{2\sigma^2}}\Big(1+\frac{1}{\sigma^2}\cdot\frac{x_1x_2}{1!}+(\frac{1}{\sigma^2})^2\cdot\frac{(x_1x_2)^2}{2!}+\cdots+(\frac{1}{\sigma^2})^n\cdot\frac{(x_1x_2)^n}{n!}+\cdots\Big)\nonumber\\
+    &=e^{-\frac{x_1^2+x_2^2}{2\sigma^2}}\Big(1\cdot1+\frac{1}{1!}\frac{x_1}{\sigma}\frac{x_2}{\sigma}+\frac{1}{2!}\frac{x_1^2}{\sigma^2}\frac{x_2^2}{\sigma^2}+\cdots+\frac{1}{n!}\frac{x_1^n}{\sigma^n}\frac{x_2^n}{\sigma^n}+\cdots\Big)\nonumber\\
+    &=\Phi(x_1)^T\Phi(x_2)\nonumber\\
+    \Phi(x)&=e^{-\frac{x^2}{2\sigma^2}}\Big(1,\sqrt{\frac{1}{1!}}\frac{x}{\sigma},\sqrt{\frac{1}{2!}}\frac{x^2}{\sigma^2},\cdots,\sqrt{\frac{1}{n!}}\frac{x^n  }{\sigma^n},\cdots\Big) \nonumber
+\end{align}
+所以高斯核的$~\Phi(x)~$是无限维的。
+
+
 \indent 事实上，对于任意给定的核函数，是否一定存在原始的核，答案显然是不一定的。那其中的关系由~Mercer~定理给出。
 
 \textbf{Mercer~定理}~~\textcolor{red}{任何半正定对称函数都可以作为核函数。}\\
