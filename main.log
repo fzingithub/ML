@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  17 DEC 2018 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.18)  5 MAY 2019 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,13 +1142,13 @@ Overfull \hbox (1.27011pt too wide) in paragraph at lines 41--43
 1/cmr/m/n/10.95 Bernoulli\C70/gbsn/m/n/10.95/52 ^^F \C70/gbsn/m/n/10.95/5e ^^C 
 \C70/gbsn/m/n/10.95/4e : \C70/gbsn/m/n/10.95/4f ‹|\C70/gbsn/m/n/10.95/ff ^^L| \
 C70/gbsn/m/n/10.95/67 „ \C70/gbsn/m/n/10.95/5e ú ^^? \C70/gbsn/m/n/10.95/4e I \
-C70/gbsn/bx/n/10.95/7e ¿ \C70/gbsn/m/n/10.95/60 ' \C70/gbsn/m/n/10.95/6a ! \C70
-/gbsn/m/n/10.95/57 ‹|\C70/gbsn/m/n/10.95/ff ^^L| \C70/gbsn/bx/n/10.95/5f — \C70
-/gbsn/m/n/10.95/52 0 \C70/gbsn/m/n/10.95/90 ; \C70/gbsn/m/n/10.95/8f ‘ \C70/gbs
-n/m/n/10.95/51 ý \C70/gbsn/m/n/10.95/65 p |\C70/gbsn/m/n/10.95/ff ^^H|\C70/gbsn
-/m/n/10.95/4e _ \C70/gbsn/m/n/10.95/53 ë\OT1/cmr/m/n/10.95 Sigmoid\C70/gbsn/m/n
-/10.95/51 ý \C70/gbsn/m/n/10.95/65 p|\C70/gbsn/m/n/10.95/ff 	||\C70/gbsn/m/n/10
-.95/30 ^^B|
+C70/gbsn/m/n/10.95/7e ¿ \C70/gbsn/m/n/10.95/60 ' \C70/gbsn/m/n/10.95/6a ! \C70/
+gbsn/m/n/10.95/57 ‹|\C70/gbsn/m/n/10.95/ff ^^L| \C70/gbsn/bx/n/10.95/5f — \C70/
+gbsn/m/n/10.95/52 0 \C70/gbsn/m/n/10.95/90 ; \C70/gbsn/m/n/10.95/8f ‘ \C70/gbsn
+/m/n/10.95/51 ý \C70/gbsn/m/n/10.95/65 p |\C70/gbsn/m/n/10.95/ff ^^H|\C70/gbsn/
+m/n/10.95/4e _ \C70/gbsn/m/n/10.95/53 ë\OT1/cmr/m/n/10.95 Sigmoid\C70/gbsn/m/n/
+10.95/51 ý \C70/gbsn/m/n/10.95/65 p|\C70/gbsn/m/n/10.95/ff 	||\C70/gbsn/m/n/10.
+95/30 ^^B|
  []
 
 Package CJKpunct Info: punctuation spaces for family 'hei' do not exist. Use fa
@@ -1209,7 +1209,7 @@ Package epstopdf Info: Source file: <Figure/1141.eps>
 to.pdf Figure/1141.eps>
 (epstopdf)             \includegraphics on input line 198.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1141-eps-converted-to.pdf, id=664, 433.62pt x 289.08pt>
+<Figure/1141-eps-converted-to.pdf, id=638, 433.62pt x 289.08pt>
 File: Figure/1141-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1141-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1141-eps-converted-to.pdf  used on input line 1
@@ -1232,7 +1232,7 @@ Package epstopdf Info: Source file: <Figure/1142.eps>
 to.pdf Figure/1142.eps>
 (epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1142-eps-converted-to.pdf, id=704, 433.62pt x 289.08pt>
+<Figure/1142-eps-converted-to.pdf, id=679, 433.62pt x 289.08pt>
 File: Figure/1142-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1142-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1142-eps-converted-to.pdf  used on input line 2
@@ -1250,7 +1250,7 @@ Package epstopdf Info: Source file: <Figure/1143.eps>
 to.pdf Figure/1143.eps>
 (epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1143-eps-converted-to.pdf, id=705, 289.08pt x 213.79875pt>
+<Figure/1143-eps-converted-to.pdf, id=680, 289.08pt x 213.79875pt>
 File: Figure/1143-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1143-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1143-eps-converted-to.pdf  used on input line 2
@@ -1272,7 +1272,7 @@ Package epstopdf Info: Source file: <Figure/1144.eps>
 to.pdf Figure/1144.eps>
 (epstopdf)             \includegraphics on input line 276.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1144-eps-converted-to.pdf, id=821, 433.62pt x 289.08pt>
+<Figure/1144-eps-converted-to.pdf, id=796, 433.62pt x 289.08pt>
 File: Figure/1144-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1144-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1144-eps-converted-to.pdf  used on input line 2
@@ -1288,7 +1288,7 @@ Package epstopdf Info: Source file: <Figure/1145.eps>
 to.pdf Figure/1145.eps>
 (epstopdf)             \includegraphics on input line 288.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1145-eps-converted-to.pdf, id=822, 336.25626pt x 253.94875pt>
+<Figure/1145-eps-converted-to.pdf, id=797, 336.25626pt x 253.94875pt>
 File: Figure/1145-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1145-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1145-eps-converted-to.pdf  used on input line 2
@@ -1333,7 +1333,7 @@ Package epstopdf Info: Source file: <Figure/Gaussion1.eps>
 rted-to.pdf Figure/Gaussion1.eps>
 (epstopdf)             \includegraphics on input line 450.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gaussion1-eps-converted-to.pdf, id=1010, 402.50375pt x 107.40125pt>
+<Figure/Gaussion1-eps-converted-to.pdf, id=985, 402.50375pt x 107.40125pt>
 File: Figure/Gaussion1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gaussion1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gaussion1-eps-converted-to.pdf  used on input l
@@ -1349,7 +1349,7 @@ Package epstopdf Info: Source file: <Figure/Gaussion2.eps>
 rted-to.pdf Figure/Gaussion2.eps>
 (epstopdf)             \includegraphics on input line 467.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gaussion2-eps-converted-to.pdf, id=1011, 396.48125pt x 107.40125pt>
+<Figure/Gaussion2-eps-converted-to.pdf, id=986, 396.48125pt x 107.40125pt>
 File: Figure/Gaussion2-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gaussion2-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gaussion2-eps-converted-to.pdf  used on input l
@@ -1367,7 +1367,7 @@ Package epstopdf Info: Source file: <Figure/GaussionO1.eps>
 erted-to.pdf Figure/GaussionO1.eps>
 (epstopdf)             \includegraphics on input line 485.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/GaussionO1-eps-converted-to.pdf, id=1044, 399.4925pt x 112.42pt>
+<Figure/GaussionO1-eps-converted-to.pdf, id=1019, 399.4925pt x 112.42pt>
 File: Figure/GaussionO1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/GaussionO1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/GaussionO1-eps-converted-to.pdf  used on input 
@@ -1383,7 +1383,7 @@ Package epstopdf Info: Source file: <Figure/GaussionO2.eps>
 erted-to.pdf Figure/GaussionO2.eps>
 (epstopdf)             \includegraphics on input line 491.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/GaussionO2-eps-converted-to.pdf, id=1045, 399.4925pt x 107.40125pt>
+<Figure/GaussionO2-eps-converted-to.pdf, id=1020, 399.4925pt x 107.40125pt>
 File: Figure/GaussionO2-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/GaussionO2-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/GaussionO2-eps-converted-to.pdf  used on input 
@@ -1399,7 +1399,7 @@ Package epstopdf Info: Source file: <Figure/Gaussion3.eps>
 rted-to.pdf Figure/Gaussion3.eps>
 (epstopdf)             \includegraphics on input line 509.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gaussion3-eps-converted-to.pdf, id=1046, 399.4925pt x 115.43124pt>
+<Figure/Gaussion3-eps-converted-to.pdf, id=1021, 399.4925pt x 115.43124pt>
 File: Figure/Gaussion3-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gaussion3-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Gaussion3-eps-converted-to.pdf  used on input l
@@ -1442,7 +1442,7 @@ Package epstopdf Info: Source file: <Figure/GaussionOO.eps>
 erted-to.pdf Figure/GaussionOO.eps>
 (epstopdf)             \includegraphics on input line 569.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/GaussionOO-eps-converted-to.pdf, id=1088, 233.87375pt x 180.675pt>
+<Figure/GaussionOO-eps-converted-to.pdf, id=1063, 233.87375pt x 180.675pt>
 File: Figure/GaussionOO-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/GaussionOO-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/GaussionOO-eps-converted-to.pdf  used on input 
@@ -1597,7 +1597,7 @@ Package epstopdf Info: Source file: <Figure/distance.eps>
 ted-to.pdf Figure/distance.eps>
 (epstopdf)             \includegraphics on input line 783.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/distance-eps-converted-to.pdf, id=1131, 89.33376pt x 84.315pt>
+<Figure/distance-eps-converted-to.pdf, id=1106, 89.33376pt x 84.315pt>
 File: Figure/distance-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/distance-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/distance-eps-converted-to.pdf  used on input li
@@ -1615,7 +1615,7 @@ Package epstopdf Info: Source file: <Figure/tree.eps>
 to.pdf Figure/tree.eps>
 (epstopdf)             \includegraphics on input line 1178.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/tree-eps-converted-to.pdf, id=1487, 462.72874pt x 344.28625pt>
+<Figure/tree-eps-converted-to.pdf, id=1462, 462.72874pt x 344.28625pt>
 File: Figure/tree-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/tree-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/tree-eps-converted-to.pdf  used on input line 1
@@ -1632,7 +1632,7 @@ Package epstopdf Info: Source file: <Figure/decisionTree.eps>
 nverted-to.pdf Figure/decisionTree.eps>
 (epstopdf)             \includegraphics on input line 1219.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/decisionTree-eps-converted-to.pdf, id=1530, 462.72874pt x 344.28625pt>
+<Figure/decisionTree-eps-converted-to.pdf, id=1505, 462.72874pt x 344.28625pt>
 File: Figure/decisionTree-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/decisionTree-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/decisionTree-eps-converted-to.pdf  used on inpu
@@ -1772,7 +1772,7 @@ df>
 s-converted-to.pdf Figure/PerceptronOrigin.eps>
 (epstopdf)             \includegraphics on input line 1634.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/PerceptronOrigin-eps-converted-to.pdf, id=1765, 433.62pt x 289.08pt>
+<Figure/PerceptronOrigin-eps-converted-to.pdf, id=1740, 433.62pt x 289.08pt>
 File: Figure/PerceptronOrigin-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/PerceptronOrigin-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/PerceptronOrigin-eps-converted-to.pdf  used on 
@@ -1790,7 +1790,7 @@ pdf>
 ps-converted-to.pdf Figure/PerceptronDuality.eps>
 (epstopdf)             \includegraphics on input line 1670.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/PerceptronDuality-eps-converted-to.pdf, id=1817, 433.62pt x 289.08pt>
+<Figure/PerceptronDuality-eps-converted-to.pdf, id=1791, 433.62pt x 289.08pt>
 File: Figure/PerceptronDuality-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/PerceptronDuality-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/PerceptronDuality-eps-converted-to.pdf  used on
@@ -1808,7 +1808,7 @@ Package epstopdf Info: Source file: <Figure/logistics_function.eps>
 eps-converted-to.pdf Figure/logistics_function.eps>
 (epstopdf)             \includegraphics on input line 1684.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/logistics_function-eps-converted-to.pdf, id=1860, 602.25pt x 401.5pt>
+<Figure/logistics_function-eps-converted-to.pdf, id=1835, 602.25pt x 401.5pt>
 File: Figure/logistics_function-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/logistics_function-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/logistics_function-eps-converted-to.pdf  used o
@@ -1824,7 +1824,7 @@ Package epstopdf Info: Source file: <Figure/1412.eps>
 to.pdf Figure/1412.eps>
 (epstopdf)             \includegraphics on input line 1689.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/1412-eps-converted-to.pdf, id=1861, 433.62pt x 289.08pt>
+<Figure/1412-eps-converted-to.pdf, id=1836, 433.62pt x 289.08pt>
 File: Figure/1412-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/1412-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/1412-eps-converted-to.pdf  used on input line 1
@@ -1843,7 +1843,7 @@ df>
 s-converted-to.pdf Figure/geometric_margin.eps>
 (epstopdf)             \includegraphics on input line 1727.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/geometric_margin-eps-converted-to.pdf, id=1894, 227.85126pt x 214.8025p
+<Figure/geometric_margin-eps-converted-to.pdf, id=1869, 227.85126pt x 214.8025p
 t>
 File: Figure/geometric_margin-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/geometric_margin-eps-converted-to.pdf>
@@ -1862,7 +1862,7 @@ Package epstopdf Info: Source file: <Figure/support_vector.eps>
 converted-to.pdf Figure/support_vector.eps>
 (epstopdf)             \includegraphics on input line 1763.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/support_vector-eps-converted-to.pdf, id=1916, 433.62pt x 234.8775pt>
+<Figure/support_vector-eps-converted-to.pdf, id=1891, 433.62pt x 234.8775pt>
 File: Figure/support_vector-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/support_vector-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/support_vector-eps-converted-to.pdf  used on in
@@ -1904,7 +1904,7 @@ Package epstopdf Info: Source file: <Figure/soft.eps>
 to.pdf Figure/soft.eps>
 (epstopdf)             \includegraphics on input line 1867.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/soft-eps-converted-to.pdf, id=1951, 357.335pt x 129.48375pt>
+<Figure/soft-eps-converted-to.pdf, id=1926, 357.335pt x 129.48375pt>
 File: Figure/soft-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/soft-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/soft-eps-converted-to.pdf  used on input line 1
@@ -1940,7 +1940,7 @@ Package epstopdf Info: Source file: <Figure/kernel.eps>
 d-to.pdf Figure/kernel.eps>
 (epstopdf)             \includegraphics on input line 1919.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/kernel-eps-converted-to.pdf, id=1964, 421.575pt x 202.7575pt>
+<Figure/kernel-eps-converted-to.pdf, id=1939, 421.575pt x 202.7575pt>
 File: Figure/kernel-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/kernel-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/kernel-eps-converted-to.pdf  used on input line
@@ -1977,7 +1977,7 @@ df>
 s-converted-to.pdf Figure/Gradient_descent.eps>
 (epstopdf)             \includegraphics on input line 2005.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Gradient_descent-eps-converted-to.pdf, id=1986, 218.8175pt x 172.645pt>
+<Figure/Gradient_descent-eps-converted-to.pdf, id=1960, 218.8175pt x 172.645pt>
 
 File: Figure/Gradient_descent-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Gradient_descent-eps-converted-to.pdf>
@@ -1995,7 +1995,7 @@ pdf>
 ps-converted-to.pdf Figure/Coordinate_ascent.eps>
 (epstopdf)             \includegraphics on input line 2012.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1987, 218.8175pt x 169.63374
+<Figure/Coordinate_ascent-eps-converted-to.pdf, id=1961, 218.8175pt x 169.63374
 pt>
 File: Figure/Coordinate_ascent-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Coordinate_ascent-eps-converted-to.pdf>
@@ -2027,7 +2027,7 @@ Package epstopdf Info: Source file: <Figure/clipped.eps>
 ed-to.pdf Figure/clipped.eps>
 (epstopdf)             \includegraphics on input line 2081.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/clipped-eps-converted-to.pdf, id=2030, 433.62pt x 192.72pt>
+<Figure/clipped-eps-converted-to.pdf, id=2005, 433.62pt x 192.72pt>
 File: Figure/clipped-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/clipped-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/clipped-eps-converted-to.pdf  used on input lin
@@ -2095,7 +2095,7 @@ Package epstopdf Info: Source file: <Figure/SMOSimple.eps>
 rted-to.pdf Figure/SMOSimple.eps>
 (epstopdf)             \includegraphics on input line 2265.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/SMOSimple-eps-converted-to.pdf, id=2154, 433.62pt x 289.08pt>
+<Figure/SMOSimple-eps-converted-to.pdf, id=2129, 433.62pt x 289.08pt>
 File: Figure/SMOSimple-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/SMOSimple-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/SMOSimple-eps-converted-to.pdf  used on input l
@@ -2117,7 +2117,7 @@ Package epstopdf Info: Source file: <Figure/SMOComplete.eps>
 verted-to.pdf Figure/SMOComplete.eps>
 (epstopdf)             \includegraphics on input line 2400.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/SMOComplete-eps-converted-to.pdf, id=2312, 433.62pt x 289.08pt>
+<Figure/SMOComplete-eps-converted-to.pdf, id=2287, 433.62pt x 289.08pt>
 File: Figure/SMOComplete-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/SMOComplete-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/SMOComplete-eps-converted-to.pdf  used on input
@@ -2149,7 +2149,7 @@ Package epstopdf Info: Source file: <Figure/Adaboost.eps>
 ted-to.pdf Figure/Adaboost.eps>
 (epstopdf)             \includegraphics on input line 2765.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/Adaboost-eps-converted-to.pdf, id=2656, 282.05376pt x 213.79875pt>
+<Figure/Adaboost-eps-converted-to.pdf, id=2631, 282.05376pt x 213.79875pt>
 File: Figure/Adaboost-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/Adaboost-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/Adaboost-eps-converted-to.pdf  used on input li
@@ -2181,7 +2181,7 @@ Package epstopdf Info: Source file: <Figure/TFPN.eps>
 to.pdf Figure/TFPN.eps>
 (epstopdf)             \includegraphics on input line 2889.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/TFPN-eps-converted-to.pdf, id=2780, 549.05125pt x 66.2475pt>
+<Figure/TFPN-eps-converted-to.pdf, id=2755, 549.05125pt x 66.2475pt>
 File: Figure/TFPN-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/TFPN-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/TFPN-eps-converted-to.pdf  used on input line 2
@@ -2198,7 +2198,7 @@ Package epstopdf Info: Source file: <Figure/ROC.eps>
 o.pdf Figure/ROC.eps>
 (epstopdf)             \includegraphics on input line 2901.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/ROC-eps-converted-to.pdf, id=2827, 462.72874pt x 344.28625pt>
+<Figure/ROC-eps-converted-to.pdf, id=2802, 462.72874pt x 344.28625pt>
 File: Figure/ROC-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/ROC-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/ROC-eps-converted-to.pdf  used on input line 29
@@ -2215,7 +2215,7 @@ Package epstopdf Info: Source file: <Figure/costMatrix.eps>
 erted-to.pdf Figure/costMatrix.eps>
 (epstopdf)             \includegraphics on input line 2922.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/costMatrix-eps-converted-to.pdf, id=2871, 549.05125pt x 145.54375pt>
+<Figure/costMatrix-eps-converted-to.pdf, id=2846, 549.05125pt x 145.54375pt>
 File: Figure/costMatrix-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/costMatrix-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/costMatrix-eps-converted-to.pdf  used on input 
@@ -2310,7 +2310,7 @@ Package epstopdf Info: Source file: <Figure/2141.eps>
 to.pdf Figure/2141.eps>
 (epstopdf)             \includegraphics on input line 3167.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/2141-eps-converted-to.pdf, id=2962, 433.62pt x 289.08pt>
+<Figure/2141-eps-converted-to.pdf, id=2936, 433.62pt x 289.08pt>
 File: Figure/2141-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/2141-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/2141-eps-converted-to.pdf  used on input line 3
@@ -2342,7 +2342,7 @@ Package epstopdf Info: Source file: <Figure/tau.eps>
 o.pdf Figure/tau.eps>
 (epstopdf)             \includegraphics on input line 3233.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/tau-eps-converted-to.pdf, id=3025, 268.00125pt x 204.765pt>
+<Figure/tau-eps-converted-to.pdf, id=3000, 268.00125pt x 204.765pt>
 File: Figure/tau-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/tau-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/tau-eps-converted-to.pdf  used on input line 32
@@ -2362,7 +2362,7 @@ Package epstopdf Info: Source file: <Figure/lwlr1.eps>
 -to.pdf Figure/lwlr1.eps>
 (epstopdf)             \includegraphics on input line 3240.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr1-eps-converted-to.pdf, id=3026, 433.62pt x 289.08pt>
+<Figure/lwlr1-eps-converted-to.pdf, id=3001, 433.62pt x 289.08pt>
 File: Figure/lwlr1-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr1-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr1-eps-converted-to.pdf  used on input line 
@@ -2378,7 +2378,7 @@ Package epstopdf Info: Source file: <Figure/lwlr0_01.eps>
 ted-to.pdf Figure/lwlr0_01.eps>
 (epstopdf)             \includegraphics on input line 3245.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr0_01-eps-converted-to.pdf, id=3027, 433.62pt x 289.08pt>
+<Figure/lwlr0_01-eps-converted-to.pdf, id=3002, 433.62pt x 289.08pt>
 File: Figure/lwlr0_01-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_01-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_01-eps-converted-to.pdf  used on input li
@@ -2394,7 +2394,7 @@ Package epstopdf Info: Source file: <Figure/lwlr0_003.eps>
 rted-to.pdf Figure/lwlr0_003.eps>
 (epstopdf)             \includegraphics on input line 3250.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/lwlr0_003-eps-converted-to.pdf, id=3028, 433.62pt x 289.08pt>
+<Figure/lwlr0_003-eps-converted-to.pdf, id=3003, 433.62pt x 289.08pt>
 File: Figure/lwlr0_003-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/lwlr0_003-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/lwlr0_003-eps-converted-to.pdf  used on input l
@@ -2427,7 +2427,7 @@ Package epstopdf Info: Source file: <Figure/KM.eps>
 .pdf Figure/KM.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/KM-eps-converted-to.pdf, id=3206, 722.7pt x 216.81pt>
+<Figure/KM-eps-converted-to.pdf, id=3181, 722.7pt x 216.81pt>
 File: Figure/KM-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/KM-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/KM-eps-converted-to.pdf  used on input line 14.
@@ -2469,7 +2469,7 @@ Package epstopdf Info: Source file: <Figure/RI.eps>
 .pdf Figure/RI.eps>
 (epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/RI-eps-converted-to.pdf, id=3235, 722.7pt x 268.00125pt>
+<Figure/RI-eps-converted-to.pdf, id=3209, 722.7pt x 268.00125pt>
 File: Figure/RI-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/RI-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/RI-eps-converted-to.pdf  used on input line 61.
@@ -2486,29 +2486,28 @@ Package epstopdf Info: Source file: <Figure/KMeans.eps>
 d-to.pdf Figure/KMeans.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<Figure/KMeans-eps-converted-to.pdf, id=3280, 722.7pt x 722.7pt>
+<Figure/KMeans-eps-converted-to.pdf, id=3255, 722.7pt x 722.7pt>
 File: Figure/KMeans-eps-converted-to.pdf Graphic file (type pdf)
 <use Figure/KMeans-eps-converted-to.pdf>
 Package pdftex.def Info: Figure/KMeans-eps-converted-to.pdf  used on input line
  104.
 (pdftex.def)             Requested size: 333.69527pt x 333.69214pt.
- [112 <./Figure/KMeans-eps-converted-to.pdf>]) (./ThesisFiles/part3.tex)
+ [112 <./Figure/KMeans-eps-converted-to.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
- [113]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E164CA95BE4835A8B2C58F603E014FD2;11216.
+(rerunfilecheck)             Checksum: DF664B6E42882F98CD998FA5D229E408;10767.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 29759 strings out of 492649
- 508577 string characters out of 6133384
+ 29719 strings out of 492649
+ 507898 string characters out of 6133384
  546168 words of memory out of 5000000
- 31175 multiletter control sequences out of 15000+600000
- 629773 words of font info for 385 fonts, out of 8000000 for 9000
+ 31151 multiletter control sequences out of 15000+600000
+ 628129 words of font info for 379 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,27n,56p,10410b,2918s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/s
@@ -2630,10 +2629,10 @@ nu/gbsnu99.pfb><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb
 ><c:/texlive/2018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9c.pfb><c:/texlive/2
 018/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9f.pfb><c:/texlive/2018/texmf-dist
 /fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on main.pdf (113 pages, 4162575 bytes).
+Output written on main.pdf (112 pages, 4159589 bytes).
 PDF statistics:
- 4243 PDF objects out of 4296 (max. 8388607)
- 3377 compressed objects within 34 object streams
- 1541 named destinations out of 1728 (max. 500000)
- 1184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4213 PDF objects out of 4296 (max. 8388607)
+ 3348 compressed objects within 34 object streams
+ 1535 named destinations out of 1728 (max. 500000)
+ 1144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
